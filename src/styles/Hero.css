@@ -1,0 +1,74 @@
+/* Etusivun alotusscreenin tyylit 
+- ehkä vähän innostuin ton ravun kaa :D t.Veera*/
+
+.heroText {
+  text-align: center;
+  color: #1a0669;
+  background-color: #a0c6ec;
+  height: 90vh;
+  width: 100vw;
+  padding: 100px 0px 20px 0px;
+}
+
+.titleNbutton {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 32px;
+}
+
+.motto {
+  margin: 0px 50px;
+}
+
+.callToAction {
+  color: #1a0669;
+  font-size: 20px;
+  border-color: #1a0669;
+  border-radius: 10px;
+  align-self: stretch;
+}
+
+.callToAction:hover {
+  background-color: #1a0669;
+  color: #a6cffa;
+  border-color: #3183da77;
+}
+
+#rapuContainer {
+  padding: 20px;
+}
+
+.rapu1 {
+  position: absolute;
+  left: -60px;
+  top: 340px;
+  height: 200px;
+  height: 40vw;
+  max-height: 240px;
+  transform: rotate(0.15turn);
+}
+
+@media screen and (min-width: 519px) {
+  .heroText {
+    padding: 200px 20px 25px 20px;
+  }
+  .rapu1 {
+    top: 380px;
+    left: -90px;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .rapu1 {
+    left: -20px;
+  }
+}

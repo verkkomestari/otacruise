@@ -1,0 +1,20 @@
+/* Suoraan alotussivun alla olevan esittely tekstin tyylit */
+
+.introContainer {
+  width: 100vw;
+  background-color: #1a0669;
+}
+
+.spacer {
+  height: 12vh;
+}
+
+.introTitle {
+  color: #d9e8fc;
+}
+
+@media screen and (min-width: 850px) {
+  .spacer {
+    height: 10vw;
+  }
+}
