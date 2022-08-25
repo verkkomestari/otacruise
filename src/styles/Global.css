@@ -5,3 +5,9 @@
     'Trebuchet MS', sans-serif;
   letter-spacing: 4px;
 }
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+}

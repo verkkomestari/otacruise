@@ -3,28 +3,25 @@
 #navigationBar {
   position: fixed;
   width: 100vw;
-  background-color: #a0c6ec;
+  background-color: #10295f;
   font-size: 20px;
-  font-family: 'Mochiy Pop One', 'Gill Sans', 'Gill Sans MT', Calibri,
-    'Trebuchet MS', sans-serif;
 }
 
 button:hover {
-  color: #1a0669;
-  border-color: #1a0669c2;
+  color: #97acdb;
+  border-color: #cadbfe;
 }
 
 .navbar-nav {
   margin-left: auto;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
-.nav-item {
-  color: #1a066985;
+.nav-item.ps-5 {
+  color: #97b2f3;
+  transition: color 0.3s ease-out;
 }
 
-.nav-item:hover {
-  background-color: #b8d7f9;
-  color: #1a0669;
-  border-radius: 6px;
+.nav-item.ps-5:hover {
+  color: #dae0ed;
 }

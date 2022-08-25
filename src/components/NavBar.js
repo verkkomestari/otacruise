@@ -1,4 +1,13 @@
 import { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useParams,
+  useNavigate,
+} from 'react-router-dom';
+
 import '../styles/Global.css';
 import '../styles/NavBar.css';
 import logo from '../assets/images/ph-rapu.png';
@@ -33,16 +42,28 @@ const NavigationBar = () => {
         <div
           class={`${isNavCollapsed ? 'collapse' : 'expand'} navbar-collapse`}
         >
-          <div className='navbar-nav' style={{ borderBottom: '4px' }}>
-            <a className='nav-item nav-link ps-5 ps-sm-2 m-sm-1' href='#'>
-              Etusivu
-            </a>
-            <a className='nav-item nav-link ps-5 ps-sm-2 m-sm-1' href='#'>
-              Liput
-            </a>
-            <a className='nav-item nav-link ps-5 ps-sm-2 m-sm-1' href='#'>
-              FAQ
-            </a>
+          <div
+            className='navbar-nav montserrat'
+            style={{ borderBottom: '4px' }}
+          >
+            <Link
+              to='/'
+              className='nav-item nav-link navlink ps-5 ps-sm-2 m-sm-1'
+            >
+              Home
+            </Link>
+            <Link
+              to='/info'
+              className='nav-item nav-link navlink ps-5 ps-sm-2 m-sm-1'
+            >
+              Info
+            </Link>
+            <Link
+              to='/tickets'
+              className='nav-item nav-link navlink ps-5 ps-sm-2 m-sm-1'
+            >
+              Tickets
+            </Link>
           </div>
         </div>
       </div>

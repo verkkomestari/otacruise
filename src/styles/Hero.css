@@ -3,9 +3,10 @@
 
 .heroText {
   text-align: center;
-  color: #1a0669;
+  color: #10295f;
   background-color: #a0c6ec;
   height: 90vh;
+  min-height: 600px;
   width: 100vw;
   padding: 100px 0px 20px 0px;
 }
@@ -30,15 +31,21 @@ h1 {
 }
 
 .callToAction {
-  color: #1a0669;
+  color: #10295f;
   font-size: 20px;
-  border-color: #1a0669;
+  border-color: #10295f;
   border-radius: 10px;
   align-self: stretch;
 }
 
 .callToAction:hover {
-  background-color: #1a0669;
+  background-color: #10295f;
+  color: #a6cffa;
+  border-color: #3183da77;
+}
+
+.callToAction:active {
+  background-color: #10295f;
   color: #a6cffa;
   border-color: #3183da77;
 }
@@ -49,26 +56,27 @@ h1 {
 
 .rapu1 {
   position: absolute;
-  left: -60px;
-  top: 340px;
+  left: -80px;
+  top: 400px;
   height: 200px;
   height: 40vw;
   max-height: 240px;
   transform: rotate(0.15turn);
 }
 
-@media screen and (min-width: 519px) {
+@media screen and (min-width: 619px) {
   .heroText {
     padding: 200px 20px 25px 20px;
   }
   .rapu1 {
-    top: 380px;
-    left: -90px;
+    top: 500px;
+    left: -100px;
   }
 }
 
 @media screen and (min-width: 770px) {
   .rapu1 {
-    left: -20px;
+    top: 500px;
+    left: 0px;
   }
 }

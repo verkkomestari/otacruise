@@ -13,6 +13,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       href='https://fonts.googleapis.com/css2?family=Mochiy+Pop+One'
       rel='stylesheet'
     ></link>
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap'
+      rel='stylesheet'
+    ></link>
     <App />
   </div>
 );

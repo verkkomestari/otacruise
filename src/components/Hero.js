@@ -6,19 +6,19 @@ import rapu from '../assets/images/ph-rapu.png';
 
 const Hero = () => {
   return (
-    <div id='hero-box' class='overflow-hidden text-center'>
+    <div class='overflow-hidden text-center'>
       <div className='heroText'>
         <div className='container titleNbutton'>
           <div>
             <h1 class='display-1 title'>Otacruise 2022</h1>
-            <p class='fs-3 lead fst-italic motto'>
-              Suurin ja suosituin risteily Aalto-yliopiston opiskelijoille!
+            <p class='fs-3 lead  motto'>
+              The most popular student cruise for Aalto University students!
             </p>
-            <p class='fs-1 lead fst-italic'>27.-29.11.</p>
+            <p class='fs-2 mt-2 motto'>27.-29.11.</p>
           </div>
           <div>
             <a class='callToAction btn btn-outline-secondary' href='#'>
-              Lue lisää!
+              Read more!
             </a>
           </div>
         </div>
