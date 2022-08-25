@@ -1,7 +1,7 @@
 const HomeCards = () => {
   return (
     <div className='container overflow-hidden mb-5'>
-      <div className='row gx-5 text-dark'>
+      <div className='row text-dark'>
         <div className='col-lg-4'>
           <div class='card m-3'>
             <div class='card-body'>

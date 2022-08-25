@@ -1,12 +1,5 @@
 import { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useParams,
-  useNavigate,
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '../styles/Global.css';
 import '../styles/NavBar.css';
@@ -19,7 +12,10 @@ const NavigationBar = () => {
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   return (
-    <nav id='navigationBar' className='navbar navbar-expand-sm sticky-top'>
+    <nav
+      id='navigationBar'
+      className='navbar navbar-dark navbar-expand-sm sticky-top'
+    >
       <div className='container'>
         <div className='navbar-brand'>
           <img

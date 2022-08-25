@@ -24,4 +24,5 @@ button:hover {
 
 .nav-item.ps-5:hover {
   color: #dae0ed;
+  border-radius: 6px;
 }

@@ -8,7 +8,7 @@ const Info = () => (
   <div id='info-bg'>
     <div id='info-container' className='container'>
       <div id='info-container-child' className='row'>
-        <div className='page-sidebar col-4'>
+        <div className='page-sidebar col-sm-4'>
           <ul className='nav nav-pills flex-column mb-auto montserrat'>
             <li>
               <Link to='/' className='nav-item navlink fs-3'>

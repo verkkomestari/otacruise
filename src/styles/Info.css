@@ -1,21 +1,32 @@
 #info-bg {
+  padding: 1em;
   padding-top: 2em;
   background-color: #7697b2;
-  height: 100vh;
+  min-height: 80vh;
 }
 
 #info-container {
-  padding: 6.667em;
+  padding: 1em;
   border-radius: 20px;
   background-color: #f7e7e7;
+}
+
+@media screen and (min-width: 770px) {
+  #info-container {
+    padding: 6.667em;
+  }
+  .page-content {
+    padding-top: 50px;
+  }
 }
 
 a {
   text-decoration: none;
 }
 
-.page-content {
-  padding-top: 50px;
+.page-sidebar {
+  padding-top: 10px;
+  padding: 1em;
 }
 
 .navlink {
@@ -26,7 +37,7 @@ a {
 }
 
 .infonav {
-  font-size: 1.6rem;
+  font-size: 0.6rem;
 }
 
 .navlink:hover {
