@@ -63,7 +63,7 @@ h1 {
   transform: rotate(0.15turn);
 }
 
-@media screen and (min-width: 619px) {
+@media screen and (min-width: 619px) and (min-height: 500px) {
   .heroText {
     padding: 200px 20px 25px 20px;
   }
@@ -73,9 +73,9 @@ h1 {
   }
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 770px) and (min-height: 500px) {
   .rapu1 {
-    top: 500px;
+    top: 470px;
     left: 0px;
   }
 }
