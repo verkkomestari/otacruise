@@ -4,9 +4,9 @@ const HomeCards = () => {
   return (
     <div className='container overflow-hidden mb-5'>
       <div className='row text-dark'>
-        <Card title='Info' />
-        <Card title='Safety' />
-        <Card title='Tickets' />
+        <Card id='main' />
+        <Card id='safety' />
+        <Card id='tickets' />
       </div>
     </div>
   );

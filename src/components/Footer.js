@@ -4,10 +4,10 @@ import '../styles/Global.css';
 
 const Footer = () => (
   <div id='footer' className='text-center'>
-    <p>
+    <div>
       <div className='montserrat'>Let's sea!</div> <br /> Remember to follow us
       on social media @Otacruise{' '}
-    </p>
+    </div>
   </div>
 );
 
