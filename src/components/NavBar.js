@@ -36,7 +36,9 @@ const NavigationBar = () => {
           <span className='navbar-toggler-icon'></span>
         </button>
         <div
-          class={`${isNavCollapsed ? 'collapse' : 'expand'} navbar-collapse`}
+          className={`${
+            isNavCollapsed ? 'collapse' : 'expand'
+          } navbar-collapse`}
         >
           <div
             className='navbar-nav montserrat'

@@ -6,19 +6,19 @@ import rapu from '../assets/images/ph-rapu.png';
 
 const Hero = () => {
   return (
-    <div class='overflow-hidden text-center'>
+    <div className='overflow-hidden text-center'>
       <div className='heroText'>
         <div className='container titleNbutton'>
           <div>
-            <h1 class='display-1 display-title'>Otacruise 2022</h1>
-            <p class='fs-3 lead  motto'>
+            <h1 className='display-1 display-title'>Otacruise 2022</h1>
+            <p className='fs-3 lead  motto'>
               The most popular student cruise for Aalto University students!
             </p>
-            <p class='fs-2 mt-2 motto'>27.-29.11.</p>
+            <p className='fs-2 mt-2 motto'>27.-29.11.</p>
           </div>
           <div>
             <a
-              class='callToAction btn btn-outline-secondary db-text'
+              className='callToAction btn btn-outline-secondary db-text'
               href='#intro'
             >
               Read more!
