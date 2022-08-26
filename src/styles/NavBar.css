@@ -3,13 +3,7 @@
 #navigationBar {
   position: fixed;
   width: 100vw;
-  background-color: #10295f;
   font-size: 20px;
-}
-
-button:hover {
-  color: #97acdb;
-  border-color: #cadbfe;
 }
 
 .navbar-nav {
@@ -24,5 +18,8 @@ button:hover {
 
 .nav-item.ps-5:hover {
   color: #dae0ed;
-  border-radius: 6px;
+}
+
+.nav-item.ps-5:focus {
+  color: #dae0ed;
 }

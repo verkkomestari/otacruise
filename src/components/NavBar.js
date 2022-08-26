@@ -14,7 +14,7 @@ const NavigationBar = () => {
   return (
     <nav
       id='navigationBar'
-      className='navbar navbar-dark navbar-expand-sm sticky-top'
+      className='navbar db-bg navbar-expand-sm sticky-top'
     >
       <div className='container'>
         <div className='navbar-brand'>
@@ -43,20 +43,23 @@ const NavigationBar = () => {
             style={{ borderBottom: '4px' }}
           >
             <Link
+              onClick={() => setIsNavCollapsed(true)}
               to='/'
-              className='nav-item nav-link navlink ps-5 ps-sm-2 m-sm-1'
+              className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1'
             >
               Home
             </Link>
             <Link
+              onClick={() => setIsNavCollapsed(true)}
               to='/info'
-              className='nav-item nav-link navlink ps-5 ps-sm-2 m-sm-1'
+              className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1'
             >
               Info
             </Link>
             <Link
+              onClick={() => setIsNavCollapsed(true)}
               to='/tickets'
-              className='nav-item nav-link navlink ps-5 ps-sm-2 m-sm-1'
+              className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1'
             >
               Tickets
             </Link>

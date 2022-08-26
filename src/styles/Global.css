@@ -1,6 +1,6 @@
 /* Tänne sellasia tyylejä, joita käytetään useissa komponenteissa */
 
-.title {
+.display-title {
   font-family: 'Mochiy Pop One', 'Gill Sans', 'Gill Sans MT', Calibri,
     'Trebuchet MS', sans-serif;
   letter-spacing: 4px;
@@ -8,6 +8,15 @@
 
 .montserrat {
   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 2px;
+}
+
+.db-bg {
+  background-color: #10295f;
+}
+
+a {
+  text-decoration: none;
 }

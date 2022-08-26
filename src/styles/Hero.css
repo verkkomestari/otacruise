@@ -31,8 +31,8 @@ h1 {
 }
 
 .callToAction {
-  color: #10295f;
   font-size: 20px;
+  color: #10295f;
   border-color: #10295f;
   border-radius: 10px;
   align-self: stretch;
@@ -58,8 +58,7 @@ h1 {
   position: absolute;
   left: -80px;
   top: 400px;
-  height: 200px;
-  height: 40vw;
+  height: min(40vw, 40vh);
   max-height: 240px;
   transform: rotate(0.15turn);
 }

@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
 import '../styles/Global.css';
 import '../styles/Info.css';
+import InfoContent from './InfoContent';
+import InfoLink from './InfoLink';
 
 // Info page
 
@@ -10,27 +11,12 @@ const Info = () => (
       <div id='info-container-child' className='row'>
         <div className='page-sidebar col-sm-4'>
           <ul className='nav nav-pills flex-column mb-auto montserrat'>
-            <li>
-              <Link to='/' className='nav-item navlink fs-3'>
-                Info
-              </Link>
-            </li>
-            <li>
-              <Link to='/' className='navlink fs-4'>
-                Safety
-              </Link>
-            </li>
-            <li>
-              <Link to='/' className='navlink fs-4'>
-                Tickets
-              </Link>
-            </li>
+            <InfoLink title={'Info'} />
+            <InfoLink title={'Safety'} />
+            <InfoLink title={'Tickets'} />
           </ul>
         </div>
-        <div className='page-content col-8'>
-          <h1 className='info-title'>Info</h1>
-          <p>This is some info text.</p>
-        </div>
+        <InfoContent />
       </div>
     </div>
   </div>
