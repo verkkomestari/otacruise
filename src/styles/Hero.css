@@ -57,8 +57,8 @@ h1 {
 .rapu1 {
   position: absolute;
   left: -80px;
-  top: 400px;
-  height: min(40vw, 40vh);
+  top: 450px;
+  height: min(50vw, 50vh);
   max-height: 240px;
   transform: rotate(0.15turn);
 }

@@ -3,24 +3,26 @@ import '../styles/Info.css';
 import InfoContent from './InfoContent';
 import InfoLink from './InfoLink';
 import { useParams } from 'react-router-dom';
-
+import infoList from '../assets/infoList';
 // Info page
 
 const Info = () => {
   const id = useParams().id;
-  const title = id === 'main' ? 'info' : id;
+  const infoText = infoList.find((info) => info.id === id);
   return (
     <div id='info-bg'>
       <div id='info-container' className='container'>
         <div id='info-container-child' className='row'>
           <div className='page-sidebar col-sm-4'>
             <ul className='nav nav-pills flex-column mb-auto montserrat'>
-              <InfoLink title={'Info'} />
-              <InfoLink title={'Safety'} />
-              <InfoLink title={'Tickets'} />
+              {infoList.map((item) => (
+                <div key={item.id}>
+                  <InfoLink info={item} />
+                </div>
+              ))}
             </ul>
           </div>
-          <InfoContent title={title} />
+          <InfoContent info={infoText} />
         </div>
       </div>
     </div>

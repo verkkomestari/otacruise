@@ -1,10 +1,10 @@
 // The text content on Info page
 
-const InfoContent = ({ title }) => {
+const InfoContent = ({ info }) => {
   return (
     <div className='page-content col-8'>
-      <h1 className='montserrat info-title'>{title}</h1>
-      <p>This is some info text.</p>
+      <h1 className='montserrat info-title'>{info.title}</h1>
+      <p>{info.content}</p>
     </div>
   );
 };

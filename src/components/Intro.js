@@ -12,7 +12,7 @@ const Intro = ({ introRef }) => {
       className='overflow-hidden text-center introContainer text-light db-bg'
     >
       <div className='spacer'></div>
-      <div className='container col-11 col-md-9 col-lg-8'>
+      <div className='container col-12 col-md-9 col-lg-8'>
         <h1 className='display-title introTitle display-5 mb-2'>
           Ahoy, Matey!
         </h1>

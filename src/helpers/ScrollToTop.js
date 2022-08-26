@@ -6,7 +6,6 @@ const ScrollToTop = (props) => {
   const location = useLocation();
   useEffect(() => {
     // "document.documentElement.scrollTo" is the magic for React Router Dom v6
-    console.log(location);
     document.documentElement.scrollTo({
       top: 0,
       left: 0,
