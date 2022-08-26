@@ -47,6 +47,14 @@ a {
 .info-title {
   color: #10295f;
   font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  padding-left: 1px;
+  color: #10295f;
+  font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   letter-spacing: 2px;
