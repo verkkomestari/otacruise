@@ -4,9 +4,10 @@ import HomeCards from './HomeCards';
 
 //Alotusssivun alla oleva esittelyosio
 
-const Intro = () => {
+const Intro = ({ introRef }) => {
   return (
     <div
+      ref={introRef}
       id='intro'
       className='overflow-hidden text-center introContainer text-light db-bg'
     >

@@ -53,18 +53,18 @@ const NavigationBar = () => {
             </Link>
             <Link
               onClick={() => setIsNavCollapsed(true)}
-              to='/info'
+              to='/info/main'
               className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1'
             >
               Info
             </Link>
-            <Link
+            {/*<Link
               onClick={() => setIsNavCollapsed(true)}
               to='/tickets'
               className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1'
             >
               Tickets
-            </Link>
+        </Link>*/}
           </div>
         </div>
       </div>

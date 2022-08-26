@@ -4,7 +4,7 @@ import rapu from '../assets/images/ph-rapu.png';
 
 // Huikean hiano aloitussivu
 
-const Hero = () => {
+const Hero = ({ executeScroll }) => {
   return (
     <div className='overflow-hidden text-center'>
       <div className='heroText'>
@@ -17,12 +17,12 @@ const Hero = () => {
             <p className='fs-2 mt-2 motto'>27.-29.11.</p>
           </div>
           <div>
-            <a
+            <button
               className='callToAction btn btn-outline-secondary db-text'
-              href='#intro'
+              onClick={executeScroll}
             >
               Read more!
-            </a>
+            </button>
           </div>
         </div>
       </div>
