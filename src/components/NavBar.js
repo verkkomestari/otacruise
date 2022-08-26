@@ -14,7 +14,7 @@ const NavigationBar = () => {
   return (
     <nav
       id='navigationBar'
-      className='navbar db-bg navbar-expand-sm sticky-top'
+      className='navbar navbar-dark db-bg navbar-expand-sm sticky-top'
     >
       <div className='container'>
         <div className='navbar-brand'>
