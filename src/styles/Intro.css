@@ -19,7 +19,7 @@
 }
 
 .card-container {
-  min-height: 400px;
+  min-height: 300px;
 }
 
 .card:hover {
@@ -31,4 +31,16 @@
   background-color: rgb(43, 98, 226);
   height: 20vh;
   min-height: 150px;
+}
+
+@media screen and (min-width: 570px) {
+  .card-container {
+    min-height: 350px;
+  }
+}
+
+@media screen and (min-width: 870px) {
+  .card-container {
+    min-height: 450px;
+  }
 }

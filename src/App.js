@@ -5,7 +5,6 @@ import Info from './components/Info';
 import Tickets from './components/Tickets';
 import Footer from './components/Footer';
 import ScrollToTop from './helpers/ScrollToTop';
-import { useRef } from 'react';
 // Sivun rakenne navi + kontsa
 // Komponentit löytyy components-kansiosta
 

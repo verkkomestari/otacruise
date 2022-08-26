@@ -5,7 +5,8 @@ import '../styles/Global.css';
 const Footer = () => (
   <div id='footer' className='text-center'>
     <p>
-      Let's sea! <br /> Remember to follow us on social media @Otacruise{' '}
+      <div className='montserrat'>Let's sea!</div> <br /> Remember to follow us
+      on social media @Otacruise{' '}
     </p>
   </div>
 );
