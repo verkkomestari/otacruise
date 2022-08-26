@@ -44,7 +44,7 @@ h1 {
   border-color: #3183da77;
 }
 
-.callToAction:active {
+.callToAction:focus {
   background-color: #10295f;
   color: #a6cffa;
   border-color: #3183da77;

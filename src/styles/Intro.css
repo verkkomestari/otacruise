@@ -22,8 +22,13 @@
   min-height: 300px;
 }
 
-.card-body:hover {
-  padding-top: 18px;
-  padding-bottom: 18px;
+.card:hover {
+  padding-top: 4px;
   box-shadow: 0 0 15px 2px rgba(101, 103, 185, 0.655);
+}
+
+.card-image {
+  background-color: rgb(43, 98, 226);
+  height: 20vh;
+  min-height: 150px;
 }

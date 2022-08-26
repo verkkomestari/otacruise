@@ -16,6 +16,7 @@ const Card = ({ title }) => {
             bulk of the card's content.
           </p>
         </div>
+        <div className='card-image'></div>
       </div>
     </div>
   );
