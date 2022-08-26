@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import '../styles/Global.css';
 import '../styles/NavBar.css';
@@ -9,6 +9,7 @@ import logo from '../assets/images/ph-rapu.png';
 
 const NavigationBar = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const navigateTo = useNavigate();
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   return (
@@ -17,7 +18,7 @@ const NavigationBar = () => {
       className='navbar navbar-dark db-bg navbar-expand-sm sticky-top'
     >
       <div className='container'>
-        <div className='navbar-brand'>
+        <div className='navbar-brand' onClick={() => navigateTo('/')}>
           <img
             alt='Otacruise'
             src={logo}

@@ -31,23 +31,7 @@ h1 {
 }
 
 .callToAction {
-  font-size: 20px;
-  color: #10295f;
-  border-color: #10295f;
-  border-radius: 10px;
-  align-self: stretch;
-}
-
-.callToAction:hover {
-  background-color: #10295f;
-  color: #a6cffa;
-  border-color: #3183da77;
-}
-
-.callToAction:focus {
-  background-color: #10295f;
-  color: #a6cffa;
-  border-color: #3183da77;
+  display: none;
 }
 
 #rapuContainer {
@@ -64,6 +48,27 @@ h1 {
 }
 
 @media screen and (min-width: 619px) and (min-height: 500px) {
+  .callToAction {
+    display: inline;
+    font-size: 20px;
+    color: #10295f;
+    border-color: #10295f;
+    border-radius: 10px;
+    align-self: stretch;
+  }
+
+  .callToAction:hover {
+    background-color: #10295f;
+    color: #a6cffa;
+    border-color: #3183da77;
+  }
+
+  .callToAction:focus {
+    background-color: #10295f;
+    color: #a6cffa;
+    border-color: #3183da77;
+  }
+
   .heroText {
     padding: 200px 20px 25px 20px;
   }
