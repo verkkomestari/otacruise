@@ -13,7 +13,7 @@ const Info = () => {
     <div id='info-bg'>
       <div id='info-container' className='container'>
         <div id='info-container-child' className='row'>
-          <div className='page-sidebar col-sm-4'>
+          <div className='page-sidebar col-md-4'>
             <ul className='nav nav-pills flex-column mb-auto montserrat'>
               {infoList.map((item) => (
                 <div key={item.id}>

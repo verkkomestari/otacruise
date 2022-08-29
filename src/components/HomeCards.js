@@ -5,8 +5,7 @@ const HomeCards = () => {
     <div className='container overflow-hidden mb-5'>
       <div className='row text-dark'>
         <Card id='main' />
-        <Card id='safety' />
-        <Card id='tickets' />
+        <Card id='aboutus' />
       </div>
     </div>
   );

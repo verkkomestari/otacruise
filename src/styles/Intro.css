@@ -8,14 +8,18 @@
   height: 12vh;
 }
 
-@media screen and (min-width: 850px) {
+/* @media screen and (min-width: 850px) {
   .spacer {
     height: 10vw;
   }
-}
+} */
 
 .card-title {
   color: #10295f;
+}
+
+.card-body {
+  min-width: 350px;
 }
 
 .card-container {
@@ -32,7 +36,7 @@
   height: 20vh;
   min-height: 150px;
 }
-
+/* 
 @media screen and (min-width: 570px) {
   .card-container {
     min-height: 350px;
@@ -43,4 +47,4 @@
   .card-container {
     min-height: 450px;
   }
-}
+} */

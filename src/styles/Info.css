@@ -6,14 +6,15 @@
 }
 
 #info-container {
-  padding: 1em;
+  padding: 50px;
+  margin-bottom: 100px;
   border-radius: 20px;
   background-color: #f7e7e7;
 }
 
 @media screen and (min-width: 770px) {
   #info-container {
-    padding: 6.667em;
+    padding: 6em;
   }
   .page-content {
     padding-top: 50px;

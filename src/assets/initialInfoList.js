@@ -2,26 +2,46 @@ const infoList = [
   {
     id: 'main',
     title: 'Info',
-    cardText: 'Get to know the basic info about Otacruise',
+    content: [
+      { subtitle: null, body: 'This is info text for the main info page' },
+    ],
+  },
+  {
+    id: 'safety',
+    title: 'Safety',
     content: [
       {
         subtitle: null,
-        body: 'Otacruise comes back bigger than ever. In the end of November, Silja Symphony will be filled with Aalto University students. The ship is completely reserved for Otacruise and entertainement will be customized to gurantee an incredible experience.',
+        body: 'Otacruise takes everyones safety seriously and wants all passengers to enjoy their time on the ship safely.',
       },
-      { subtitle: 'Dates', body: 'Departure from Olympia Terminal: 28.11.' },
-      { subtitle: '', body: 'Arrival to Olympia Terminal: 30.11.' },
       {
-        subtitle: 'Tickets',
-        body: 'Detailed information about ticket prices and descriptions will be published shortly.',
+        subtitle: 'Safety Guide',
+        body: '► Take care of yourself and your friends. Agree on a meetingplace if you get separated.',
       },
-      { subtitle: '', body: 'Tickets will be sold on Kide.app.' },
+      {
+        subtitle: '',
+        body: '► Please follow the instructions given by the event organisers, crew or security staff.',
+      },
+      {
+        subtitle: '',
+        body: '► Be sure to drink water throughout the event.',
+      },
+      {
+        subtitle: '',
+        body: '► Please take care of the boat´s spaces. Don’t trash and be mindful of the other passagers.',
+      },
     ],
   },
-
+  {
+    id: 'tickets',
+    title: 'Tickets',
+    content: [
+      { subtitle: null, body: 'This is info text for the tickets info page' },
+    ],
+  },
   {
     id: 'aboutus',
     title: 'About Us',
-    cardText: 'Want to know the story behind Otacruise?',
     content: [
       {
         subtitle: 'Our Story',

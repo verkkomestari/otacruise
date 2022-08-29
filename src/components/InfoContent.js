@@ -5,7 +5,7 @@ const InfoContent = ({ info }) => {
     <div className='page-content col-8'>
       <h1 className='montserrat info-title'>{info.title}</h1>
       {info.content.map((part) => (
-        <div>
+        <div className='page-body'>
           <h2 className='montserrat subtitle'>{part.subtitle}</h2>
           <p>{part.body}</p>
         </div>
