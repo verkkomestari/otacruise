@@ -19,7 +19,13 @@
 }
 
 .card-body {
-  min-width: 350px;
+  min-width: 80vw;
+}
+
+@media screen and (min-width: 400px) {
+  .card-body {
+    min-width: 350px;
+  }
 }
 
 .card-container {

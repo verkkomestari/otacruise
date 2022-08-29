@@ -6,7 +6,7 @@
 }
 
 #info-container {
-  padding: 50px;
+  padding-left: 40px;
   margin-bottom: 100px;
   border-radius: 20px;
   background-color: #f7e7e7;
@@ -16,9 +16,6 @@
   #info-container {
     padding: 6em;
   }
-  .page-content {
-    padding-top: 50px;
-  }
 }
 
 a {
@@ -26,7 +23,7 @@ a {
 }
 
 .page-sidebar {
-  padding-top: 10px;
+  padding-top: 20px;
   padding: 1em;
 }
 

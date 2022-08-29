@@ -8,8 +8,11 @@ const infoList = [
         subtitle: null,
         body: 'Otacruise comes back bigger than ever. In the end of November, Silja Symphony will be filled with Aalto University students. The ship is completely reserved for Otacruise and entertainement will be customized to gurantee an incredible experience.',
       },
-      { subtitle: 'Dates', body: 'Departure from Olympia Terminal: 28.11.' },
-      { subtitle: '', body: 'Arrival to Olympia Terminal: 30.11.' },
+      {
+        subtitle: 'Dates',
+        body: 'Departure from Olympia Terminal: 27.11.2022',
+      },
+      { subtitle: '', body: 'Arrival to Olympia Terminal: 28.11.2022' },
       {
         subtitle: 'Tickets',
         body: 'Detailed information about ticket prices and descriptions will be published shortly.',
@@ -36,7 +39,7 @@ const infoList = [
         body: 'Our aim is to create memorable experiences with our love towards the student community in the core of everything we do. ',
       },
       {
-        subtitle: 'OUR COMMINITY',
+        subtitle: 'OUR COMMuNITY',
         body: 'It is in our best interest to make sure you have a pleasant experience onboard. All decisions regarding the cruise are made with safety and functionality in mind.',
       },
       {
