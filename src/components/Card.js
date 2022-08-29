@@ -11,8 +11,8 @@ const Card = ({ id }) => {
   };
   return (
     <div className='col card-container'>
-      <div className='card m-3'>
-        <div className='card-body' onClick={handleClick}>
+      <div className='card m-3' onClick={handleClick}>
+        <div className='card-body'>
           <h5 className='card-title montserrat'>{info.title}</h5>
           <p className='card-text mb-1'>{info.cardText}</p>
         </div>
