@@ -3,6 +3,7 @@ const infoList = [
     id: 'main',
     title: 'Info',
     cardText: 'Get to know the basic info about Otacruise',
+    img: '../assets/images/IG_arkku.jpg',
     content: [
       {
         subtitle: null,
@@ -25,6 +26,7 @@ const infoList = [
     id: 'aboutus',
     title: 'About Us',
     cardText: 'Want to know the story behind Otacruise?',
+    img: '../assets/images/IG_arkku.jpg',
     content: [
       {
         subtitle: 'Our Story',

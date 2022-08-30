@@ -1,6 +1,7 @@
 import '../styles/Global.css';
 import '../styles/Intro.css';
 import HomeCards from './HomeCards';
+import tausta from '../assets/images/meritausta.PNG';
 
 //Alotusssivun alla oleva esittelyosio
 
@@ -9,10 +10,11 @@ const Intro = ({ introRef }) => {
     <div
       ref={introRef}
       id='intro'
-      className='overflow-hidden text-center introContainer text-light db-bg'
+      className='overflow-hidden text-center introContainer text-light'
+      style={{ backgroundImage: `url(${tausta})` }}
     >
       <div className='spacer'></div>
-      <div className='container col-12 col-md-9 col-lg-8'>
+      <div className='container col-12 col-md-9 col-lg-8 db-bg p-3'>
         <h1 className='display-title introTitle display-5 mb-2'>
           Ahoy, Matey!
         </h1>
