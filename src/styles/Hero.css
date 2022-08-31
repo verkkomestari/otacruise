@@ -5,10 +5,16 @@
   text-align: center;
   color: #10295f;
   background-color: #a0c6ec;
-  height: 90vh;
+  height: 100vh;
   min-height: 600px;
   width: 100vw;
   padding: 100px 0px 20px 0px;
+}
+
+@media screen and (min-width: 600px) {
+  .heroText {
+    height: 90vh;
+  }
 }
 
 .titleNbutton {
