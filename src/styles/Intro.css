@@ -40,6 +40,14 @@
 .card-image {
   height: 20vh;
   min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.icon {
+  font-size: max(15vh, 124px);
 }
 /* 
 @media screen and (min-width: 570px) {

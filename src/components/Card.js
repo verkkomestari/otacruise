@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import infoList from '../assets/infoList';
-import image from '../assets/images/Hero_rapu_sininen_tausta.pdf';
+import card_image from '../assets/images/card_image.JPG';
+import IconGet from '../helpers/IconGet';
 
 const Card = ({ id }) => {
   const info = infoList.find((i) => i.id === id);
@@ -18,14 +19,18 @@ const Card = ({ id }) => {
           <p className='card-text mb-1'>{info.cardText}</p>
         </div>
         <div
-          className='card-image rounded-bottom'
+          className='card-image rounded-bottom d-flex align-items-center justify-content-center'
           style={{
-            backgroundImage: `url(${image})`,
+            backgroundImage: `url(${card_image})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
           }}
-        ></div>
+        >
+          <h1 className='icon'>
+            <IconGet id={id} />
+          </h1>
+        </div>
       </div>
     </div>
   );
