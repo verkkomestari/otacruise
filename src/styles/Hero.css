@@ -40,9 +40,9 @@ h1 {
 
 .rapu1 {
   position: absolute;
-  left: -134px;
-  top: 420px;
-  height: min(60vw, 60vh);
+  left: -90px;
+  height: 60vh;
+  top: 64vh;
   max-height: 300px;
 }
 
@@ -79,8 +79,15 @@ h1 {
   }
 }
 
-@media screen and (min-width: 770px) and (min-height: 600px) {
+@media screen and (min-height: 800px) and (max-width: 700px) {
   .rapu1 {
-    left: 0px;
+    left: 30px;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-height: 700px) {
+  .rapu1 {
+    left: 50px;
+    height: 50vh;
   }
 }
