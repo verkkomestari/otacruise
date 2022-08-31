@@ -1,6 +1,6 @@
 import '../styles/Hero.css';
 import '../styles/Global.css';
-import rapu from '../assets/images/ph-rapu.png';
+import rapu from '../assets/images/final_rapu.png';
 
 // Huikean hiano aloitussivu
 

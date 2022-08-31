@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import '../styles/Global.css';
 import '../styles/NavBar.css';
-import logo from '../assets/images/ph-rapu.png';
+import logo from '../assets/images/final_rapu.png';
 
 // Navigointipalkki sivun yläreunassa
 

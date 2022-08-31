@@ -42,9 +42,8 @@ h1 {
   position: absolute;
   left: -134px;
   top: 420px;
-  height: min(50vw, 50vh);
-  max-height: 240px;
-  transform: rotate(0.15turn);
+  height: min(60vw, 60vh);
+  max-height: 300px;
 }
 
 @media screen and (min-width: 619px) and (min-height: 500px) {
@@ -72,15 +71,16 @@ h1 {
   .heroText {
     padding: 200px 20px 25px 20px;
   }
+}
+
+@media screen and (max-height: 600px) {
   .rapu1 {
-    top: 500px;
-    left: -100px;
+    top: 410px;
   }
 }
 
-@media screen and (min-width: 770px) and (min-height: 500px) {
+@media screen and (min-width: 770px) and (min-height: 600px) {
   .rapu1 {
-    top: 470px;
     left: 0px;
   }
 }
