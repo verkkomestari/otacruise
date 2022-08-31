@@ -2,7 +2,7 @@
 
 const InfoContent = ({ info }) => {
   return (
-    <div className='page-content col-md-9'>
+    <div className='page-content col-md-8'>
       <h1 className='montserrat info-title'>{info.title}</h1>
       {info.content.map((part) => (
         <div className='page-body' key={part.content}>
