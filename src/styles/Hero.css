@@ -5,15 +5,27 @@
   text-align: center;
   color: #10295f;
   background-color: #a0c6ec;
-  height: 100vh;
+  height: 102vh;
   min-height: 600px;
   width: 100vw;
   padding: 100px 0px 20px 0px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-height: 800px) and (min-width: 390px) {
+  .heroText {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-height: 800px) and (min-width: 600px) {
   .heroText {
     height: 90vh;
+  }
+}
+
+@media screen and (min-height: 900px) and (max-width: 600px) {
+  .heroText {
+    height: 80vh;
   }
 }
 
@@ -38,18 +50,6 @@ h1 {
 
 .callToAction {
   display: none;
-}
-
-#rapuContainer {
-  padding: 20px;
-}
-
-.rapu1 {
-  position: absolute;
-  left: -90px;
-  height: 60vh;
-  top: 64vh;
-  max-height: 300px;
 }
 
 @media screen and (min-width: 619px) and (min-height: 500px) {
@@ -79,21 +79,56 @@ h1 {
   }
 }
 
-@media screen and (max-height: 600px) {
-  .rapu1 {
-    top: 410px;
-  }
+#rapuContainer {
+  padding: 20px;
 }
 
-@media screen and (min-height: 800px) and (max-width: 700px) {
-  .rapu1 {
-    left: 30px;
-  }
+.rapu1 {
+  position: absolute;
+  left: 30px;
+  height: min(50vh, 50vw);
+  top: 420px;
+  max-height: 300px;
 }
 
-@media screen and (min-width: 800px) and (min-height: 700px) {
+@media screen and (max-width: 500px) and (min-height: 700px) {
   .rapu1 {
     left: 50px;
-    height: 50vh;
+    height: 300px;
+  }
+}
+
+@media screen and (max-height: 500px) and (min-width: 660px) {
+  .rapu1 {
+    top: 340px;
+    left: 50px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-height: 300px) {
+  .rapu1 {
+    left: -90px;
+  }
+}
+
+@media screen and (min-height: 600px) and (min-width: 770px) {
+  .rapu1 {
+    top: 60vh;
+    max-height: 350px;
+  }
+}
+
+@media screen and (min-height: 1000px) and (min-width: 770px) {
+  .rapu1 {
+    top: 67vh;
+    max-height: 350px;
+  }
+}
+
+@media screen and (min-height: 1100px) and (max-width: 1000px) {
+  .rapu1 {
+    top: 65vh;
+    max-height: 350px;
   }
 }
