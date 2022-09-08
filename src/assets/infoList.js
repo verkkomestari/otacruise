@@ -13,7 +13,7 @@ const infoList = [
         subtitle: 'Dates',
         body: 'Departure from Olympia Terminal: 27.11.2022',
       },
-      { subtitle: '', body: 'Arrival to Olympia Terminal: 28.11.2022' },
+      { subtitle: '', body: 'Arrival to Olympia Terminal: 29.11.2022' },
       {
         subtitle: 'Tickets',
         body: 'Detailed information about ticket prices and descriptions will be published shortly.',
