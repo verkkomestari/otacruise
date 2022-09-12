@@ -12,14 +12,15 @@
 }
 
 .nav-item.ps-5 {
-  color: #97b2f3;
+  color: #dae0ed;
   transition: color 0.3s ease-out;
 }
 
 .nav-item.ps-5:hover {
-  color: #dae0ed;
+  color: #bfd0f8;
+  text-shadow: 1px 1px 10px rgb(16, 7, 68) ;
 }
 
-.nav-item.ps-5:focus {
-  color: #dae0ed;
-}
+/* .nav-item.ps-5:focus {
+  color: #97b2f3;
+} */
