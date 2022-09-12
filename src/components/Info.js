@@ -1,14 +1,14 @@
-import '../styles/Global.css';
-import '../styles/Info.css';
-import InfoContent from './InfoContent';
-import InfoLink from './InfoLink';
-import { useParams } from 'react-router-dom';
-import infoList from '../assets/infoList';
+import '../styles/Global.css'
+import '../styles/Info.css'
+import InfoContent from './InfoContent'
+import InfoLink from './InfoLink'
+import { useParams } from 'react-router-dom'
+import infoList from '../assets/infoList'
 // Info page
 
 const Info = () => {
-  const id = useParams().id;
-  const infoText = infoList.find((info) => info.id === id);
+  const id = useParams().id
+  const infoText = infoList.find((info) => info.id === id)
   return (
     <div id='info-bg'>
       <div id='info-container' className='container'>
@@ -22,11 +22,11 @@ const Info = () => {
               ))}
             </ul>
           </div>
-          <InfoContent info={infoText} />
+          <InfoContent infoList={infoText} />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Info;
+export default Info
