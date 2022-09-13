@@ -69,6 +69,30 @@ const infoList = [
         subtitle: '',
         body: '► Club One membership number (optional)',
       },
+      {
+        subtitle: '',
+        body: 'There is 25 minutes to fill in the information. You can edit the information on Kide.app until 19.10.',
+      },
+      {
+        subtitle: 'What´s included?',
+        body: 'The ticket price includes: ',
+      },
+      {
+        subtitle: '',
+        body: '► the trip from Helsinki to Stockholm and back on the Silja Symphony on 27.-29.11.',
+      },
+      {
+        subtitle: '',
+        body: '► 17 € meal voucher that you can use in the ship’s restaurants and for example the breakfast',
+      },
+      {
+        subtitle: '',
+        body: '► Program on the ship',
+      },
+      {
+        subtitle: '',
+        body: 'While buying the cabin, you can also buy the buffet dinner if you want (47€/passenger/day). You can also buy an overalls patch on Kide.app for 2€.',
+      },
     ],
   },
   {
@@ -154,7 +178,7 @@ const infoList = [
       },
       {
         subtitle: 'Who is organising Otacruise?',
-        body: 'Otacruise is run by a non-profit association, called Otaniemen Merikerho ry, set up specifically for this purpose. The association is run by a group of previous fuksicaptains.',
+        body: 'Otacruise is run by a non-profit association, Otaniemen Merikerho ry, set up specifically for this purpose. The association is run by a group of previous fuksicaptains.',
       },
     ],
   },
