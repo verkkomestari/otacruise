@@ -227,7 +227,7 @@ const infoList = [
       },
       {
         subtitle: 'When do the ticket sales start?',
-        body: 'On Kide.app on 22.9. at 17:00 and on campus on 26.9. at 06:30.',
+        body: 'On Kide.app on 22.9. at 17:00 and on campus on 26.9. at 08:00.',
       },
       {
         subtitle: 'Is there a fuksi quota?',
