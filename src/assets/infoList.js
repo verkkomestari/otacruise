@@ -178,7 +178,7 @@ const infoList = [
       },
       {
         subtitle: 'Who is organising Otacruise?',
-        body: 'Otacruise is run by a non-profit association, Otaniemen Merikerho ry, set up specifically for this purpose. The association is run by a group of previous fuksicaptains.',
+        body: 'Otacruise is run by a non-profit association, Otaniemen Merikerho ry, set up specifically for this purpose. You can contact the organisers at merikerho@merikerho.net .',
       },
     ],
   },
