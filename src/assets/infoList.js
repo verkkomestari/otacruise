@@ -11,9 +11,12 @@ const infoList = [
       },
       {
         subtitle: 'Dates',
-        body: 'Departure from Olympia Terminal: 27.11.2022',
+        body: 'Departure from Olympia Terminal: 27.11.2022 at 17:00',
       },
-      { subtitle: '', body: 'Arrival to Olympia Terminal: 29.11.2022' },
+      {
+        subtitle: '',
+        body: 'Arrival to Olympia Terminal: 29.11.2022 at 10:30',
+      },
       {
         subtitle: 'More Info',
         body: 'Look through the info pages to find out more!',
@@ -29,7 +32,11 @@ const infoList = [
     content: [
       {
         subtitle: '',
-        body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 20.9. at 17:00 and on campus on 22.9. at 8:00. The possible line should be formed on the side of Alvarin aukio in front of the Z door. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
+        body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 22.9. at 17:00 and on campus on 26.9. at 8:00. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
+      },
+      {
+        subtitle: '',
+        body: '',
       },
       {
         subtitle: 'Ticket information',
@@ -37,8 +44,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: `► Name (first & last name as in passport/drivers licence)
-        `,
+        body: `► Name (first & last name as in passport/drivers licence)`,
       },
       {
         subtitle: '',
@@ -71,6 +77,10 @@ const infoList = [
       {
         subtitle: '',
         body: 'There is 25 minutes to fill in the information. You can edit the information on Kide.app until 19.10.',
+      },
+      {
+        subtitle: '',
+        body: '',
       },
       {
         subtitle: 'Cabin Prices',
@@ -115,6 +125,10 @@ const infoList = [
       {
         subtitle: '',
         body: '► De Luxe for two 346 €',
+      },
+      {
+        subtitle: '',
+        body: '',
       },
       {
         subtitle: 'What´s included?',
@@ -221,7 +235,7 @@ const infoList = [
       },
       {
         subtitle: 'Who is organising Otacruise?',
-        body: 'Otacruise is run by a non-profit association, Otaniemen Merikerho ry, set up specifically for this purpose. You can contact the organisers at merikerho@merikerho.net .',
+        body: 'Otacruise is run by a non-profit association, Otaniemen Merikerho ry, set up specifically for this purpose. You can contact the organisers at merikerho@merikerho.net or on Telegram @CaptainOtacruise.',
       },
     ],
   },
