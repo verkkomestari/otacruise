@@ -15,10 +15,9 @@ const infoList = [
       },
       { subtitle: '', body: 'Arrival to Olympia Terminal: 29.11.2022' },
       {
-        subtitle: 'Tickets',
-        body: 'Detailed information about ticket prices and descriptions will be published shortly.',
+        subtitle: 'More Info',
+        body: 'Look through the info pages to find out more!',
       },
-      { subtitle: '', body: 'Tickets will be sold on Kide.app.' },
     ],
   },
 
@@ -38,7 +37,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: `► Name (first & last name)
+        body: `► Name (first & last name as in passport/drivers licence)
         `,
       },
       {
@@ -59,7 +58,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► Gender',
+        body: '► Gender (as in passport/drivers licence)',
       },
       {
         subtitle: '',
@@ -72,6 +71,50 @@ const infoList = [
       {
         subtitle: '',
         body: 'There is 25 minutes to fill in the information. You can edit the information on Kide.app until 19.10.',
+      },
+      {
+        subtitle: 'Cabin Prices',
+        body: 'The cabins are priced as follows (price per a whole cabin):',
+      },
+      {
+        subtitle: '',
+        body: '► C-class for two 126 €',
+      },
+      {
+        subtitle: '',
+        body: '► C-class for three 153 €',
+      },
+      {
+        subtitle: '',
+        body: '► C-class for four 184 €',
+      },
+      {
+        subtitle: '',
+        body: '► B-class for two 138 €',
+      },
+      {
+        subtitle: '',
+        body: '► B-class for four 196 €',
+      },
+      {
+        subtitle: '',
+        body: '► Promenade-class for two 154 €',
+      },
+      {
+        subtitle: '',
+        body: '► Promenade-class for four 220 €',
+      },
+      {
+        subtitle: '',
+        body: '► A-class for two 186 €',
+      },
+      {
+        subtitle: '',
+        body: '► A-class for four 256 €',
+      },
+      {
+        subtitle: '',
+        body: '► De Luxe for two 346 €',
       },
       {
         subtitle: 'What´s included?',
@@ -87,7 +130,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► Program on the ship',
+        body: '► Program on the ship, including a main stage artist that will be published later!',
       },
       {
         subtitle: '',
@@ -170,7 +213,7 @@ const infoList = [
       },
       {
         subtitle: 'When do the ticket sales start?',
-        body: 'On Kide.app on 20.9. at 17:00 and on campus on 22.9. at 8:00.',
+        body: 'On Kide.app on 22.9. at 17:00 and on campus on 26.9. at 06:30.',
       },
       {
         subtitle: 'Is there a fuksi quota?',
