@@ -131,7 +131,7 @@ const infoList = [
         body: '',
       },
       {
-        subtitle: 'What´s included?',
+        subtitle: "What's included?",
         body: 'The ticket price includes: ',
       },
       {
@@ -140,7 +140,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► 17 € meal voucher that you can use in the ship’s restaurants and for example the breakfast',
+        body: "► 17 € meal voucher that you can use in the ship's restaurants and for example the breakfast",
       },
       {
         subtitle: '',
@@ -217,12 +217,12 @@ const infoList = [
       },
       {
         subtitle:
-          'I’m the one buying the cabin for me and my friends. What information do I need from my fellow cabin members to buy the cabin?',
+          "I'm the one buying the cabin for me and my friends. What information do I need from my fellow cabin members to buy the cabin?",
         body: ' You will need the name (first & last name), name of your guild/association in Finnish, @aalto.fi email, phone number, date of birth, gender, nationality (if not Finnish) and clubone-membership number (optional) from each member of your cabin.',
       },
       {
         subtitle:
-          'Can I buy a cabin for less people than the cabin’s capacity?',
+          "Can I buy a cabin for less people than the cabin's capacity?",
         body: 'Unfortunately, no. You will need to fill the whole cabin.',
       },
       {
