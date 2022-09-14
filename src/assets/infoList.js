@@ -72,6 +72,10 @@ const infoList = [
       },
       {
         subtitle: '',
+        body: '► Year of starting studies',
+      },
+      {
+        subtitle: '',
         body: '► Club One membership number (optional)',
       },
       {
@@ -144,11 +148,11 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► Program on the ship, including a main stage artist that will be published later!',
+        body: '► Program on the ship, including a main stage artist that will be published later 🎉',
       },
       {
         subtitle: '',
-        body: 'While buying the cabin, you can also buy the buffet dinner if you want (47€/passenger/day). You can also buy an overalls patch on Kide.app for 2€.',
+        body: 'While buying the cabin, you can also buy the buffet dinner if you want (47€/passenger/day).',
       },
     ],
   },
