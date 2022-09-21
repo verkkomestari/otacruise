@@ -57,3 +57,13 @@ a {
   font-weight: 900;
   letter-spacing: 2px;
 }
+
+#linkbtn {
+  color:#10295f;
+  margin-bottom: 20px;
+  border-width: 2px;
+}
+
+#linkbtn:link, #linkbtn:visited {
+  color: white;
+}
