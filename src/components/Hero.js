@@ -1,6 +1,8 @@
-import '../styles/Hero.css';
-import '../styles/Global.css';
-import rapu from '../assets/images/final_rapu.png';
+import '../styles/Hero.css'
+import '../styles/Global.css'
+import rapu from '../assets/images/final_rapu.png'
+import otacruise from '../assets/images/otacruise.png'
+import year from '../assets/images/2022.png'
 
 // Huikean hiano aloitussivu
 
@@ -9,26 +11,38 @@ const Hero = ({ executeScroll }) => {
     <div className='overflow-hidden text-center'>
       <div className='heroText'>
         <div className='container titleNbutton'>
-          <div>
-            <h1 className='display-1 display-title'>Otacruise 2022</h1>
-            <p className='fs-3 lead  motto'>
+          <div
+            className='d-flex justify-content-center align-items-center ms-md-5 me-md-5'
+            id='titleCont'>
+            <div>
+              <div>
+                <img src={otacruise} alt='heroTitle' id='otacruise' />
+              </div>
+              <div>
+                <img src={year} alt='heroTitle' id='year' />
+              </div>
+            </div>
+          </div>
+          <div className='row d-flex justify-content-center'>
+            <p className='fs-3 lead motto justify-content-center'>
               The most popular student cruise for Aalto University students!
             </p>
-            <p className='fs-2 mt-2 motto'>27.-29.11.</p>
+          </div>
+          <div className='row d-flex justify-content-center'>
+            <p className='fs-2 mt-2 motto date'>27.-29.11.</p>
           </div>
           <div>
             <button
               className='callToAction btn btn-outline-secondary db-text'
-              onClick={executeScroll}
-            >
+              onClick={executeScroll}>
               Read more!
             </button>
           </div>
         </div>
       </div>
-      <img alt='' src={rapu} className='rapu1 align-center' />
+      <img alt='' src={rapu} className='rapu1' />
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

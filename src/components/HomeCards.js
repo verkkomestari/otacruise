@@ -1,4 +1,4 @@
-import Card from './Card';
+import Card from './Card'
 
 const HomeCards = () => {
   return (
@@ -8,7 +8,7 @@ const HomeCards = () => {
         <Card id='aboutus' />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HomeCards;
+export default HomeCards
