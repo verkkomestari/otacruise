@@ -94,22 +94,35 @@ h1 {
 }
 
 /* vertical mobile*/
-@media screen and (min-width: 300px) and (max-width: 450px) and (min-height: 600px)  {
+@media screen and (min-width: 300px) and (max-width: 450px) and (min-height: 800px) and (max-height: 900px)  {
 
   .rapu1 {
     display: block;
+    left: -120px;
     top: 80vh;
+    height: min(55vh, 65vw);
   }
 }
 
-@media screen and (max-width: 500px) and  (min-height: 700px){
+
+@media screen and (min-width: 400px) and (max-width: 500px) and  (min-height: 700px){
   .rapu1 {
     top: 64vh;
     height: min(55vh, 65vw);
   }
-
+  
   .heroText {
-    height: 85vh;
+    height: 90vh;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) and (min-height: 880px) and (max-height: 1000px)  {
+
+  .rapu1 {
+    display: block;
+    left: -120px;
+    top: 70vh;
+    height: min(55vh, 65vw);
   }
 }
 
