@@ -21,6 +21,21 @@
   text-shadow: 1px 1px 10px rgb(16, 7, 68) ;
 }
 
+a.navTickets {
+  background-color: rgb(95, 95, 209);
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #dae0ed;
+}
+
+a.navTickets:hover {
+  background-color: rgb(69, 69, 151);
+  color: #bfd0f8;
+  text-shadow: 0;
+}
+
+
 /* .nav-item.ps-5:focus {
   color: #97b2f3;
 } */
