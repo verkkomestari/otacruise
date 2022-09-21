@@ -12,7 +12,6 @@ const InfoContent = ({ infoList }) => {
               target='_blank'
               rel='noreferrer'
               className='ticketLink'>
-              {' '}
               Go to Kide.app!
             </a>
           </div>

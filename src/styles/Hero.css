@@ -44,8 +44,38 @@ h1 {
   padding: 0 50px;
 }
 
+.ticketsAction {
+  margin: 10px;
+  font-size: 20px;
+  color: #dae0ed;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  background-color: rgb(95, 95, 209);
+  border-color: rgb(95, 95, 209);
+  border-radius: 10px;
+  align-self: stretch;
+}
+
+.ticketsAction:hover {
+  background-color: #10295f;
+  color: #a6cffa;
+  border-color: #3183da77;
+}
+
+a.ticketLinkHero{
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #dae0ed;
+}
+
+a.ticketLinkHero:hover{
+  color: #f3efefe4;
+  border-color: #10295f;
+}
+
 .callToAction {
-  display: none;
   font-size: 20px;
   color: #10295f;
   border-color: #10295f;
@@ -80,51 +110,23 @@ h1 {
 
 @media screen and (min-width: 300px) and  (min-height: 300px){
   .heroText {
-    height: 100vh;
+    height: 90vh;
     padding: 100px 0px 0px 0px;
   }
 }
 
 /* vertical thin mobile*/
-@media screen and (min-width: 240px) and (max-width: 300px) and  (min-height: 600px){
-  .rapu1 {
-    display: block;
-    top: 72vh;
-  }
-}
+
 
 /* vertical mobile*/
 @media screen and (min-width: 300px) and (max-width: 450px) and (min-height: 800px) and (max-height: 900px)  {
-
   .rapu1 {
-    display: block;
     left: -120px;
     top: 80vh;
     height: min(55vh, 65vw);
   }
 }
 
-
-@media screen and (min-width: 400px) and (max-width: 500px) and  (min-height: 700px){
-  .rapu1 {
-    top: 64vh;
-    height: min(55vh, 65vw);
-  }
-  
-  .heroText {
-    height: 90vh;
-  }
-}
-
-@media screen and (min-width: 300px) and (max-width: 450px) and (min-height: 880px) and (max-height: 1000px)  {
-
-  .rapu1 {
-    display: block;
-    left: -120px;
-    top: 70vh;
-    height: min(55vh, 65vw);
-  }
-}
 
 /* vertical tablet*/
 @media screen and (max-width: 820px) and (min-height: 1000px){
@@ -136,7 +138,6 @@ h1 {
   #year{
     width: 25vw;;
   }
-
 
   .rapu1 {
     display: block;
@@ -178,10 +179,6 @@ h1 {
 
   #year{
     max-width: 300px;
-  }
-
-  .callToAction{
-    display: inline;
   }
 }
 
@@ -227,8 +224,5 @@ h1 {
     max-height: 400px;
   }
 
-  .callToAction{
-    display: inline;
-  }
 
 }
