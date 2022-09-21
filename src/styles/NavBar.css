@@ -24,14 +24,18 @@
 a.navTickets {
   background-color: rgb(95, 95, 209);
   padding: 10px;
+  border-width: 2px;
   border-radius: 10px;
   text-decoration: none;
   color: #dae0ed;
+  transition-duration: 0.3s;
 }
 
 a.navTickets:hover {
-  background-color: rgb(69, 69, 151);
-  color: #bfd0f8;
+  background-color: rgb(77, 77, 150);
+  border-width: 2px;
+  border-color: #8d98fc;
+  color: #8d98fc;
   text-shadow: 0;
 }
 

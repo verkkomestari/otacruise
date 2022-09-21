@@ -56,7 +56,7 @@ const NavigationBar = () => {
             <div
               onClick={() => setIsNavCollapsed(true)}
               to='/info/tickets'
-              className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1 text-light'>
+              className='nav-item nav-link navlink lb-text ps-sm-2 m-sm-1 text-light'>
               <a
                 href='https://kide.app/events/c153f086-a944-4782-a70a-a608a49be183'
                 target='_blank'

@@ -58,12 +58,29 @@ a {
   letter-spacing: 2px;
 }
 
-#linkbtn {
+a.ticketLink{
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #10295f;
+}
+
+a.ticketLink:hover{
+  color: #f3efefe4;
+  border-color: #10295f;
+}
+
+.linkbtn, .a {
   color:#10295f;
   margin-bottom: 20px;
   border-width: 2px;
+  border-radius: 10px;
+  border-color: #071637;
+  transition-duration: 0.3s;
 }
 
-#linkbtn:link, #linkbtn:visited {
-  color: white;
+.linkbtn:link, .linkbtn:hover {
+  background-color: #10295f;
+  border-color: #10295f;
+  color: #f3efefe4;
 }

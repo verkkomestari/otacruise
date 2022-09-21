@@ -5,12 +5,13 @@ const InfoContent = ({ infoList }) => {
     <div className='page-content col-md-8'>
       <h1 className='montserrat info-title'>{infoList.title}</h1>
       {infoList.title === 'Tickets' ? (
-        <div className='mb-4'>
-          <div className='btn callToAction' id='linkbtn'>
+        <div className='mb-1'>
+          <div className='btn linkbtn' id='linkbtn'>
             <a
               href='https://kide.app/events/c153f086-a944-4782-a70a-a608a49be183'
               target='_blank'
-              rel='noreferrer'>
+              rel='noreferrer'
+              className='ticketLink'>
               {' '}
               Go to Kide.app!
             </a>
