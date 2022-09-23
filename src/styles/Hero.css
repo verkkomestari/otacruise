@@ -64,11 +64,12 @@ h1 {
 }
 
 a.ticketLinkHero{
-  font-weight: 900;
   padding: 10px 20px;
+  color: #c8d5f0;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-weight: 500;
-  color: #dae0ed;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 a.ticketLinkHero:hover{

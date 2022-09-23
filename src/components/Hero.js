@@ -3,6 +3,7 @@ import '../styles/Global.css'
 import rapu from '../assets/images/final_rapu.png'
 import otacruise from '../assets/images/otacruise.png'
 import year from '../assets/images/2022.png'
+import { Link } from 'react-router-dom'
 
 // Huikean hiano aloitussivu
 
@@ -40,11 +41,9 @@ const Hero = ({ executeScroll }) => {
           </div>
           <div className=' d-flex justify-content-center'>
             <button className='d-block d-sm-none ticketsAction btn btn-outline-secondary db-text'>
-              <a
-                href='https://otacruise.fi/info/queueing'
-                className='ticketLinkHero montserrat'>
+              <Link to='/info/queueing' className='nav-item nav-link p-1'>
                 Queueing info!
-              </a>
+              </Link>
             </button>
           </div>
         </div>
