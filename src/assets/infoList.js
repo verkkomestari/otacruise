@@ -144,11 +144,11 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: "► 17 € meal voucher that you can use in the ship's restaurants and for example the breakfast",
+        body: "► 17 € meal voucher that you can use in the ship's restaurants and for example the breakfast. NOTE! De Luxe cabins do not have special breakfast, due to it being closed on this cruise.",
       },
       {
         subtitle: '',
-        body: '► Program on the ship, including a main stage artist that will be published later 🎉',
+        body: '► Program on the ship, including Kasmir as the main performer 🎉',
       },
       {
         subtitle: '',
@@ -220,6 +220,10 @@ const infoList = [
         body: 'One cabin member registers and pays for the entire cabin group in the same registration.',
       },
       {
+        subtitle: 'Can I switch cabin members in our cabin?',
+        body: 'Yes. You can edit your ticket information on Kide.app until 19.10.2022 free of charge. After that there is an editing fee of 30€.',
+      },
+      {
         subtitle:
           "I'm the one buying the cabin for me and my friends. What information do I need from my fellow cabin members to buy the cabin?",
         body: ' You will need the name (first & last name), name of your guild/association in Finnish, @aalto.fi email, phone number, date of birth, gender, nationality (if not Finnish) and clubone-membership number (optional) from each member of your cabin.',
@@ -240,6 +244,14 @@ const infoList = [
       {
         subtitle: 'Who is organising Otacruise?',
         body: 'Otacruise is run by a non-profit association, Otaniemen Merikerho ry, set up specifically for this purpose. You can contact the organisers at merikerho@merikerho.net or on Telegram @CaptainOtacruise.',
+      },
+      {
+        subtitle: 'Does the De Luxe cabin include a special breakfast?',
+        body: 'Unfortunately, no. The special breakfast is closed by the decision of Silja Line on Otacruise.',
+      },
+      {
+        subtitle: 'Is the spa open on the cruise?',
+        body: 'Yes. The Sunflower Oasis spa is open from 13.00-22.00. Last entrance at 20:30.',
       },
     ],
   },

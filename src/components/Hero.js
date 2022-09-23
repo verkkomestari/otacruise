@@ -12,7 +12,7 @@ const Hero = ({ executeScroll }) => {
       <div className='heroText'>
         <div className='container titleNbutton'>
           <div
-            className='d-flex justify-content-center align-items-center ms-md-5 me-md-5 mt-5'
+            className='d-flex justify-content-center align-items-center ms-md-5 me-md-5 mt-sm-5'
             id='titleCont'>
             <div>
               <div>
