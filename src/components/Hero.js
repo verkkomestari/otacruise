@@ -41,9 +41,9 @@ const Hero = ({ executeScroll }) => {
           <div className=' d-flex justify-content-center'>
             <button className='d-block d-sm-none ticketsAction btn btn-outline-secondary db-text'>
               <a
-                href='https://kide.app/events/c153f086-a944-4782-a70a-a608a49be183'
+                href='https://otacruise.fi/info/queueing'
                 className='ticketLinkHero'>
-                Tickets on Kide.app!
+                Queueing info!
               </a>
             </button>
           </div>

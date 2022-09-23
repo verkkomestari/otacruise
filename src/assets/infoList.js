@@ -255,6 +255,51 @@ const infoList = [
       },
     ],
   },
+  {
+    id: 'queueing',
+    title: 'Queueing info',
+    cardText: 'Queue? Que? What? Where? How?',
+    img: '../assets/images/IG_arkku.jpg',
+    content: [
+      {
+        subtitle: '',
+        body: 'This section is about the campus ticket sales. As there has been a great demand for Otacruise tickets, it follows that there is a great possibility of a queue in front of the sales spot.',
+      },
+      {
+        subtitle: 'What? Where? When?',
+        body: 'Campus sales for Otacruise cabins start at the main lobby of the Undergraduate Center on Monday 26.9. at 8 am.',
+      },
+      {
+        subtitle: 'What cabins and how many?',
+        body: 'The campus sales have at least 169 cabins for sale. These include Promenade (50 cabins), A (50 cabins), B (50 cabins) and C (19 cabins) class cabins for 4 persons. The organizer reserves the right to make changes.',
+      },
+      {
+        subtitle: 'What do I need?',
+        body: "The only thing you need for the queueing ticket is your Kide.app account email address. We will send the queueing ticket straight to your Kide.app wallet. You don't need cash/card/mobilepay on site, just your kide.app.",
+      },
+      {
+        subtitle: 'Where does the queue start?',
+        body: 'The queue starts from outside of the Alvarin aukio side door of Kandidaattikeskus (Z-door). The first queuers can move inside when the sales start at 8:00.',
+      },
+      {
+        subtitle: 'Mind your behavior',
+        body: 'We hope all queuers behave well, like a good landlubber should. 🦀 We do not recommend queueing lists as they may cause misconduct.',
+      },
+      {
+        subtitle:
+          'My cabin mates and I are queueing. Can we switch between who is queueing?',
+        body: 'Yes. You can switch who is queueing as long as there is at least one person queueing for the spot at all times.',
+      },
+      {
+        subtitle: 'Toilets',
+        body: 'The queuers can use the toilets of the HUB of Kandidaattikeskus if they need to, but leaving the queue longer than a toilet break will be considered as giving away your place in the queue. We hope that everyone stays honest about their coming and going!',
+      },
+      {
+        subtitle: 'What if I notice someone who is not behaving well?',
+        body: 'Please tell us about any dishonest behaviour. If we notice any passing, harassment or inappropriate behaviour in the queue, we reserve the right to not sell tickets to people in question. All cases will be discussed individually.',
+      },
+    ],
+  },
 ]
 
 export default infoList
