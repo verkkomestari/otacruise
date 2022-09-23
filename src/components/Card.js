@@ -1,16 +1,15 @@
-import { useNavigate } from 'react-router-dom';
-import infoList from '../assets/infoList';
-import card_image from '../assets/images/card_image.JPG';
-import IconGet from '../helpers/IconGet';
+import { useNavigate } from 'react-router-dom'
+import infoList from '../assets/infoList'
+import card_image from '../assets/images/card_image.JPG'
+import IconGet from '../helpers/IconGet'
 
 const Card = ({ id }) => {
-  const info = infoList.find((i) => i.id === id);
-  console.log(info);
-  const navigateTo = useNavigate();
+  const info = infoList.find((i) => i.id === id)
+  const navigateTo = useNavigate()
   const handleClick = () => {
-    window.scroll(0, 0);
-    navigateTo(`/info/${info.id}`);
-  };
+    window.scroll(0, 0)
+    navigateTo(`/info/${info.id}`)
+  }
   return (
     <div className='col card-container'>
       <div className='card m-3' onClick={handleClick}>
@@ -25,15 +24,14 @@ const Card = ({ id }) => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-          }}
-        >
+          }}>
           <h1 className='icon'>
             <IconGet id={id} />
           </h1>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

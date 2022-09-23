@@ -42,7 +42,7 @@ const Hero = ({ executeScroll }) => {
             <button className='d-block d-sm-none ticketsAction btn btn-outline-secondary db-text'>
               <a
                 href='https://otacruise.fi/info/queueing'
-                className='ticketLinkHero'>
+                className='ticketLinkHero montserrat'>
                 Queueing info!
               </a>
             </button>
