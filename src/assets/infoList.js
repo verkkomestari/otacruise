@@ -256,50 +256,62 @@ const infoList = [
     ],
   },
   {
-    id: 'queueing',
-    title: 'Queueing info',
-    cardText: 'Queue? Que? What? Where? How?',
+    id: 'packing',
+    title: 'Packing list',
+    cardText: 'What to pack? What to not?',
     img: '../assets/images/IG_arkku.jpg',
     content: [
       {
         subtitle: '',
-        body: 'This section is about the campus ticket sales. As there has been a great demand for Otacruise tickets, it follows that there is a great possibility of a queue in front of the sales spot.',
+        body: 'What should you take with you to the cruise? And what is forbidden? This section will tell you',
       },
       {
-        subtitle: 'What? Where? When?',
-        body: 'Campus sales for Otacruise cabins start at the main lobby of the Undergraduate Center on Monday 26.9. at 8 am.',
+        subtitle: 'Forbidden items',
+        body: '► All alcoholic beverages',
       },
       {
-        subtitle: 'What cabins and how many?',
-        body: 'The campus sales have at least 169 cabins for sale. These include Promenade (50 cabins), A (50 cabins), B (50 cabins) and C (19 cabins) class cabins for 4 persons. The organizer reserves the right to make changes.',
+        subtitle: '',
+        body: '► All opened bevarage bottles and other similar products',
       },
       {
-        subtitle: 'What do I need?',
-        body: "The only thing you need for the queueing ticket is your Kide.app account email address. We will send the queueing ticket straight to your Kide.app wallet. You don't need cash/card/mobilepay on site, just your kide.app.",
+        subtitle: '',
+        body: '► All bevarage bottles and cartons over 0,33l',
       },
       {
-        subtitle: 'Where does the queue start?',
-        body: 'The queue starts from outside of the Alvarin aukio side door of Kandidaattikeskus (Z-door). The first queuers can move inside when the sales start at 8:00.',
+        subtitle: '',
+        body: '► Own foods and snacks',
       },
       {
-        subtitle: 'Mind your behavior',
-        body: 'We hope all queuers behave well, like a good landlubber should. 🦀 We do not recommend queueing lists as they may cause misconduct.',
+        subtitle: '',
+        body: '► Speakers (passengers need to hear the announcements on board)',
+      },
+      {
+        subtitle: '',
+        body: '► Weapons, replicas and other dangerous items',
       },
       {
         subtitle:
-          'My cabin mates and I are queueing. Can we switch between who is queueing?',
-        body: 'Yes. You can switch who is queueing as long as there is at least one person queueing for the spot at all times.',
+          '',
+        body: 'NOTE! Items required for a medical condition are discussed independently (e.g. diabetes). Certificates are required.',
       },
       {
-        subtitle: 'Toilets',
-        body: 'The queuers can use the toilets of the HUB of Kandidaattikeskus if they need to, but leaving the queue longer than a toilet break will be considered as giving away your place in the queue. We hope that everyone stays honest about their coming and going!',
+        subtitle: '',
+        body: 'Confiscated items will not be returned.',
       },
       {
-        subtitle: 'What if I notice someone who is not behaving well?',
-        body: 'Please tell us about any dishonest behaviour. If we notice any passing, harassment or inappropriate behaviour in the queue, we reserve the right to not sell tickets to people in question. All cases will be discussed individually.',
+        subtitle: 'What should you take?',
+        body: '► Overalls',
+      },
+      {
+        subtitle: '',
+        body: '► Personal hygiene items',
+      },
+      {
+        subtitle: '',
+        body: '► Official identification (passport, identity card)',
       },
     ],
-  },
+  }
 ]
 
 export default infoList

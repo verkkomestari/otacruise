@@ -53,12 +53,6 @@ const NavigationBar = () => {
               className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1'>
               Info
             </Link>
-            <Link
-              onClick={() => setIsNavCollapsed(true)}
-              to='/info/queueing'
-              className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1 navTickets'>
-              Queueing info!
-            </Link>
           </div>
         </div>
       </div>

@@ -39,13 +39,6 @@ const Hero = ({ executeScroll }) => {
               Read more!
             </button>
           </div>
-          <div className=' d-flex justify-content-center'>
-            <button className='d-block d-sm-none ticketsAction btn btn-outline-secondary db-text'>
-              <Link to='/info/queueing' className='nav-item nav-link p-1'>
-                Queueing info!
-              </Link>
-            </button>
-          </div>
         </div>
       </div>
       <img alt='' src={rapu} className='rapu1' />
