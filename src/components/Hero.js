@@ -3,7 +3,7 @@ import '../styles/Global.css'
 import rapu from '../assets/images/final_rapu.png'
 import otacruise from '../assets/images/otacruise.png'
 import year from '../assets/images/2022.png'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 
 // Huikean hiano aloitussivu
 
