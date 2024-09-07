@@ -2,8 +2,9 @@ import '../styles/Hero.css'
 import '../styles/Global.css'
 import rapu from '../assets/images/final_rapu.png'
 import otacruise from '../assets/images/otacruise.png'
-import year from '../assets/images/2022.png'
+//import year from '../assets/images/2022.png'
 //import { Link } from 'react-router-dom'
+//import merihevonen from '../assets/images/merihevonen.png'
 
 // Huikean hiano aloitussivu
 
@@ -19,9 +20,6 @@ const Hero = ({ executeScroll }) => {
               <div>
                 <img src={otacruise} alt='heroTitle' id='otacruise' />
               </div>
-              <div>
-                <img src={year} alt='heroTitle' id='year' />
-              </div>
             </div>
           </div>
           <div className='row d-flex justify-content-center'>
@@ -29,7 +27,7 @@ const Hero = ({ executeScroll }) => {
               The most popular student cruise for Aalto University students!
             </p>
             <div className='row d-flex justify-content-center'>
-              <p className='fs-2 mt-2 motto date'>24.-26.11.</p>
+              <p className='fs-2 mt-2 motto date'>24.-26.11.2024</p>
             </div>
           </div>
           <div className='d-none d-sm-block d-flex justify-content-center'>
