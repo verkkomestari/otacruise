@@ -29,7 +29,7 @@ const Hero = ({ executeScroll }) => {
               The most popular student cruise for Aalto University students!
             </p>
             <div className='row d-flex justify-content-center'>
-              <p className='fs-2 mt-2 motto date'>27.-29.11.</p>
+              <p className='fs-2 mt-2 motto date'>24.-26.11.</p>
             </div>
           </div>
           <div className='d-none d-sm-block d-flex justify-content-center'>

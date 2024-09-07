@@ -11,11 +11,11 @@ const infoList = [
       },
       {
         subtitle: 'Dates',
-        body: 'Departure from Olympia Terminal: 27.11.2022 at 17:00',
+        body: 'Departure from Olympia Terminal: 24.11.2024 at 17:00',
       },
       {
         subtitle: '',
-        body: 'Arrival to Olympia Terminal: 29.11.2022 at 10:30',
+        body: 'Arrival to Olympia Terminal: 26.11.2024 at 10:30',
       },
       {
         subtitle: 'More Info',
@@ -32,7 +32,7 @@ const infoList = [
     content: [
       {
         subtitle: '',
-        body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 22.9. at 17:00 and on campus on 26.9. at 8:00. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
+        body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 24.9. at 12:00 and on campus on 26.9. at 8:00. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
       },
       {
         subtitle: '',
@@ -140,15 +140,19 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► the trip from Helsinki to Stockholm and back on the Silja Symphony on 27.-29.11.',
+        body: '► The trip from Helsinki to Stockholm and back on the Silja Symphony on 24.-26.11.',
       },
       {
         subtitle: '',
-        body: "► 17 € meal voucher that you can use in the ship's restaurants and for example the breakfast. NOTE! De Luxe cabins do not have special breakfast, due to it being closed on this cruise.",
+        body: '► A unique overall patch, of course',
       },
       {
         subtitle: '',
-        body: '► Program on the ship, including Kasmir as the main performer 🎉',
+        body: "► A voucher to the ship's Grande Buffet, where you'll get to enjoy a delicious meal with dishes ranging from a variety of fish and seafood to many vegetarian options. Drinks included!",
+      },
+      {
+        subtitle: '',
+        body: '► Program on the ship and on land, including the hottest performace groups of Otaniemi  🎉',
       },
       {
         subtitle: '',
@@ -196,7 +200,7 @@ const infoList = [
     content: [
       {
         subtitle: '',
-        body: 'This section collects all of the most commonly asked questions about Otacruise. If you can`t find what youre looking for you can contact @CaptainOtacruise on Telegram.',
+        body: 'This section collects all of the most commonly asked questions about Otacruise. If you can`t find what youre looking for, you can contact @CaptainOtacruise on Telegram.',
       },
       {
         subtitle:
@@ -209,7 +213,7 @@ const infoList = [
       },
       {
         subtitle: 'Which cabin class are the tickets for?',
-        body: ' Cabins are available in De Luxe, A, B, C and Promenade classes. Cabins are available in 2, 3 and 4 person sizes.',
+        body: ' Cabins are available in A, B, C and Promenade classes. Cabins are available in 2, 3 and 4 person sizes.',
       },
       {
         subtitle: 'How many tickets are available?',
@@ -235,7 +239,7 @@ const infoList = [
       },
       {
         subtitle: 'When do the ticket sales start?',
-        body: 'On Kide.app on 22.9. at 17:00 and on campus on 26.9. at 08:00.',
+        body: 'On Kide.app on 24.9. at 12:00 and on campus on 26.9. at 08:00.',
       },
       {
         subtitle: 'Is there a fuksi quota?',
@@ -244,10 +248,6 @@ const infoList = [
       {
         subtitle: 'Who is organising Otacruise?',
         body: 'Otacruise is run by a non-profit association, Otaniemen Merikerho ry, set up specifically for this purpose. You can contact the organisers at merikerho@merikerho.net or on Telegram @CaptainOtacruise.',
-      },
-      {
-        subtitle: 'Does the De Luxe cabin include a special breakfast?',
-        body: 'Unfortunately, no. The special breakfast is closed by the decision of Silja Line on Otacruise.',
       },
       {
         subtitle: 'Is the spa open on the cruise?',
@@ -309,6 +309,10 @@ const infoList = [
       {
         subtitle: '',
         body: '► Official identification (passport, identity card)',
+      },
+      {
+        subtitle: '',
+        body: 'The cabins have hair dryers.',
       },
     ],
   }
