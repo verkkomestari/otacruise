@@ -1,7 +1,7 @@
 import '../styles/Global.css'
 import '../styles/Intro.css'
 import HomeCards from './HomeCards'
-import tausta from '../assets/images/meritausta.PNG'
+import tausta from '../assets/images/meritausta-2.jpg'
 
 //Alotusssivun alla oleva esittelyosio
 

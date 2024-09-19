@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import '../styles/Global.css'
 import '../styles/NavBar.css'
-import logo from '../assets/images/final_rapu.png'
+//import logo from '../assets/images/final_rapu.png'
+import pelastusrengas from '../assets/images/pelastusrengas.png'
 
 // Navigointipalkki sivun yläreunassa
 
@@ -15,13 +16,13 @@ const NavigationBar = () => {
   return (
     <nav
       id='navigationBar'
-      className='navbar navbar-dark db-bg navbar-expand-sm sticky-top'>
+      className='navbar navbar-dark nav-bg navbar-expand-sm sticky-top'>
       <div className='container'>
         <div className='navbar-brand' onClick={() => navigateTo('/')}>
           <img
             alt='Otacruise'
-            src={logo}
-            height='50'
+            src={pelastusrengas}
+            height='85'
             className='align-center'
           />
         </div>

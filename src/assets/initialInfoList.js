@@ -56,7 +56,7 @@ const infoList = [
         body: 'Our aim is to create memorable experiences with our love towards the student community in the core of everything we do. ',
       },
       {
-        subtitle: 'OUR COMMINITY',
+        subtitle: 'OUR COMMUNITY',
         body: 'It is in our best interest to make sure you have a pleasant experience onboard. All decisions regarding the cruise are made with safety and functionality in mind.',
       },
       {

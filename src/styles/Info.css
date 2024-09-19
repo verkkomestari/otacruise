@@ -1,15 +1,16 @@
 #info-bg {
   padding: 1em;
   padding-top: 2em;
-  background-image: url('../assets/images/meritausta.PNG');
+  background-image: url('../assets/images/meritausta.jpg');
   min-height: 100vh;
 }
 
 #info-container {
   padding: 30px;
   margin-bottom: 100px;
+  margin-top: 50px;
   border-radius: 20px;
-  background-color: #f7e7e7;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 770px) {
@@ -28,7 +29,7 @@ a {
 }
 
 .navlink {
-  color: rgb(64, 146, 194);
+  color: #41b3a2;
   text-transform: uppercase;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
@@ -39,11 +40,11 @@ a {
 }
 
 .navlink:hover {
-  color: #10295f;
+  color: #146555;
 }
 
 .info-title {
-  color: #10295f;
+  color: #146555;
   font-size: 2rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -51,7 +52,7 @@ a {
 
 .subtitle {
   padding-left: 1px;
-  color: #10295f;
+  color: #146555;
   font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
@@ -62,25 +63,26 @@ a.ticketLink{
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #10295f;
+  color: #146555;
 }
 
 a.ticketLink:hover{
-  color: #f3efefe4;
-  border-color: #10295f;
+  color: #ffffff;
+  border-color: #146555;
 }
 
 .linkbtn, .a {
-  color:#10295f;
+  color: #146555;
   margin-bottom: 20px;
   border-width: 2px;
   border-radius: 10px;
-  border-color: #071637;
+  border-color: #146555;
+  background-color: #ffffff;
   transition-duration: 0.3s;
 }
 
 .linkbtn:link, .linkbtn:hover {
-  background-color: #10295f;
-  border-color: #10295f;
-  color: #f3efefe4;
+  background-color: #146555;
+  border-color: #146555;
+  color: #146555;
 }

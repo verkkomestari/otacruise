@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import infoList from '../assets/infoList'
-import card_image from '../assets/images/card_image.JPG'
+import card_image from '../assets/images/card_image-2.jpg'
 import IconGet from '../helpers/IconGet'
 
 const Card = ({ id }) => {

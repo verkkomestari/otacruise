@@ -1,10 +1,10 @@
 import '../styles/Hero.css'
 import '../styles/Global.css'
-import rapu from '../assets/images/final_rapu.png'
+//import rapu from '../assets/images/final_rapu.png'
 import otacruise from '../assets/images/otacruise.png'
 //import year from '../assets/images/2022.png'
 //import { Link } from 'react-router-dom'
-//import merihevonen from '../assets/images/merihevonen.png'
+import merihevonen from '../assets/images/merihevonen.png'
 
 // Huikean hiano aloitussivu
 
@@ -30,6 +30,8 @@ const Hero = ({ executeScroll }) => {
               <p className='fs-2 mt-2 motto date'>24.-26.11.2024</p>
             </div>
           </div>
+          <div className='mb-1'>
+        </div>
           <div className='d-none d-sm-block d-flex justify-content-center'>
             <button
               className='callToAction btn btn-outline-secondary db-text'
@@ -39,9 +41,19 @@ const Hero = ({ executeScroll }) => {
           </div>
         </div>
       </div>
-      <img alt='' src={rapu} className='rapu1' />
+      <img alt='' src={merihevonen} className='rapu1' />
     </div>
   )
 }
 
 export default Hero
+
+/*<div className='btn linkbtn' id='linkbtn'>
+            <a
+              href='https://kide.app/events/c153f086-a944-4782-a70a-a608a49be183'
+              target='_blank'
+              rel='noreferrer'
+              className='ticketLink'>
+              Get tickets!
+            </a>
+          </div> */

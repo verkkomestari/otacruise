@@ -7,7 +7,7 @@ const infoList = [
     content: [
       {
         subtitle: null,
-        body: 'Otacruise comes back bigger than ever. In the end of November, Silja Symphony will be filled with Aalto University students. The ship is completely reserved for Otacruise and entertainment will be customized to gurantee an incredible experience.',
+        body: 'Otacruise comes back bigger than ever. At the end of November, Silja Symphony will be filled with Aalto University students. The ship is completely reserved for Otacruise and entertainment will be customized to gurantee an incredible experience.',
       },
       {
         subtitle: 'Dates',
@@ -32,7 +32,7 @@ const infoList = [
     content: [
       {
         subtitle: '',
-        body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 24.9. at 12:00 and on campus on 26.9. at 8:00. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
+        body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 24.9. at 17:00 and on campus on 26.9. at 8:00. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
       },
       {
         subtitle: '',
@@ -92,43 +92,39 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► C-class for two 126 €',
+        body: '► C-class for two 194 €',
       },
       {
         subtitle: '',
-        body: '► C-class for three 153 €',
+        body: '► C-class for three 261 €',
       },
       {
         subtitle: '',
-        body: '► C-class for four 184 €',
+        body: '► C-class for four 328 €',
       },
       {
         subtitle: '',
-        body: '► B-class for two 138 €',
+        body: '► B-class for two 208 €',
       },
       {
         subtitle: '',
-        body: '► B-class for four 196 €',
+        body: '► B-class for four 348 €',
       },
       {
         subtitle: '',
-        body: '► Promenade-class for two 154 €',
+        body: '► Promenade-class for two 226 €',
       },
       {
         subtitle: '',
-        body: '► Promenade-class for four 220 €',
+        body: '► Promenade-class for four 372 €',
       },
       {
         subtitle: '',
-        body: '► A-class for two 186 €',
+        body: '► A-class for two 226 €',
       },
       {
         subtitle: '',
-        body: '► A-class for four 256 €',
-      },
-      {
-        subtitle: '',
-        body: '► De Luxe for two 346 €',
+        body: '► A-class for four 372 €',
       },
       {
         subtitle: '',
@@ -140,7 +136,11 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► The trip from Helsinki to Stockholm and back on the Silja Symphony on 24.-26.11.',
+        body: '► The trip from Helsinki to Stockholm and back on the Silja Symphony on 24.-26.11.2024',
+      },
+      {
+        subtitle: '',
+        body: "► Grande Buffet on board (40€ value), where you'll get to enjoy a delicious meal with dishes ranging from a variety of fish and seafood to many vegetarian options. Drinks included!",
       },
       {
         subtitle: '',
@@ -148,15 +148,15 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: "► A voucher to the ship's Grande Buffet, where you'll get to enjoy a delicious meal with dishes ranging from a variety of fish and seafood to many vegetarian options. Drinks included!",
+        body: '► 14,8€ fuel and environmental fee, more info',
       },
       {
         subtitle: '',
-        body: '► Program on the ship and on land, including the hottest performace groups of Otaniemi  🎉',
+        body: '► On-board entertainment, including the hottest performace groups of Otaniemi  🎉',
       },
       {
         subtitle: '',
-        body: 'While buying the cabin, you can also buy the buffet dinner if you want (47€/passenger/day).',
+        body: 'While buying the cabin, it is possible to purchase the Sea Breakfast. A second buffet dinner or the Burger Buffet can be purchased on the ship.',
       },
     ],
   },

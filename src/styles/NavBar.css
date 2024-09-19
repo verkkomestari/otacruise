@@ -12,17 +12,17 @@
 }
 
 .nav-item.ps-5 {
-  color: #dae0ed;
+  color: #d7c3f1;
   transition: color 0.3s ease-out;
 }
 
 .nav-item.ps-5:hover {
-  color: #bfd0f8;
-  text-shadow: 1px 1px 10px rgb(16, 7, 68) ;
+  color: #d7c3f1;
+  text-shadow: 1px 1px 10px #146555 ;
 }
 
 a.navTickets {
-  background-color: rgb(95, 95, 209,);
+  background-color: #ffffff;
   padding: 10px;
   border-width: 2px;
   border-radius: 10px;
@@ -32,7 +32,7 @@ a.navTickets {
 }
 
 a.navTickets:hover {
-  background-color: rgb(77, 77, 150);
+  background-color: #d7c3f1;
   border-width: 2px;
   border-color: #8d98fc;
   color: #8d98fc;

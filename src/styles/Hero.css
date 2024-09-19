@@ -3,7 +3,7 @@
 
 .heroText {
   text-align: center;
-  color: #10295f;
+  color: #146555;
   background-color: #d7c3f1;
   height: 85vh;
   min-height: 400px;
@@ -47,25 +47,25 @@ h1 {
 .ticketsAction {
   margin: 10px;
   font-size: 20px;
-  color: #dae0ed;
+  color: #9bd4ac;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
-  background-color: rgb(95, 95, 209);
-  border-color: rgb(95, 95, 209);
+  background-color: #9bd4ac;
+  border-color: #9bd4ac;
   border-radius: 10px;
   align-self: stretch;
 }
 
 .ticketsAction:hover {
-  background-color: #10295f;
-  color: #a6cffa;
-  border-color: #3183da77;
+  background-color: #9bd4ac;
+  color: #9bd4ac;
+  border-color: #9bd4ac;
 }
 
 a.ticketLinkHero{
   padding: 10px 20px;
-  color: #c8d5f0;
+  color: #9bd4ac;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -73,28 +73,28 @@ a.ticketLinkHero{
 }
 
 a.ticketLinkHero:hover{
-  color: #f3efefe4;
+  color: #9bd4ac;
   border-color: #10295f;
 }
 
 .callToAction {
   font-size: 20px;
-  color: #10295f;
-  border-color: #10295f;
+  color: #166555;
+  border-color: #166555;
   border-radius: 10px;
   align-self: stretch;
 }
 
 .callToAction:hover {
-  background-color: #10295f;
-  color: #a6cffa;
-  border-color: #3183da77;
+  background-color: #166555;
+  color: #d7c3f1;
+  border-color: #166555;
 }
 
 .callToAction:focus {
-  background-color: #10295f;
-  color: #a6cffa;
-  border-color: #3183da77;
+  background-color: #166555;
+  color: #d7c3f1;
+  border-color: #166555;
 }
 
 #rapuContainer {
@@ -104,7 +104,7 @@ a.ticketLinkHero:hover{
 .rapu1 {
   display: none;
   position: absolute;
-  left: -10px;
+  left: 300px;
   height: min(57vh, 57vw);
   top: 64vh;
   max-height: 300px;
