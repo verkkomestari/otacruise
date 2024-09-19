@@ -279,7 +279,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► Speakers (passengers need to hear the announcements on board)',
+        body: '► Big speakers. Small ones are allowed',
       },
       {
         subtitle: '',
