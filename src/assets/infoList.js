@@ -208,10 +208,6 @@ const infoList = [
         body: 'No, the cruise is only open to Aalto University students. When purchasing a ticket, you must provide the Aalto email address of each cabin member.',
       },
       {
-        subtitle: 'Are “Nelikiltaristeily” or “Fuksicruise” coming up?',
-        body: 'No, Otacruise will combine and at the same time replace these cruises.',
-      },
-      {
         subtitle: 'Which cabin class are the tickets for?',
         body: ' Cabins are available in A, B, C and Promenade classes. Cabins are available in 2, 3 and 4 person sizes.',
       },
@@ -225,7 +221,7 @@ const infoList = [
       },
       {
         subtitle: 'Can I switch cabin members in our cabin?',
-        body: 'Yes. You can edit your ticket information on Kide.app until 19.10.2022 free of charge. After that there is an editing fee of 30€.',
+        body: 'Yes. You can edit your ticket information on Kide.app until 13.10.2024 free of charge. After that there is an editing fee of 30€.',
       },
       {
         subtitle:
@@ -249,10 +245,10 @@ const infoList = [
         subtitle: 'Who is organising Otacruise?',
         body: 'Otacruise is run by a non-profit association, Otaniemen Merikerho ry, set up specifically for this purpose. You can contact the organisers at merikerho@merikerho.net or on Telegram @CaptainOtacruise.',
       },
-      {
+      /*{
         subtitle: 'Is the spa open on the cruise?',
         body: 'Yes. The Sunflower Oasis spa is open from 13.00-22.00. Last entrance at 20:30.',
-      },
+      },*/
     ],
   },
   {
