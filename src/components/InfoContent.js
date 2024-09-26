@@ -2,13 +2,13 @@
 
 const InfoContent = ({ infoList }) => {
   return (
-    <div className='page-content col-md-8'>
+    <div className='page-content col-md-8'> 
       <h1 className='montserrat info-title'>{infoList.title}</h1>
       {infoList.title === 'Tickets' ? (
         <div className='mb-1'>
           <div className='btn linkbtn' id='linkbtn'>
             <a
-              href='https://www.instagram.com/otacruise/'
+              href='https://kide.app/events/23b3ba87-a6e4-4cbb-8725-7871931f150f'
               target='_blank'
               rel='noreferrer'
               className='ticketLink'>

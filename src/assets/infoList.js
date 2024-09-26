@@ -1,3 +1,5 @@
+//import { Link } from "react-router-dom"
+
 const infoList = [
   {
     id: 'main',
@@ -80,7 +82,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: 'There is 25 minutes to fill in the information. You can edit the information on Kide.app until 19.10.',
+        body: 'There is 25 minutes to fill in the information. You can edit the information on Kide.app until 13.10.',
       },
       {
         subtitle: '',
@@ -148,7 +150,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► 14,8€ fuel and environmental fee, more info',
+        body: "► 14,8€ fuel and environmental fee. See more info on Tallink Silja's website",
       },
       {
         subtitle: '',
@@ -156,7 +158,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: 'While buying the cabin, it is possible to purchase the Sea Breakfast. A second buffet dinner or the Burger Buffet can be purchased on the ship.',
+        body: 'While buying the cabin, it is possible to purchase the Sea Breakfast. A second buffet dinner or the Burger Buffet can be purchased on board the ship.',
       },
     ],
   },
@@ -208,20 +210,20 @@ const infoList = [
         body: 'No, the cruise is only open to Aalto University students. When purchasing a ticket, you must provide the Aalto email address of each cabin member.',
       },
       {
+        subtitle: 'How does the registration work?',
+        body: 'One cabin member registers and pays for the entire cabin group in the same registration.',
+      },
+      {
+        subtitle: 'Can I switch the cabin members in our cabin?',
+        body: 'Yes. You can edit your ticket information on Kide.app until 13.10.2024 free of charge. After that there is an editing fee of 30€.',
+      },
+      {
         subtitle: 'Which cabin class are the tickets for?',
         body: ' Cabins are available in A, B, C and Promenade classes. Cabins are available in 2, 3 and 4 person sizes.',
       },
       {
         subtitle: 'How many tickets are available?',
         body: 'There are tickets for about 2500 Aalto students.',
-      },
-      {
-        subtitle: 'How does the registration work?',
-        body: 'One cabin member registers and pays for the entire cabin group in the same registration.',
-      },
-      {
-        subtitle: 'Can I switch cabin members in our cabin?',
-        body: 'Yes. You can edit your ticket information on Kide.app until 13.10.2024 free of charge. After that there is an editing fee of 30€.',
       },
       {
         subtitle:
@@ -232,14 +234,6 @@ const infoList = [
         subtitle:
           "Can I buy a cabin for less people than the cabin's capacity?",
         body: 'Unfortunately, no. You will need to fill the whole cabin.',
-      },
-      {
-        subtitle: 'When do the ticket sales start?',
-        body: 'On Kide.app on 24.9. at 12:00 and on campus on 26.9. at 08:00.',
-      },
-      {
-        subtitle: 'Is there a fuksi quota?',
-        body: 'There is no fuksi quota this year. All tickets are available for Aalto students of all academic ages.',
       },
       {
         subtitle: 'Who is organising Otacruise?',
