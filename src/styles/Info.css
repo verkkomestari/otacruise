@@ -67,7 +67,7 @@ a.ticketLink{
 }
 
 a.ticketLink:hover{
-  color: #ffffff;
+  color: #d7c3f1;
   border-color: #146555;
 }
 
@@ -77,7 +77,7 @@ a.ticketLink:hover{
   border-width: 2px;
   border-radius: 10px;
   border-color: #146555;
-  background-color: #ffffff;
+  background-color: #d7c3f1;
   transition-duration: 0.3s;
 }
 

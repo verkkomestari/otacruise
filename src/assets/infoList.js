@@ -163,38 +163,6 @@ const infoList = [
     ],
   },
   {
-    id: 'aboutus',
-    title: 'About Us',
-    cardText: 'Want to know the story behind Otacruise?',
-    img: '../assets/images/IG_arkku.jpg',
-    content: [
-      {
-        subtitle: 'Our Story',
-        body: 'When Otacruise was arranged for the first time in the autumn of 2021, it brought together students from all guilds and associations craving to finally experience the student cruise after having to go a while without any huge mass events. While there have been a range of different traditional student cruises in the past, it is our pleasure to organize one that gathers all the students of Otaniemi.',
-      },
-      {
-        subtitle: '',
-        body: 'Over the years, student cruises have been a part of the student culture and are one of the most anticipated events of the year. Otacruise is all about having a good time with friends and meeting new people while enjoying the wide variety of activities. Although the concept is simple — students board the ship and spend two nights and one day on a cruise from Helsinki to Stockholm and back — our main focus is on the cruise programme and we want to keep evolving, year after year.',
-      },
-      {
-        subtitle: '',
-        body: 'Our aim is to create memorable experiences with our love towards the student community in the core of everything we do. ',
-      },
-      {
-        subtitle: 'Our community',
-        body: 'It is in our best interest to make sure you have a pleasant experience onboard. All decisions regarding the cruise are made with safety and functionality in mind.',
-      },
-      {
-        subtitle: '',
-        body: 'We do not condone racism or discrimination in any shape or form. Respecting others is essential for us. We do not tolerate violence, harassment, or any other aggressive behavior. ',
-      },
-      {
-        subtitle: '',
-        body: 'To ensure everyone a smooth sailing, we encourage you to maintain a pleasant environment at all times and respect other guests. ',
-      },
-    ],
-  },
-  {
     id: 'faq',
     title: 'FAQ',
     cardText: 'All the most asked questions abuut the cruise',
@@ -209,27 +177,27 @@ const infoList = [
           'Is the cruise also open to students from other universities?',
         body: 'No, the cruise is only open to Aalto University students. When purchasing a ticket, you must provide the Aalto email address of each cabin member.',
       },
-      {
+      /*{
         subtitle: 'How does the registration work?',
         body: 'One cabin member registers and pays for the entire cabin group in the same registration.',
-      },
+      }*/
       {
         subtitle: 'Can I switch the cabin members in our cabin?',
         body: 'Yes. You can edit your ticket information on Kide.app until 13.10.2024 free of charge. After that there is an editing fee of 30€.',
       },
-      {
+      /*{
         subtitle: 'Which cabin class are the tickets for?',
         body: ' Cabins are available in A, B, C and Promenade classes. Cabins are available in 2, 3 and 4 person sizes.',
-      },
+      },*/
       {
         subtitle: 'How many tickets are available?',
         body: 'There are tickets for about 2500 Aalto students.',
       },
-      {
+      /*{
         subtitle:
           "I'm the one buying the cabin for me and my friends. What information do I need from my fellow cabin members to buy the cabin?",
         body: ' You will need the name (first & last name), name of your guild/association in Finnish, @aalto.fi email, phone number, date of birth, gender, nationality (if not Finnish) and clubone-membership number (optional) from each member of your cabin.',
-      },
+      },*/
       {
         subtitle:
           "Can I buy a cabin for less people than the cabin's capacity?",
@@ -304,6 +272,55 @@ const infoList = [
         subtitle: '',
         body: 'The cabins have hair dryers.',
       },
+    ],
+  },
+  {
+    id: 'safetyguidelines',
+    title: 'Safety & guidelines',
+    cardText: 'Smooth sailing for everybody!',
+    img: '../assets/images/IG_arkku.jpg',
+    content: [
+      {
+        subtitle: 'Ensuring smooth sailing for everyone',
+        body: 'It is in our best interest to make sure you have a pleasant experience onboard. All decisions regarding the cruise are made with safety and functionality in mind.',
+      },
+      {
+        subtitle: '',
+        body: "We do not condone racism or discrimination in any shape or form. Respecting others is essential for us. We do not tolerate violence, harassment, or any other aggressive behavior. Onboard Otacruise we follow AYY's safer space policy.",
+      },
+      {
+        subtitle: '',
+        body: 'To ensure everyone a smooth sailing, we encourage you to maintain a pleasant environment at all times and respect other guests. ',
+      },
+    ],
+  },
+  {
+    id: 'aboutus',
+    title: 'About Us',
+    cardText: 'Want to know the story behind Otacruise?',
+    img: '../assets/images/IG_arkku.jpg',
+    content: [
+      {
+        subtitle: 'Our Story',
+        body: 'When Otacruise was arranged for the first time in the autumn of 2021, it brought together students from all guilds and associations craving to finally experience the student cruise after having to go a while without any huge mass events. While there have been a range of different traditional student cruises in the past, it is our pleasure to organize one that gathers all the students of Otaniemi.',
+      },
+      {
+        subtitle: '',
+        body: 'Over the years, student cruises have been a part of the student culture and are one of the most anticipated events of the year. Otacruise is all about having a good time with friends and meeting new people while enjoying the wide variety of activities. Although the concept is simple — students board the ship and spend two nights and one day on a cruise from Helsinki to Stockholm and back — our main focus is on the cruise programme and we want to keep evolving, year after year.',
+      },
+      {
+        subtitle: '',
+        body: 'Otaniemen Merikerho ry was found to work as the organizing association of Otacruise on behalf of Aalto students. Our aim is to create memorable experiences with our love towards the student community in the core of everything we do. We have an open recruit at the start of the year, so all cruise and student life enthusiasts will have an equal opportunity join the crew of Merikerho!',
+      },
+      {
+        subtitle: 'Contact us:',
+        body: 'Email: merikerho@merikerho.net',
+      },
+      {
+        subtitle: '',
+        body: 'Telegram: @CaptainOtacruise',
+      }
+    
     ],
   }
 ]

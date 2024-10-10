@@ -28,11 +28,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .date {
@@ -51,14 +51,14 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
-  background-color: #9bd4ac;
+  background-color: #d7c3f1;
   border-color: #9bd4ac;
   border-radius: 10px;
   align-self: stretch;
 }
 
 .ticketsAction:hover {
-  background-color: #9bd4ac;
+  background-color: #d7c3f1;
   color: #9bd4ac;
   border-color: #9bd4ac;
 }
@@ -82,6 +82,7 @@ a.ticketLinkHero:hover{
   color: #166555;
   border-color: #166555;
   border-radius: 10px;
+  border-width: 2px;
   align-self: stretch;
 }
 

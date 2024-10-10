@@ -1,4 +1,7 @@
 {
     "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true
+    "prettier.singleQuote": true,
+    "files.watcherExclude": {
+        "**/target": true
+    }
 }

@@ -31,6 +31,15 @@ const Hero = ({ executeScroll }) => {
             </div>
           </div>
           <div className='mb-1'>
+          <div className='btn linkbtn' id='linkbtn'>
+            <a
+              href='https://kide.app/events/23b3ba87-a6e4-4cbb-8725-7871931f150f'
+              target='_blank'
+              rel='noreferrer'
+              className='ticketLink'>
+              Get tickets!
+            </a>
+          </div>  
         </div>
           <div className='d-none d-sm-block d-flex justify-content-center'>
             <button
@@ -50,7 +59,7 @@ export default Hero
 
 /*<div className='btn linkbtn' id='linkbtn'>
             <a
-              href='https://kide.app/events/c153f086-a944-4782-a70a-a608a49be183'
+              href='https://kide.app/events/23b3ba87-a6e4-4cbb-8725-7871931f150f'
               target='_blank'
               rel='noreferrer'
               className='ticketLink'>
