@@ -1,5 +1,7 @@
 //import { Link } from "react-router-dom"
 
+import { Link } from "react-router-dom"
+
 const infoList = [
   {
     id: 'main',
@@ -13,7 +15,7 @@ const infoList = [
       },
       {
         subtitle: 'Dates',
-        body: 'Departure from Olympia Terminal: 24.11.2024 at 17:00',
+        body: 'Departure from Olympia Terminal: 24.11.2024 at 17:00. Boarding 13-16.',
       },
       {
         subtitle: '',
@@ -152,6 +154,8 @@ const infoList = [
         subtitle: '',
         body: "► 14,8€ fuel and environmental fee. See more info on Tallink Silja's website",
       },
+      { Link: 'www.yle.fi'
+      },
       {
         subtitle: '',
         body: '► On-board entertainment, including the hottest performace groups of Otaniemi  🎉',
@@ -170,7 +174,7 @@ const infoList = [
     content: [
       {
         subtitle: '',
-        body: 'This section collects all of the most commonly asked questions about Otacruise. If you can`t find what youre looking for, you can contact @CaptainOtacruise on Telegram.',
+        body: "This section collects all of the most commonly asked questions about Otacruise. If you can't find what youre looking for, you can contact @CaptainOtacruise on Telegram.",
       },
       {
         subtitle:
@@ -183,7 +187,7 @@ const infoList = [
       }*/
       {
         subtitle: 'Can I switch the cabin members in our cabin?',
-        body: 'Yes. You can edit your ticket information on Kide.app until 13.10.2024 free of charge. After that there is an editing fee of 30€.',
+        body: 'Yes. You can edit your ticket information on Kide.app until 13.10.2024 free of charge. After that, contact opiskelijamatkat@matkapojat.fi for changes. This will cost 30€.',
       },
       /*{
         subtitle: 'Which cabin class are the tickets for?',
@@ -199,8 +203,7 @@ const infoList = [
         body: ' You will need the name (first & last name), name of your guild/association in Finnish, @aalto.fi email, phone number, date of birth, gender, nationality (if not Finnish) and clubone-membership number (optional) from each member of your cabin.',
       },*/
       {
-        subtitle:
-          "Can I buy a cabin for less people than the cabin's capacity?",
+        subtitle: "Can I buy a cabin for less people than the cabin's capacity?",
         body: 'Unfortunately, no. You will need to fill the whole cabin.',
       },
       {
