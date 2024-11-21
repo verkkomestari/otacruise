@@ -212,7 +212,7 @@ const infoList = [
       },
       {
         subtitle: 'Is the spa open on the cruise?',
-        body: 'Yes. The Sunflower Oasis spa is open from 13.00-22.00. Last entrance at 20:30.',
+        body: 'Yes. The Sunflower Oasis spa is open from 15.00-19.00 on the first day, and 12:00-20:00 on the second day.',
       },
     ],
   },
