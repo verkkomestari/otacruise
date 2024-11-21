@@ -1,6 +1,4 @@
-//import { Link } from "react-router-dom"
 
-import { Link } from "react-router-dom"
 
 const infoList = [
   {
@@ -16,6 +14,10 @@ const infoList = [
       {
         subtitle: 'Dates',
         body: 'Departure from Olympia Terminal: 24.11.2024 at 17:00. Boarding 13-16.',
+      },
+      {
+        subtitle: '',
+        body: 'Arrival to Stockholm: 25.11.2024 at 10:00 Swedish time. Return to the ship at 16:00 the latest.',
       },
       {
         subtitle: '',
@@ -154,8 +156,6 @@ const infoList = [
         subtitle: '',
         body: "► 14,8€ fuel and environmental fee. See more info on Tallink Silja's website",
       },
-      { Link: 'www.yle.fi'
-      },
       {
         subtitle: '',
         body: '► On-board entertainment, including the hottest performace groups of Otaniemi  🎉',
@@ -210,10 +210,10 @@ const infoList = [
         subtitle: 'Who is organising Otacruise?',
         body: 'Otacruise is run by a non-profit association, Otaniemen Merikerho ry, set up specifically for this purpose. You can contact the organisers at merikerho@merikerho.net or on Telegram @CaptainOtacruise.',
       },
-      /*{
+      {
         subtitle: 'Is the spa open on the cruise?',
         body: 'Yes. The Sunflower Oasis spa is open from 13.00-22.00. Last entrance at 20:30.',
-      },*/
+      },
     ],
   },
   {
@@ -244,7 +244,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► Big speakers. Small ones are allowed',
+        body: '► Big speakers. Small ones (the size of a phone) are allowed',
       },
       {
         subtitle: '',
@@ -294,6 +294,10 @@ const infoList = [
       {
         subtitle: '',
         body: 'To ensure everyone a smooth sailing, we encourage you to maintain a pleasant environment at all times and respect other guests. ',
+      },
+      {
+        subtitle: 'In case of harassment',
+        body: 'You can contact the harassment contact people of Otacruise through Telegram @OtacruiseHary, or through the following form:',
       },
     ],
   },

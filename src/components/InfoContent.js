@@ -32,6 +32,21 @@ const InfoContent = ({ infoList }) => {
           <p className={infoList.id === 'faq' ? 'pb-4' : ''}>{part.body}</p>
         </div>
       ))}
+      {infoList.title === 'Safety & guidelines' ? (
+        <div className='mb-1'>
+          <div className='btn linkbtn' id='linkbtn'>
+            <a
+              href='https://forms.gle/78ddcKNhBKLY3zXu6'
+              target='_blank'
+              rel='noreferrer'
+              className='ticketLink'>
+              Harassment report form
+            </a>
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   )
 }
