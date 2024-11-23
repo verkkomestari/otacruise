@@ -273,7 +273,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: 'The cabins have hair dryers.',
+        body: 'The cabins have sheets, towels and hair dryers.',
       },
     ],
   },
