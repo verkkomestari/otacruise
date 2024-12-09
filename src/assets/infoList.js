@@ -317,7 +317,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: 'Otaniemen Merikerho ry was found to work as the organizing association of Otacruise on behalf of Aalto students. Our aim is to create memorable experiences with our love towards the student community in the core of everything we do. We have an open recruit at the start of the year, so all cruise and student life enthusiasts will have an equal opportunity join the crew of Merikerho!',
+        body: 'Otaniemen Merikerho ry was found to work as the organizing association of Otacruise on behalf of Aalto students. Our aim is to create memorable experiences with our love towards the student community in the core of everything we do. We have an open recruit at the end of the year, so all cruise and student life enthusiasts will have an equal opportunity join the crew of Merikerho!',
       },
       {
         subtitle: 'Contact us:',
@@ -326,6 +326,10 @@ const infoList = [
       {
         subtitle: '',
         body: 'Telegram: @CaptainOtacruise',
+      },
+      {
+        subtitle: 'Apply to be an organiser!',
+        body: 'The application is open until the end of the year and is made through the following link. More information can be found in the form',
       }
     
     ],

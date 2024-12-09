@@ -47,6 +47,21 @@ const InfoContent = ({ infoList }) => {
       ) : (
         <></>
       )}
+      {infoList.title === 'About Us' ? (
+        <div className='mb-1'>
+          <div className='btn linkbtn' id='linkbtn'>
+            <a
+              href='https://docs.google.com/forms/d/1C_Rwul7hrcd6CMteDJ7nNCcq7Y3evcfo1GWSfEp2E4M/edit'
+              target='_blank'
+              rel='noreferrer'
+              className='ticketLink'>
+              Application form
+            </a>
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   )
 }
