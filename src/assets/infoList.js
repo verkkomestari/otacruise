@@ -329,7 +329,7 @@ const infoList = [
       },
       {
         subtitle: 'Apply to be an organiser!',
-        body: 'The application is open until the end of the year and is made through the following link. More information can be found in the form',
+        body: 'Want to get on board earlier and be a part of the organising team for Otacruise 2025? The application is open until the end of the year and is made through the following link. More information can be found in the form:',
       }
     
     ],
