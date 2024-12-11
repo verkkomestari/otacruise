@@ -309,7 +309,7 @@ const infoList = [
     content: [
       {
         subtitle: 'Our Story',
-        body: 'When Otacruise was arranged for the first time in the autumn of 2021, it brought together students from all guilds and associations craving to finally experience the student cruise after having to go a while without any huge mass events. While there have been a range of different traditional student cruises in the past, it is our pleasure to organize one that gathers all the students of Otaniemi.',
+        body: 'When Otacruise was arranged for the first time in the autumn of 2021, it brought together students from all guilds and associations craving to finally experience the student cruise after having to go a while without any huge mass events. While there have been a range of different traditional student cruises in the past, it is our pleasure to organize one that gathers all the students of Otaniemi. Otacruise is the biggest student cruise in Finland!',
       },
       {
         subtitle: '',
