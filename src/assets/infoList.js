@@ -18,7 +18,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: 'Arrival to Stockholm: 24.11.2025 at 10:00 Swedish time* . Return to the ship at 16:00 the latest.*',
+        body: 'Arrival to Stockholm: 24.11.2025 at 10:00 Swedish time. Return to the ship at 16:00 the latest.*',
       },
       {
         subtitle: '',
@@ -26,7 +26,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '* the times are estimates for the time being',
+        body: '* The times are estimates for the time being',
       },
       {
         subtitle: 'More Info',
