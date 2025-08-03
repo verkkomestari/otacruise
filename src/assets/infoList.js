@@ -103,39 +103,39 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► C-class for two 194 €',
+        body: '► C-class for two ??? €',
       },
       {
         subtitle: '',
-        body: '► C-class for three 261 €',
+        body: '► C-class for three ??? €',
       },
       {
         subtitle: '',
-        body: '► C-class for four 328 €',
+        body: '► C-class for four ??? €',
       },
       {
         subtitle: '',
-        body: '► B-class for two 208 €',
+        body: '► B-class for two ??? €',
       },
       {
         subtitle: '',
-        body: '► B-class for four 348 €',
+        body: '► B-class for four ??? €',
       },
       {
         subtitle: '',
-        body: '► Promenade-class for two 226 €',
+        body: '► Promenade-class for two ??? €',
       },
       {
         subtitle: '',
-        body: '► Promenade-class for four 372 €',
+        body: '► Promenade-class for four ??? €',
       },
       {
         subtitle: '',
-        body: '► A-class for two 226 €',
+        body: '► A-class for two ??? €',
       },
       {
         subtitle: '',
-        body: '► A-class for four 372 €',
+        body: '► A-class for four ??? €',
       },
       {
         subtitle: '',
@@ -147,11 +147,11 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► The trip from Helsinki to Stockholm and back on the Silja Symphony on 24.-26.11.2024',
+        body: '► The trip from Helsinki to Stockholm and back on the Silja Symphony on 23.-25.11.2025',
       },
       {
         subtitle: '',
-        body: "► Grande Buffet on board (40€ value), where you'll get to enjoy a delicious meal with dishes ranging from a variety of fish and seafood to many vegetarian options. Drinks included!",
+        body: "► Grande Buffet on board (≈40€ value), where you'll get to enjoy a delicious meal with dishes ranging from a variety of fish and seafood to many vegetarian options. Drinks included!",
       },
       {
         subtitle: '',
@@ -159,7 +159,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: "► 14,8€ fuel and environmental fee. See more info on Tallink Silja's website",
+        body: "► 18€ fuel and environmental fee. See more info on Tallink Silja's website",
       },
       {
         subtitle: '',
