@@ -13,15 +13,20 @@ const infoList = [
       },
       {
         subtitle: 'Dates',
-        body: 'Departure from Olympia Terminal: 24.11.2024 at 17:00. Boarding 13-16.',
+      
+        body: 'Departure from Olympia Terminal: 23.11.2025 at 17:00. Boarding 13-16.*',
       },
       {
         subtitle: '',
-        body: 'Arrival to Stockholm: 25.11.2024 at 10:00 Swedish time. Return to the ship at 16:00 the latest.',
+        body: 'Arrival to Stockholm: 24.11.2025 at 10:00 Swedish time* . Return to the ship at 16:00 the latest.*',
       },
       {
         subtitle: '',
-        body: 'Arrival to Olympia Terminal: 26.11.2024 at 10:30',
+        body: 'Arrival to Olympia Terminal: 25.11.2025 at 10:30*',
+      },
+      {
+        subtitle: '',
+        body: '* the times are estimates for the time being',
       },
       {
         subtitle: 'More Info',
