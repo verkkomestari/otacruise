@@ -27,7 +27,7 @@ const Hero = ({ executeScroll }) => {
               Finland's biggest student cruise for Aalto University students!
             </p>
             <div className='row d-flex justify-content-center'>
-              <p className='fs-2 mt-2 motto date'>24.-26.11.2024</p>
+              <p className='fs-2 mt-2 motto date'>23.-25.11.2025</p>
             </div>
           </div>
           <div className='mb-1'>
