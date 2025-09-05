@@ -43,7 +43,7 @@ const infoList = [
     content: [
       {
         subtitle: '',
-        body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 24.9. at 17:00 and on campus on 26.9. at 8:00. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
+        body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 22.9. at 17:00 and on campus on 24.9. at 8:00. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
       },
       {
         subtitle: '',
@@ -192,7 +192,7 @@ const infoList = [
       }*/
       {
         subtitle: 'Can I switch the cabin members in our cabin?',
-        body: 'Yes. You can edit your ticket information on Kide.app until 13.10.2024 free of charge. After that, contact opiskelijamatkat@matkapojat.fi for changes. This will cost 30€.',
+        body: 'Yes. You can edit your ticket information on Kide.app until TBA free of charge. After that, contact opiskelijamatkat@matkapojat.fi for changes. This will cost 30€.',
       },
       /*{
         subtitle: 'Which cabin class are the tickets for?',
