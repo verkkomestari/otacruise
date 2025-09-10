@@ -21,7 +21,7 @@ const infoList = [
         body: 'Arrival to Stockholm: 24.11.2025 at 10:00 Swedish time. Return to the ship at 16:00 the latest.*',
       },
       {
-        subtitle: '',
+        subtitle: ''
         body: 'Arrival to Olympia Terminal: 25.11.2025 at 10:30*',
       },
       {
@@ -103,39 +103,39 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: '► C-class for two ??? €',
+        body: '► C-class for two 204 €',
       },
       {
         subtitle: '',
-        body: '► C-class for three ??? €',
+        body: '► C-class for three 276 €',
       },
       {
         subtitle: '',
-        body: '► C-class for four ??? €',
+        body: '► C-class for four 348 €',
       },
       {
         subtitle: '',
-        body: '► B-class for two ??? €',
+        body: '► B-class for two 216 €',
       },
       {
         subtitle: '',
-        body: '► B-class for four ??? €',
+        body: '► B-class for four 364 €',
       },
       {
         subtitle: '',
-        body: '► Promenade-class for two ??? €',
+        body: '► Promenade-class for two 232 €',
       },
       {
         subtitle: '',
-        body: '► Promenade-class for four ??? €',
+        body: '► Promenade-class for four 384 €',
       },
       {
         subtitle: '',
-        body: '► A-class for two ??? €',
+        body: '► A-class for two 232 €',
       },
       {
         subtitle: '',
-        body: '► A-class for four ??? €',
+        body: '► A-class for four 384 €',
       },
       {
         subtitle: '',
