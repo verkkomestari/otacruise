@@ -21,7 +21,7 @@ const infoList = [
         body: 'Arrival to Stockholm: 24.11.2025 at 10:00 Swedish time. Return to the ship at 16:00 the latest.*',
       },
       {
-        subtitle: ''
+        subtitle: '',
         body: 'Arrival to Olympia Terminal: 25.11.2025 at 10:30*',
       },
       {
