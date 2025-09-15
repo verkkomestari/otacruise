@@ -8,7 +8,7 @@ const InfoContent = ({ infoList }) => {
         <div className='mb-1'>
           <div className='btn linkbtn' id='linkbtn'>
             <a
-              href='https://kide.app/events/23b3ba87-a6e4-4cbb-8725-7871931f150f'
+              href='https://otacruise.com'
               target='_blank'
               rel='noreferrer'
               className='ticketLink'>
