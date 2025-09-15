@@ -91,7 +91,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: 'There is 25 minutes to fill in the information. You can edit the information on Kide.app until 13.10.',
+        body: 'There is 25 minutes to fill in the information. You can edit the information on Kide.app until 12.10.',
       },
       {
         subtitle: '',
