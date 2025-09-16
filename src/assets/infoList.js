@@ -9,7 +9,7 @@ const infoList = [
     content: [
       {
         subtitle: null,
-        body: 'Otacruise comes back bigger than ever. At the end of November, Silja Symphony will be filled with Aalto University students. The ship is completely reserved for Otacruise and entertainment will be customized to gurantee an incredible experience.',
+        body: "Otacruise comes back bigger than ever for it's five-year anniversary cruise. At the end of November, Silja Symphony will be filled with Aalto University students. The ship is completely reserved for Otacruise and entertainment will be customized to gurantee an incredible experience.",
       },
       {
         subtitle: 'Dates',
