@@ -53,7 +53,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: 'Our aim is to create memorable experiences with our love towards the student community in the core of everything we do. ',
+        body: 'Our aim is to create memorable experiences with our love towards the student community in the core of everything we do. At Otacruise, we believe in celebrating lifes vibrant momentum while simultaneously harnessing the immeasurable power of community. Our operation has grown quite a lot yet we have still stayed true to our roots: Viva la Vida ja vetoja is not just our core value — it is our operational North Star, our inspirational deliverable, our deeply synergized lifestyle philosophy. ',
       },
       {
         subtitle: 'OUR COMMUNITY',
