@@ -49,11 +49,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: 'Over the years, student cruises have been a part of the student culture and are one of the most anticipated events of the year. Otacruise is all about having a good time with friends and meeting new people while enjoying the wide variety of activities. Although the concept is simple — students board the ship and spend two nights and one day on a cruise from Helsinki to Stockholm and back — our main focus is on the cruise programme and we want to keep evolving, year after year.',
-      },
-      {
-        subtitle: '',
-        body: "At Otacruise, we believe in celebrating life's vibrant momentum while simultaneously harnessing the immeasurable power of community. Our operation has grown quite a lot yet we have still stayed true to our roots: Viva la vida ja vetoja isn't just our core value — it's our operational North Star, our inspirational deliverable, our deeply synergized lifestyle philosophy.",
+        body: "Over the years, student cruises have been a part of the student culture and are one of the most anticipated events of the year. Otacruise is all about having a good time with friends and meeting new people while enjoying the wide variety of activities. Although the concept is simple — students board the ship and spend two nights and one day on a cruise from Helsinki to Stockholm and back — our main focus is on the cruise programme and we want to keep evolving, year after year. At Otacruise, we believe in celebrating life's vibrant momentum while simultaneously harnessing the immeasurable power of community. Our operation has grown quite a lot yet we have still stayed true to our roots: Viva la vida ja vetoja isn't just our core value — it's our operational North Star, our inspirational deliverable, our deeply synergized lifestyle philosophy.",
       },
       {
         subtitle: '',
