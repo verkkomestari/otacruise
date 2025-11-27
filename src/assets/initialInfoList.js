@@ -53,7 +53,7 @@ const infoList = [
       },
       {
         subtitle: '',
-        body: "At Otacruise, we believe in celebrating life's vibrant momentum while simultaneously harnessing the immeasurable power of community. Our operation has grown quite a lot yet we have still stayed true to our roots: Viva la vida ja vetoja isn't just our core value — it's our operational North Star, our inspirational deliverable, our deeply synergized lifestyle philosophy."
+        body: "At Otacruise, we believe in celebrating life's vibrant momentum while simultaneously harnessing the immeasurable power of community. Our operation has grown quite a lot yet we have still stayed true to our roots: Viva la vida ja vetoja isn't just our core value — it's our operational North Star, our inspirational deliverable, our deeply synergized lifestyle philosophy.",
       },
       {
         subtitle: '',
