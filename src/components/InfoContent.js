@@ -51,7 +51,7 @@ const InfoContent = ({ infoList }) => {
         <div className='mb-1'>
           <div className='btn linkbtn' id='linkbtn'>
             <a
-              href='https://forms.gle/oqCWaBzqa1LfHrS97'
+              href='https://forms.gle/vk15w6hemVJftMCp6'
               target='_blank'
               rel='noreferrer'
               className='ticketLink'>
