@@ -21,7 +21,11 @@
     "sharp": "^0.35.3",
     "svgo": "^4.0.2",
     "vite": "^8.2.1",
-    "vite-plugin-image-optimizer": "^2.0.3"
+    "vite-plugin-image-optimizer": "^2.0.3",
+    "typescript": "^5.5.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
   },
   "browserslist": {
     "production": [

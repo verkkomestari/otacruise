@@ -5,7 +5,6 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 export default defineConfig({
   plugins: [
     ViteImageOptimizer({
-      apply: 'serve',
       png: {
         quality: 80,
       },
