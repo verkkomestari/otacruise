@@ -4,6 +4,6 @@ const Tickets = () => (
   <>
     <p>Tickets Jea</p>
   </>
-);
+)
 
-export default Tickets;
+export default Tickets
