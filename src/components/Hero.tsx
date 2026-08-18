@@ -5,10 +5,15 @@ import otacruise from '../assets/images/otacruise.png'
 //import year from '../assets/images/2022.png'
 //import { Link } from 'react-router-dom'
 import merihevonen from '../assets/images/merihevonen.png'
+import { DEPARTURE_DATE, ARRIVAL_DATE } from '../consts'
 
 // Huikean hiano aloitussivu
 
-const Hero = ({ executeScroll }) => {
+interface HeroProps {
+  executeScroll: () => void
+}
+
+const Hero = ({ executeScroll }: HeroProps) => {
   return (
     <div className='overflow-hidden text-center'>
       <div className='heroText'>
@@ -28,7 +33,9 @@ const Hero = ({ executeScroll }) => {
               Finland's biggest student cruise for Aalto University students!
             </p>
             <div className='row d-flex justify-content-center'>
-              <p className='fs-2 mt-2 motto date'>22.-24.11.2026</p>
+              <p className='fs-2 mt-2 motto date'>
+                {DEPARTURE_DATE.getDate()} - {ARRIVAL_DATE.toLocaleDateString()}
+              </p>
             </div>
           </div>
           {/* <div className='mb-1'>

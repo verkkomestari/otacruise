@@ -1,0 +1,5 @@
+export const DEPARTURE_DATE = new Date('2025-11-22T17:00:00+02:00')
+export const ARRIVAL_DATE = new Date('2025-11-24T12:00:00+02:00')
+export const ARRIVAL_STOCKHOLM_DATE = new Date('2025-11-23T12:00:00+02:00')
+export const RETURN_TO_SHIP_LATEST_DATE = new Date('2025-11-23T16:00:00+02:00')
+export const DEPARTURE_STOCKHOLM_DATE = new Date('2025-11-23T18:00:00+02:00')

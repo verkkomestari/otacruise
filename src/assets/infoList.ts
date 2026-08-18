@@ -1,3 +1,10 @@
+import {
+  ARRIVAL_DATE,
+  DEPARTURE_DATE,
+  ARRIVAL_STOCKHOLM_DATE,
+  RETURN_TO_SHIP_LATEST_DATE,
+} from '../consts'
+
 const infoList = [
   {
     id: 'main',
@@ -12,15 +19,15 @@ const infoList = [
       {
         subtitle: 'Dates',
 
-        body: 'Departure from Olympia Terminal: 22.11.2026 at 17:00. Boarding 13-16.*',
+        body: `Departure from Olympia Terminal: ${DEPARTURE_DATE.toLocaleDateString()} at ${DEPARTURE_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}. Boarding 13-16.*`,
       },
       {
         subtitle: '',
-        body: 'Arrival to Stockholm: 24.11.2026 at 10:00 Swedish time. Return to the ship at 16:00 the latest.*',
+        body: `Arrival to Stockholm: ${ARRIVAL_STOCKHOLM_DATE.toLocaleDateString()} at ${ARRIVAL_STOCKHOLM_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} Swedish time. Return to the ship at ${RETURN_TO_SHIP_LATEST_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} the latest.*`,
       },
       {
         subtitle: '',
-        body: 'Arrival to Olympia Terminal: 25.11.2026 at 10:30*',
+        body: `Arrival to Olympia Terminal: ${ARRIVAL_DATE.toLocaleDateString()} at ${ARRIVAL_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}*`,
       },
       {
         subtitle: '',
