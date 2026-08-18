@@ -1,9 +1,4 @@
-import {
-  ARRIVAL_DATE,
-  DEPARTURE_DATE,
-  ARRIVAL_STOCKHOLM_DATE,
-  RETURN_TO_SHIP_LATEST_DATE,
-} from '../consts'
+import CONSTS from '../consts'
 
 const infoList = [
   {
@@ -19,15 +14,15 @@ const infoList = [
       {
         subtitle: 'Dates',
 
-        body: `Departure from Olympia Terminal: ${DEPARTURE_DATE.toLocaleDateString()} at ${DEPARTURE_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}. Boarding 13-16.*`,
+        body: `Departure from Olympia Terminal: ${CONSTS.DEPARTURE_DATE.toLocaleDateString()} at ${CONSTS.DEPARTURE_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}. Boarding 13-16.*`,
       },
       {
         subtitle: '',
-        body: `Arrival to Stockholm: ${ARRIVAL_STOCKHOLM_DATE.toLocaleDateString()} at ${ARRIVAL_STOCKHOLM_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} Swedish time. Return to the ship at ${RETURN_TO_SHIP_LATEST_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} the latest.*`,
+        body: `Arrival to Stockholm: ${CONSTS.ARRIVAL_STOCKHOLM_DATE.toLocaleDateString()} at ${CONSTS.ARRIVAL_STOCKHOLM_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} Swedish time. Return to the ship at ${CONSTS.RETURN_TO_SHIP_LATEST_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} the latest.*`,
       },
       {
         subtitle: '',
-        body: `Arrival to Olympia Terminal: ${ARRIVAL_DATE.toLocaleDateString()} at ${ARRIVAL_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}*`,
+        body: `Arrival to Olympia Terminal: ${CONSTS.ARRIVAL_DATE.toLocaleDateString()} at ${CONSTS.ARRIVAL_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}*`,
       },
       {
         subtitle: '',

@@ -5,7 +5,7 @@ import otacruise from '../assets/images/otacruise.png'
 //import year from '../assets/images/2022.png'
 //import { Link } from 'react-router-dom'
 import merihevonen from '../assets/images/merihevonen.png'
-import { DEPARTURE_DATE, ARRIVAL_DATE } from '../consts'
+import CONSTS from '../consts'
 
 // Huikean hiano aloitussivu
 
@@ -34,7 +34,8 @@ const Hero = ({ executeScroll }: HeroProps) => {
             </p>
             <div className='row d-flex justify-content-center'>
               <p className='fs-2 mt-2 motto date'>
-                {DEPARTURE_DATE.getDate()} - {ARRIVAL_DATE.toLocaleDateString()}
+                {CONSTS.DEPARTURE_DATE.getDate()} -{' '}
+                {CONSTS.ARRIVAL_DATE.toLocaleDateString()}
               </p>
             </div>
           </div>
