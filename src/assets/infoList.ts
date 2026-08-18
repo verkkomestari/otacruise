@@ -1,5 +1,7 @@
 import CONSTS from '../consts'
 
+export type TInfoList = typeof infoList
+
 const infoList = [
   {
     id: 'main',
@@ -13,7 +15,6 @@ const infoList = [
       },
       {
         subtitle: 'Dates',
-
         body: `Departure from Olympia Terminal: ${CONSTS.DEPARTURE_DATE.toLocaleDateString()} at ${CONSTS.DEPARTURE_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}. Boarding 13-16.*`,
       },
       {

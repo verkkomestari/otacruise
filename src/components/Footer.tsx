@@ -1,6 +1,5 @@
-import '../styles/Footer.css';
-import '../styles/Global.css';
-// Footer
+import '../styles/Footer.css'
+import '../styles/Global.css'
 
 const Footer = () => (
   <div id='footer' className='text-center'>
@@ -9,6 +8,6 @@ const Footer = () => (
       on social media @Otacruise{' '}
     </div>
   </div>
-);
+)
 
-export default Footer;
+export default Footer

@@ -16,7 +16,8 @@ const NavigationBar = () => {
   return (
     <nav
       id='navigationBar'
-      className='navbar navbar-dark nav-bg navbar-expand-sm sticky-top'>
+      className='navbar navbar-dark nav-bg navbar-expand-sm sticky-top'
+    >
       <div className='container'>
         <div className='navbar-brand' onClick={() => navigateTo('/')}>
           <img
@@ -32,26 +33,31 @@ const NavigationBar = () => {
           aria-controls='navbarNavAltMarkup'
           aria-expanded='false'
           aria-label='Toggle navigation'
-          onClick={handleNavCollapse}>
+          onClick={handleNavCollapse}
+        >
           <span className='navbar-toggler-icon'></span>
         </button>
         <div
           className={`${
             isNavCollapsed ? 'collapse' : 'expand'
-          } navbar-collapse`}>
+          } navbar-collapse`}
+        >
           <div
             className='navbar-nav montserrat'
-            style={{ borderBottom: '4px' }}>
+            style={{ borderBottom: '4px' }}
+          >
             <Link
               onClick={() => setIsNavCollapsed(true)}
               to='/'
-              className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1'>
+              className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1'
+            >
               Home
             </Link>
             <Link
               onClick={() => setIsNavCollapsed(true)}
               to='/info/main'
-              className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1'>
+              className='nav-item nav-link navlink lb-text ps-5 ps-sm-2 m-sm-1'
+            >
               Info
             </Link>
           </div>

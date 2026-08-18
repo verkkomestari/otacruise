@@ -3,8 +3,12 @@ import infoList from '../assets/infoList'
 import card_image from '../assets/images/card_image-2.jpg'
 import IconGet from '../helpers/IconGet'
 
-const Card = ({ id }) => {
-  const info = infoList.find((i) => i.id === id)
+interface CardProps {
+  id: string
+}
+
+const Card = ({ id }: CardProps) => {
+  const info = infoList.find((i) => i.id === id) ?? infoList[0]
   const navigateTo = useNavigate()
   const handleClick = () => {
     window.scroll(0, 0)
@@ -24,7 +28,8 @@ const Card = ({ id }) => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-          }}>
+          }}
+        >
           <h1 className='icon'>
             <IconGet id={id} />
           </h1>

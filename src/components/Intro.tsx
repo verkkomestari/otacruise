@@ -5,13 +5,18 @@ import tausta from '../assets/images/meritausta-2.jpg'
 
 //Alotusssivun alla oleva esittelyosio
 
-const Intro = ({ introRef }) => {
+interface IntroProps {
+  introRef: React.RefObject<HTMLDivElement>
+}
+
+const Intro = ({ introRef }: IntroProps) => {
   return (
     <div
       ref={introRef}
       id='intro'
       className='overflow-hidden text-center introContainer text-light'
-      style={{ backgroundImage: `url(${tausta})` }}>
+      style={{ backgroundImage: `url(${tausta})` }}
+    >
       <div className='spacer'></div>
       <div className='container col-12 col-md-9 col-lg-8 db-bg p-3 rounded'>
         <h1 className='display-title introTitle display-5 mb-2'>

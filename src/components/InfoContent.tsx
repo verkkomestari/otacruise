@@ -1,10 +1,15 @@
 // The text content on Info page
+import type { TInfoList } from '../assets/infoList'
 
-const InfoContent = ({ infoList }) => {
+interface InfoContentProps {
+  infoItem: TInfoList[number]
+}
+
+const InfoContent = ({ infoItem }: InfoContentProps) => {
   return (
     <div className='page-content col-md-8'>
-      <h1 className='montserrat info-title'>{infoList.title}</h1>
-      {infoList.title === 'Tickets' ? (
+      <h1 className='montserrat info-title'>{infoItem.title}</h1>
+      {infoItem.title === 'Tickets' ? (
         <div className='mb-1'>
           <div className='btn linkbtn' id='linkbtn'>
             <a
@@ -20,21 +25,21 @@ const InfoContent = ({ infoList }) => {
       ) : (
         <></>
       )}
-      {infoList.content.map((part) => (
-        <div className='page-body' key={part.content}>
+      {infoItem.content.map((part, idx) => (
+        <div className='page-body' key={idx}>
           <h2
             className={
-              infoList.id === 'faq'
+              infoItem.id === 'faq'
                 ? 'montserrat subtitle pb-1'
                 : 'montserrat subtitle'
             }
           >
             {part.subtitle}
           </h2>
-          <p className={infoList.id === 'faq' ? 'pb-4' : ''}>{part.body}</p>
+          <p className={infoItem.id === 'faq' ? 'pb-4' : ''}>{part.body}</p>
         </div>
       ))}
-      {infoList.title === 'Safety & guidelines' ? (
+      {infoItem.title === 'Safety & guidelines' ? (
         <div className='mb-1'>
           <div className='btn linkbtn' id='linkbtn'>
             <a
@@ -50,7 +55,7 @@ const InfoContent = ({ infoList }) => {
       ) : (
         <></>
       )}
-      {infoList.title === 'About Us' ? (
+      {infoItem.title === 'About Us' ? (
         <div className='mb-1'>
           <div className='btn linkbtn' id='linkbtn'>
             <a

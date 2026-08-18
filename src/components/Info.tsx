@@ -7,8 +7,9 @@ import infoList from '../assets/infoList'
 // Info page
 
 const Info = () => {
-  const id = useParams().id
-  const infoText = infoList.find((info) => info.id === id)
+  const { id } = useParams()
+
+  const infoText = infoList.find((info) => info.id === id) ?? infoList[0]
   return (
     <div id='info-bg'>
       <div id='info-container' className='container'>
@@ -22,7 +23,7 @@ const Info = () => {
               ))}
             </ul>
           </div>
-          <InfoContent infoList={infoText} />
+          <InfoContent infoItem={infoText} />
         </div>
       </div>
     </div>
