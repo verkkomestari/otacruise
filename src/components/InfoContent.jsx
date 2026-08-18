@@ -2,7 +2,7 @@
 
 const InfoContent = ({ infoList }) => {
   return (
-    <div className='page-content col-md-8'> 
+    <div className='page-content col-md-8'>
       <h1 className='montserrat info-title'>{infoList.title}</h1>
       {infoList.title === 'Tickets' ? (
         <div className='mb-1'>
@@ -11,7 +11,8 @@ const InfoContent = ({ infoList }) => {
               href='https://kide.app/events/093d480a-c091-44d6-82f4-627da1e4872f'
               target='_blank'
               rel='noreferrer'
-              className='ticketLink'>
+              className='ticketLink'
+            >
               Go to Kide.app!
             </a>
           </div>
@@ -26,7 +27,8 @@ const InfoContent = ({ infoList }) => {
               infoList.id === 'faq'
                 ? 'montserrat subtitle pb-1'
                 : 'montserrat subtitle'
-            }>
+            }
+          >
             {part.subtitle}
           </h2>
           <p className={infoList.id === 'faq' ? 'pb-4' : ''}>{part.body}</p>
@@ -39,7 +41,8 @@ const InfoContent = ({ infoList }) => {
               href='https://forms.gle/oqCWaBzqa1LfHrS97'
               target='_blank'
               rel='noreferrer'
-              className='ticketLink'>
+              className='ticketLink'
+            >
               Harassment report form
             </a>
           </div>
@@ -54,7 +57,8 @@ const InfoContent = ({ infoList }) => {
               href='https://forms.gle/vk15w6hemVJftMCp6'
               target='_blank'
               rel='noreferrer'
-              className='ticketLink'>
+              className='ticketLink'
+            >
               Application form
             </a>
           </div>

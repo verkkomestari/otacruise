@@ -1,5 +1,3 @@
-
-
 const infoList = [
   {
     id: 'main',
@@ -13,16 +11,16 @@ const infoList = [
       },
       {
         subtitle: 'Dates',
-      
-        body: 'Departure from Olympia Terminal: 23.11.2025 at 17:00. Boarding 13-16.*',
+
+        body: 'Departure from Olympia Terminal: 22.11.2026 at 17:00. Boarding 13-16.*',
       },
       {
         subtitle: '',
-        body: 'Arrival to Stockholm: 24.11.2025 at 10:00 Swedish time. Return to the ship at 16:00 the latest.*',
+        body: 'Arrival to Stockholm: 24.11.2026 at 10:00 Swedish time. Return to the ship at 16:00 the latest.*',
       },
       {
         subtitle: '',
-        body: 'Arrival to Olympia Terminal: 25.11.2025 at 10:30*',
+        body: 'Arrival to Olympia Terminal: 25.11.2026 at 10:30*',
       },
       {
         subtitle: '',
@@ -35,142 +33,142 @@ const infoList = [
     ],
   },
 
-  {
-    id: 'tickets',
-    title: 'Tickets',
-    cardText: 'What tickets? How do I get them?',
-    img: '../assets/images/IG_arkku.jpg',
-    content: [
-      {
-        subtitle: '',
-        body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 22.9. at 17:00 and on campus on 24.9. at 8:00. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
-      },
-      {
-        subtitle: '',
-        body: '',
-      },
-      {
-        subtitle: 'Ticket information',
-        body: 'The cabins will be sold as whole, so that one passenger buys tickets for the whole cabin. While buying a cabin, one must list following information of each cabin member:',
-      },
-      {
-        subtitle: '',
-        body: `► Name (first & last name as in passport/drivers licence)`,
-      },
-      {
-        subtitle: '',
-        body: '► Name of your guild/association in Finnish',
-      },
-      {
-        subtitle: '',
-        body: '► @aalto.fi email',
-      },
-      {
-        subtitle: '',
-        body: '► Phone number',
-      },
-      {
-        subtitle: '',
-        body: '► Date of birth',
-      },
-      {
-        subtitle: '',
-        body: '► Gender (as in passport/drivers licence)',
-      },
-      {
-        subtitle: '',
-        body: '► Nationality (if not Finnish)',
-      },
-      {
-        subtitle: '',
-        body: '► Year of starting studies',
-      },
-      {
-        subtitle: '',
-        body: '► Club One membership number (optional)',
-      },
-      {
-        subtitle: '',
-        body: 'There is 25 minutes to fill in the information. You can edit the information on Kide.app until 12.10.',
-      },
-      {
-        subtitle: '',
-        body: '',
-      },
-      {
-        subtitle: 'Cabin Prices',
-        body: 'The cabins are priced as follows (price per a whole cabin):',
-      },
-      {
-        subtitle: '',
-        body: '► C-class for two 204 €',
-      },
-      {
-        subtitle: '',
-        body: '► C-class for three 276 €',
-      },
-      {
-        subtitle: '',
-        body: '► C-class for four 348 €',
-      },
-      {
-        subtitle: '',
-        body: '► B-class for two 216 €',
-      },
-      {
-        subtitle: '',
-        body: '► B-class for four 364 €',
-      },
-      {
-        subtitle: '',
-        body: '► Promenade-class for two 232 €',
-      },
-      {
-        subtitle: '',
-        body: '► Promenade-class for four 384 €',
-      },
-      {
-        subtitle: '',
-        body: '► A-class for two 232 €',
-      },
-      {
-        subtitle: '',
-        body: '► A-class for four 384 €',
-      },
-      {
-        subtitle: '',
-        body: '',
-      },
-      {
-        subtitle: "What's included?",
-        body: 'The ticket price includes: ',
-      },
-      {
-        subtitle: '',
-        body: '► The trip from Helsinki to Stockholm and back on the Silja Symphony on 23.-25.11.2025',
-      },
-      {
-        subtitle: '',
-        body: "► Grande Buffet on board (≈40€ value), where you'll get to enjoy a delicious meal with dishes ranging from a variety of fish and seafood to many vegetarian options. Drinks included!",
-      },
-      {
-        subtitle: '',
-        body: '► A unique overall patch, of course',
-      },
-      {
-        subtitle: '',
-        body: "► 18€ fuel and environmental fee. See more info on Tallink Silja's website",
-      },
-      {
-        subtitle: '',
-        body: '► On-board entertainment, including the hottest performace groups of Otaniemi  🎉',
-      },
-      {
-        subtitle: '',
-        body: 'While buying the cabin, it is possible to purchase the Sea Breakfast. A second buffet dinner or the Burger Buffet can be purchased on board the ship.',
-      },
-    ],
-  },
+  // {
+  //   id: 'tickets',
+  //   title: 'Tickets',
+  //   cardText: 'What tickets? How do I get them?',
+  //   img: '../assets/images/IG_arkku.jpg',
+  //   content: [
+  //     {
+  //       subtitle: '',
+  //       body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 22.9. at 17:00 and on campus on 24.9. at 8:00. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '',
+  //     },
+  //     {
+  //       subtitle: 'Ticket information',
+  //       body: 'The cabins will be sold as whole, so that one passenger buys tickets for the whole cabin. While buying a cabin, one must list following information of each cabin member:',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: `► Name (first & last name as in passport/drivers licence)`,
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► Name of your guild/association in Finnish',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► @aalto.fi email',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► Phone number',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► Date of birth',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► Gender (as in passport/drivers licence)',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► Nationality (if not Finnish)',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► Year of starting studies',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► Club One membership number (optional)',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: 'There is 25 minutes to fill in the information. You can edit the information on Kide.app until 12.10.',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '',
+  //     },
+  //     {
+  //       subtitle: 'Cabin Prices',
+  //       body: 'The cabins are priced as follows (price per a whole cabin):',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► C-class for two 204 €',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► C-class for three 276 €',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► C-class for four 348 €',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► B-class for two 216 €',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► B-class for four 364 €',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► Promenade-class for two 232 €',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► Promenade-class for four 384 €',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► A-class for two 232 €',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► A-class for four 384 €',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '',
+  //     },
+  //     {
+  //       subtitle: "What's included?",
+  //       body: 'The ticket price includes: ',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► The trip from Helsinki to Stockholm and back on the Silja Symphony on 22.-24.11.2026',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: "► Grande Buffet on board (≈40€ value), where you'll get to enjoy a delicious meal with dishes ranging from a variety of fish and seafood to many vegetarian options. Drinks included!",
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► A unique overall patch, of course',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: "► 18€ fuel and environmental fee. See more info on Tallink Silja's website",
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: '► On-board entertainment, including the hottest performace groups of Otaniemi  🎉',
+  //     },
+  //     {
+  //       subtitle: '',
+  //       body: 'While buying the cabin, it is possible to purchase the Sea Breakfast. A second buffet dinner or the Burger Buffet can be purchased on board the ship.',
+  //     },
+  //   ],
+  // },
   {
     id: 'faq',
     title: 'FAQ',
@@ -208,7 +206,8 @@ const infoList = [
         body: ' You will need the name (first & last name), name of your guild/association in Finnish, @aalto.fi email, phone number, date of birth, gender, nationality (if not Finnish) and clubone-membership number (optional) from each member of your cabin.',
       },*/
       {
-        subtitle: "Can I buy a cabin for less people than the cabin's capacity?",
+        subtitle:
+          "Can I buy a cabin for less people than the cabin's capacity?",
         body: 'Unfortunately, no. You will need to fill the whole cabin.',
       },
       {
@@ -256,8 +255,7 @@ const infoList = [
         body: '► Weapons, replicas and other dangerous items',
       },
       {
-        subtitle:
-          '',
+        subtitle: '',
         body: 'NOTE! Items required for a medical condition are discussed independently (e.g. diabetes). Certificates are required.',
       },
       {
@@ -334,11 +332,10 @@ const infoList = [
       },
       {
         subtitle: 'Apply to be an organiser!',
-        body: 'Want to get on board earlier and be a part of the organising team for Otacruise 2025? The application is open until the end of the year and is made through the following link. More information can be found in the form:',
-      }
-    
+        body: 'Want to get on board earlier and be a part of the organising team for Otacruise? The application is open until the end of the year and is made through the following link. More information can be found in the form:',
+      },
     ],
-  }
+  },
 ]
 
 export default infoList

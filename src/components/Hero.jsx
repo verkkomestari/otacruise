@@ -15,7 +15,8 @@ const Hero = ({ executeScroll }) => {
         <div className='container titleNbutton'>
           <div
             className='d-flex justify-content-center align-items-center ms-md-5 me-md-5 mt-sm-5'
-            id='titleCont'>
+            id='titleCont'
+          >
             <div>
               <div>
                 <img src={otacruise} alt='heroTitle' id='otacruise' />
@@ -27,24 +28,26 @@ const Hero = ({ executeScroll }) => {
               Finland's biggest student cruise for Aalto University students!
             </p>
             <div className='row d-flex justify-content-center'>
-              <p className='fs-2 mt-2 motto date'>23.-25.11.2025</p>
+              <p className='fs-2 mt-2 motto date'>22.-24.11.2026</p>
             </div>
           </div>
-          <div className='mb-1'>
-          <div className='btn linkbtn' id='linkbtn'>
-            <a
-              href='https://kide.app/events/093d480a-c091-44d6-82f4-627da1e4872f'
-              target='_blank'
-              rel='noreferrer'
-              className='ticketLink'>
-              Get tickets!
-            </a>
-          </div>  
-        </div>
+          {/* <div className='mb-1'>
+            <div className='btn linkbtn' id='linkbtn'>
+              <a
+                href='https://kide.app/events/093d480a-c091-44d6-82f4-627da1e4872f'
+                target='_blank'
+                rel='noreferrer'
+                className='ticketLink'
+              >
+                Get tickets!
+              </a>
+            </div>
+          </div> */}
           <div className='d-none d-sm-block d-flex justify-content-center'>
             <button
               className='callToAction btn btn-outline-secondary db-text'
-              onClick={executeScroll}>
+              onClick={executeScroll}
+            >
               Read more!
             </button>
           </div>
