@@ -18,7 +18,10 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.5",
     "eslint": "^10.8.1",
-    "vite": "^8.2.1"
+    "sharp": "^0.35.3",
+    "svgo": "^4.0.2",
+    "vite": "^8.2.1",
+    "vite-plugin-image-optimizer": "^2.0.3"
   },
   "browserslist": {
     "production": [
