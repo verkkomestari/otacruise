@@ -7,17 +7,17 @@
   background-color: #d7c3f1;
   height: 85vh;
   min-height: 400px;
-  width: 100vw;
+  width: 100%;
   padding: 50px 0px 0px 0px;
 }
 
-#otacruise{
+#otacruise {
   width: 90vw;
   max-width: 800px;
   padding: 0 0 10px 0;
 }
 
-#year{
+#year {
   width: 40vw;
   max-width: 400px;
   padding: 0 0 15px 0;
@@ -40,7 +40,7 @@ h1 {
   padding-bottom: 50px !important;
 }
 
-.motto{
+.motto {
   padding: 0 50px;
 }
 
@@ -63,7 +63,7 @@ h1 {
   border-color: #9bd4ac;
 }
 
-a.ticketLinkHero{
+a.ticketLinkHero {
   padding: 10px 20px;
   color: #9bd4ac;
   font-family: 'Montserrat', sans-serif;
@@ -72,7 +72,7 @@ a.ticketLinkHero{
   letter-spacing: 2px;
 }
 
-a.ticketLinkHero:hover{
+a.ticketLinkHero:hover {
   color: #9bd4ac;
   border-color: #10295f;
 }
@@ -111,7 +111,7 @@ a.ticketLinkHero:hover{
   max-height: 300px;
 }
 
-@media screen and (min-width: 300px) and  (min-height: 300px){
+@media screen and (min-width: 300px) and (min-height: 300px) {
   .heroText {
     height: 92vh;
     min-height: 600px;
@@ -121,9 +121,8 @@ a.ticketLinkHero:hover{
 
 /* vertical thin mobile*/
 
-
 /* vertical mobile*/
-@media screen and (min-width: 300px) and (max-width: 450px) and (min-height: 800px) and (max-height: 900px)  {
+@media screen and (min-width: 300px) and (max-width: 450px) and (min-height: 800px) and (max-height: 900px) {
   .rapu1 {
     left: 0px;
     top: 80vh;
@@ -131,16 +130,15 @@ a.ticketLinkHero:hover{
   }
 }
 
-
 /* vertical tablet*/
-@media screen and (max-width: 820px) and (min-height: 1000px){
+@media screen and (max-width: 820px) and (min-height: 1000px) {
   .heroText {
     height: 92vh;
     padding: 200px 0px 0px 0px;
   }
 
-  #year{
-    width: 25vw;;
+  #year {
+    width: 25vw;
   }
 
   .rapu1 {
@@ -150,14 +148,14 @@ a.ticketLinkHero:hover{
   }
 }
 
-@media screen and (min-width: 820px) and (max-width: 1100px) and (min-height: 1000px){
+@media screen and (min-width: 820px) and (max-width: 1100px) and (min-height: 1000px) {
   .heroText {
     height: 92vh;
     padding: 200px 0px 0px 0px;
   }
 
-  #year{
-    width: 25vw;;
+  #year {
+    width: 25vw;
   }
 
   .rapu1 {
@@ -169,36 +167,35 @@ a.ticketLinkHero:hover{
 
 /* laptops */
 
-@media screen and (min-width: 500px) and (max-height: 1000px){
-
+@media screen and (min-width: 500px) and (max-height: 1000px) {
   .heroText {
     height: max-content;
   }
 
-  #otacruise{
+  #otacruise {
     width: 60vw;
     max-width: 750px;
   }
 
-  #year{
+  #year {
     max-width: 300px;
   }
 
-  .rapu1{
+  .rapu1 {
     display: none;
   }
 }
 
-@media screen and (min-width: 1100px) and (max-height: 1000px){
-  .rapu1{
+@media screen and (min-width: 1100px) and (max-height: 1000px) {
+  .rapu1 {
     display: block;
     left: 0vh;
     top: 50vh;
   }
 }
 
-@media screen and (min-width: 1100px) and (max-width: 1400px) and (min-height: 1000px){
-  .rapu1{
+@media screen and (min-width: 1100px) and (max-width: 1400px) and (min-height: 1000px) {
+  .rapu1 {
     display: block;
     left: -10vh;
     top: 70vh;
@@ -206,21 +203,20 @@ a.ticketLinkHero:hover{
   }
 }
 
-@media screen and (min-width: 1400px)and (min-height: 600px){
-
+@media screen and (min-width: 1400px) and (min-height: 600px) {
   .heroText {
     height: 92vh;
   }
 
-  .date{
+  .date {
     padding-bottom: 12vh !important;
   }
 
-  #otacruise{
+  #otacruise {
     margin-inline: 100px;
   }
 
-  #year{
+  #year {
     width: 20vw;
   }
 

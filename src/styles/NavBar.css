@@ -2,7 +2,7 @@
 
 #navigationBar {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   font-size: 20px;
 }
 
@@ -18,7 +18,7 @@
 
 .nav-item.ps-5:hover {
   color: #d7c3f1;
-  text-shadow: 1px 1px 10px #146555 ;
+  text-shadow: 1px 1px 10px #146555;
 }
 
 a.navTickets {
@@ -38,7 +38,6 @@ a.navTickets:hover {
   color: #8d98fc;
   text-shadow: 0;
 }
-
 
 /* .nav-item.ps-5:focus {
   color: #97b2f3;

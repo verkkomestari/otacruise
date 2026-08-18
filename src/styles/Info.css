@@ -31,7 +31,9 @@ a {
 .navlink {
   color: #41b3a2;
   text-transform: uppercase;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
 
@@ -59,19 +61,20 @@ a {
   letter-spacing: 2px;
 }
 
-a.ticketLink{
+a.ticketLink {
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: 600;
   color: #146555;
 }
 
-a.ticketLink:hover{
+a.ticketLink:hover {
   color: #d7c3f1;
   border-color: #146555;
 }
 
-.linkbtn, .a {
+.linkbtn,
+.a {
   color: #146555;
   margin-bottom: 20px;
   border-width: 2px;
@@ -81,7 +84,8 @@ a.ticketLink:hover{
   transition-duration: 0.3s;
 }
 
-.linkbtn:link, .linkbtn:hover {
+.linkbtn:link,
+.linkbtn:hover {
   background-color: #146555;
   border-color: #146555;
   color: #146555;
