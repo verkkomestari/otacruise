@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import infoList from '../assets/infoList'
-import card_image from '../assets/images/card_image-2.jpg'
+import card_image from '../assets/images/meritausta.png'
 
 const CardWrapper = styled.div`
   min-width: 0;
@@ -11,9 +11,8 @@ const CardWrapper = styled.div`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.sky};
   border-radius: ${({ theme }) => theme.radii.small};
-  box-shadow: ${({ theme }) => theme.shadows.card};
   cursor: pointer;
   transition:
     transform 0.2s ease,
@@ -23,7 +22,6 @@ const CardWrapper = styled.div`
   &:hover {
     transform: translateY(-4px);
     background-color: rgb(238, 246, 253);
-    box-shadow: ${({ theme }) => theme.shadows.cardHover};
   }
 
   .card-body {
@@ -32,7 +30,7 @@ const CardWrapper = styled.div`
 
   .card-title {
     margin: 0 0 0.5rem;
-    color: ${({ theme }) => theme.colors.brandAccent};
+    color: ${({ theme }) => theme.colors.darkBlue};
     font-family: ${({ theme }) => theme.fonts.body};
     font-weight: 900;
     letter-spacing: 2px;

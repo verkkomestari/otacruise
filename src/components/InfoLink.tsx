@@ -10,7 +10,7 @@ interface InfoLinkProps {
 
 const NavigationLink = styled(Link)`
   display: block;
-  color: ${({ theme }) => theme.colors.link};
+  color: ${({ theme }) => theme.colors.darkBlue};
   font-size: 1.5rem;
   font-family: ${({ theme }) => theme.fonts.body};
   font-weight: 900;
@@ -20,7 +20,7 @@ const NavigationLink = styled(Link)`
   transition: color 0.15s ease-in-out;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.brandDark};
+    color: ${({ theme }) => theme.colors.sky};
   }
 `
 

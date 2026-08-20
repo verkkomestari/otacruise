@@ -15,7 +15,7 @@ const Content = styled.main`
 `
 
 const Title = styled.h1`
-  color: ${({ theme }) => theme.colors.brandDark};
+  color: ${({ theme }) => theme.colors.darkBlue};
   font-size: 2rem;
   font-family: ${({ theme }) => theme.fonts.body};
   font-weight: 900;
@@ -30,7 +30,7 @@ const PageBody = styled.div`
 const Subtitle = styled.h2<{ $faq: boolean }>`
   padding-left: 1px;
   padding-bottom: ${({ $faq }) => ($faq ? '0.25rem' : '0')};
-  color: ${({ theme }) => theme.colors.brandDark};
+  color: ${({ theme }) => theme.colors.darkBlue};
   font-size: 1.3rem;
   font-family: ${({ theme }) => theme.fonts.body};
   font-weight: 900;
@@ -45,19 +45,19 @@ const LinkButton = styled.a`
   display: inline-block;
   margin-bottom: 20px;
   padding: 10px 20px;
-  border: 2px solid ${({ theme }) => theme.colors.brandDark};
+  border: 2px solid ${({ theme }) => theme.colors.darkBlue};
   border-radius: ${({ theme }) => theme.radii.button};
-  color: ${({ theme }) => theme.colors.brandDark};
-  background-color: ${({ theme }) => theme.colors.lavender};
+  color: ${({ theme }) => theme.colors.darkBlue};
+  background-color: ${({ theme }) => theme.colors.sky};
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.3s;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.lavender};
-    background-color: ${({ theme }) => theme.colors.brandDark};
-    border-color: ${({ theme }) => theme.colors.brandDark};
+    color: ${({ theme }) => theme.colors.sky};
+    background-color: ${({ theme }) => theme.colors.darkBlue};
+    border-color: ${({ theme }) => theme.colors.darkBlue};
   }
 `
 

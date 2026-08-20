@@ -4,7 +4,7 @@ const FooterContainer = styled.footer`
   padding: 60px 40px 40px;
   color: white;
   text-align: center;
-  background-color: ${({ theme }) => theme.colors.lavenderDark};
+  background-color: ${({ theme }) => theme.colors.darkGreen};
 `
 
 const FooterTitle = styled.div`

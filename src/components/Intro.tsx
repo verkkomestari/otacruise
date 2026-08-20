@@ -25,7 +25,7 @@ const IntroCopy = styled.div`
   margin: 0 auto;
   padding: 1rem;
   border-radius: 0.375rem;
-  background-color: ${({ theme }) => theme.colors.primaryBackground};
+  background-color: ${({ theme }) => theme.colors.darkBlue};
 `
 
 const IntroTitle = styled.h1`
