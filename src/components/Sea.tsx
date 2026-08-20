@@ -28,6 +28,7 @@ interface FishTrajectory {
   startY: number
   jumpHeight: number
   direction: number
+  size: number
 }
 
 export const AnimatedSea: React.FC = () => {
@@ -90,6 +91,7 @@ export const AnimatedSea: React.FC = () => {
     startY: 280,
     jumpHeight: -80,
     direction: 1,
+    size: 80,
   })
 
   // Jumping fish loop with a new parabolic trajectory on every jump
@@ -104,6 +106,7 @@ export const AnimatedSea: React.FC = () => {
         const endX = startX + direction * jumpDistance
         const startY = randomBetween(250, 310)
         const jumpHeight = startY - randomBetween(180, 360)
+        const size = randomBetween(55, 100)
 
         fishTrajectory.current = {
           startX,
@@ -111,6 +114,7 @@ export const AnimatedSea: React.FC = () => {
           startY,
           jumpHeight,
           direction,
+          size,
         }
 
         // 1. Reset position submerged
@@ -180,15 +184,18 @@ export const AnimatedSea: React.FC = () => {
         <animated.g
           style={{
             transform: fishSpring.progress.to((progress) => {
-              const { startX, endX, startY, jumpHeight, direction } =
+              const { startX, endX, startY, jumpHeight, direction, size } =
                 fishTrajectory.current
               const arc = 4 * progress * (1 - progress)
               const x = startX + (endX - startX) * progress
               const y = startY + (jumpHeight - startY) * arc
               const rotate = direction * (progress * 110 - 55)
 
-              return `translate(${x}px, ${y}px) rotate(${rotate}deg) scaleX(${direction})`
+              return `translate(${x}px, ${y}px) rotate(${rotate}deg) scale(${size / 80}) scaleX(${direction})`
             }),
+            opacity: fishSpring.progress.to((progress) =>
+              progress === 0 ? 0 : 1,
+            ),
             transformOrigin: '40px 40px',
           }}
         >
