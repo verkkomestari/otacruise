@@ -8,7 +8,7 @@ import meritausta from '../assets/images/meritausta.png'
 const InfoBackground = styled.div<{ $background: string }>`
   min-height: 100vh;
   padding: 2em 1em 1em;
-  background: url(${({ $background }) => $background}) center / cover;
+  background: ${({ theme }) => theme.colors.blue};};
 `
 
 const InfoContainer = styled.div`
