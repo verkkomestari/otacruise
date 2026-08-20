@@ -1,77 +1,116 @@
 // The text content on Info page
 import type { TInfoList } from '../assets/infoList'
+import styled from 'styled-components'
 
 interface InfoContentProps {
   infoItem: TInfoList[number]
 }
 
+const Content = styled.main`
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 66.667%;
+  }
+`
+
+const Title = styled.h1`
+  color: #146555;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+`
+
+const PageBody = styled.div`
+  margin-bottom: 1rem;
+`
+
+const Subtitle = styled.h2<{ $faq: boolean }>`
+  padding-left: 1px;
+  padding-bottom: ${({ $faq }) => ($faq ? '0.25rem' : '0')};
+  color: #146555;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+`
+
+const BodyText = styled.p<{ $faq: boolean }>`
+  padding-bottom: ${({ $faq }) => ($faq ? '1.5rem' : '0')};
+`
+
+const LinkButton = styled.a`
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: 2px solid #146555;
+  border-radius: 10px;
+  color: #146555;
+  background-color: #d7c3f1;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: #d7c3f1;
+    background-color: #146555;
+    border-color: #146555;
+  }
+`
+
 const InfoContent = ({ infoItem }: InfoContentProps) => {
   return (
-    <div className='page-content col-md-8'>
-      <h1 className='montserrat info-title'>{infoItem.title}</h1>
+    <Content>
+      <Title>{infoItem.title}</Title>
       {infoItem.title === 'Tickets' ? (
-        <div className='mb-1'>
-          <div className='btn linkbtn' id='linkbtn'>
-            <a
-              href='https://kide.app/events/093d480a-c091-44d6-82f4-627da1e4872f'
-              target='_blank'
-              rel='noreferrer'
-              className='ticketLink'
-            >
-              Go to Kide.app!
-            </a>
-          </div>
+        <div>
+          <LinkButton
+            href='https://kide.app/events/093d480a-c091-44d6-82f4-627da1e4872f'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Go to Kide.app!
+          </LinkButton>
         </div>
       ) : (
         <></>
       )}
       {infoItem.content.map((part, idx) => (
-        <div className='page-body' key={idx}>
-          <h2
-            className={
-              infoItem.id === 'faq'
-                ? 'montserrat subtitle pb-1'
-                : 'montserrat subtitle'
-            }
-          >
-            {part.subtitle}
-          </h2>
-          <p className={infoItem.id === 'faq' ? 'pb-4' : ''}>{part.body}</p>
-        </div>
+        <PageBody key={idx}>
+          <Subtitle $faq={infoItem.id === 'faq'}>{part.subtitle}</Subtitle>
+          <BodyText $faq={infoItem.id === 'faq'}>{part.body}</BodyText>
+        </PageBody>
       ))}
       {infoItem.title === 'Safety & guidelines' ? (
-        <div className='mb-1'>
-          <div className='btn linkbtn' id='linkbtn'>
-            <a
-              href='https://forms.gle/oqCWaBzqa1LfHrS97'
-              target='_blank'
-              rel='noreferrer'
-              className='ticketLink'
-            >
-              Harassment report form
-            </a>
-          </div>
+        <div>
+          <LinkButton
+            href='https://forms.gle/oqCWaBzqa1LfHrS97'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Harassment report form
+          </LinkButton>
         </div>
       ) : (
         <></>
       )}
       {infoItem.title === 'About Us' ? (
-        <div className='mb-1'>
-          <div className='btn linkbtn' id='linkbtn'>
-            <a
-              href='https://forms.gle/vk15w6hemVJftMCp6'
-              target='_blank'
-              rel='noreferrer'
-              className='ticketLink'
-            >
-              Application form
-            </a>
-          </div>
+        <div>
+          <LinkButton
+            href='https://forms.gle/vk15w6hemVJftMCp6'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Application form
+          </LinkButton>
         </div>
       ) : (
         <></>
       )}
-    </div>
+    </Content>
   )
 }
 

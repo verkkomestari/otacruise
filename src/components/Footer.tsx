@@ -1,13 +1,23 @@
-import '../styles/Footer.css'
-import '../styles/Global.css'
+import styled from 'styled-components'
+
+const FooterContainer = styled.footer`
+  padding: 60px 40px 40px;
+  color: white;
+  text-align: center;
+  background-color: #b69cd6;
+`
+
+const FooterTitle = styled.div`
+  font-family: 'Montserrat', sans-serif;
+`
 
 const Footer = () => (
-  <div id='footer' className='text-center'>
+  <FooterContainer id='footer'>
     <div>
-      <div className='montserrat'>Let's sea!</div> <br /> Remember to follow us
-      on social media @Otacruise{' '}
+      <FooterTitle>Let's sea!</FooterTitle> <br /> Remember to follow us on
+      social media @Otacruise{' '}
     </div>
-  </div>
+  </FooterContainer>
 )
 
 export default Footer

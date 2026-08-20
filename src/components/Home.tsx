@@ -2,8 +2,6 @@ import Hero from './Hero'
 import Intro from './Intro'
 import { useRef } from 'react'
 
-// Home page ref.current.offsetTop
-
 const Home = () => {
   const scrollToRef = (ref: React.RefObject<HTMLDivElement>) =>
     window.scrollTo({
