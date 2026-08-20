@@ -4,7 +4,6 @@ import InfoContent from './InfoContent'
 import InfoLink from './InfoLink'
 import { useParams } from 'react-router-dom'
 import infoList from '../assets/infoList'
-// Info page
 
 const Info = () => {
   const { id } = useParams()

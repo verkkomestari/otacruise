@@ -1,13 +1,13 @@
 import { useNavigate } from 'react-router-dom'
 import infoList from '../assets/infoList'
 import card_image from '../assets/images/card_image-2.jpg'
-import IconGet from '../helpers/IconGet'
 
 interface CardProps {
   id: string
+  children?: React.ReactNode
 }
 
-const Card = ({ id }: CardProps) => {
+const Card = ({ id, children }: CardProps) => {
   const info = infoList.find((i) => i.id === id) ?? infoList[0]
   const navigateTo = useNavigate()
   const handleClick = () => {
@@ -30,9 +30,7 @@ const Card = ({ id }: CardProps) => {
             backgroundRepeat: 'no-repeat',
           }}
         >
-          <h1 className='icon'>
-            <IconGet id={id} />
-          </h1>
+          <h1 className='icon'>{children}</h1>
         </div>
       </div>
     </div>

@@ -5,9 +5,9 @@
   "dependencies": {
     "bootstrap": "^5.2.0",
     "react": "^19.2.8",
-    "react-bootstrap-icons": "^1.8.4",
     "react-dom": "^19.2.8",
-    "react-router-dom": "^7.18.2"
+    "react-router-dom": "^7.18.2",
+    "styled-components": "^6.5.3"
   },
   "scripts": {
     "dev": "vite",
@@ -16,16 +16,16 @@
     "test": "echo \"No test runner configured.\" && exit 0"
   },
   "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^6.0.5",
     "eslint": "^10.8.1",
     "sharp": "^0.35.3",
     "svgo": "^4.0.2",
-    "vite": "^8.2.1",
-    "vite-plugin-image-optimizer": "^2.0.3",
     "typescript": "^5.5.0",
-    "@types/node": "^20.0.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0"
+    "vite": "^8.2.1",
+    "vite-plugin-image-optimizer": "^2.0.3"
   },
   "browserslist": {
     "production": [
