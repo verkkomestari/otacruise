@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import HomeCards from './HomeCards'
-import tausta from '../assets/images/meritausta.png'
 
 //Alotusssivun alla oleva esittelyosio
 
@@ -8,9 +7,11 @@ interface IntroProps {
   introRef: React.RefObject<HTMLDivElement>
 }
 
-const IntroSection = styled.div<{ $background: string }>`
+const IntroSection = styled.div`
   width: 100%;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
   text-align: center;
   color: white;
   background-color: ${({ theme }) => theme.colors.lightBlue};
@@ -43,7 +44,7 @@ const IntroText = styled.p`
 
 const Intro = ({ introRef }: IntroProps) => {
   return (
-    <IntroSection ref={introRef} id='intro' $background={tausta}>
+    <IntroSection ref={introRef} id='intro'>
       <Spacer />
       <IntroCopy>
         <IntroTitle>Ahoy, Matey!</IntroTitle>

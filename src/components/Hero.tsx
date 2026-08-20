@@ -118,7 +118,6 @@ const Hero = ({ executeScroll }: HeroProps) => {
         <HeroCTA type='button' onClick={executeScroll}>
           Read more!
         </HeroCTA>
-        <HeroMascot src={merihevonen} alt='' />
       </HeroContent>
     </HeroWrapper>
   )

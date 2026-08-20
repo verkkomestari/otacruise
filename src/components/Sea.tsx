@@ -6,18 +6,20 @@ import pallokala from '../assets/images/pallokala.png'
 const SeaContainer = styled.div`
   width: 100%;
   height: 25rem;
+  margin-bottom: 8rem;
   overflow: visible; /* Allows the fish to jump outside the container bounds */
   position: relative;
+  z-index: 0;
   background-color: ${({ theme }) => theme.colors.cloud};
 `
 
 // Base wave paths designed to tile seamlessly
 const WAVE_PATH_1 =
-  'M 0 50 Q 150 20 300 50 T 600 50 T 900 50 T 1200 50 T 1500 50 T 1800 50 V 400 H 0 Z'
+  'M 0 50 Q 150 20 300 50 T 600 50 T 900 50 T 1200 50 T 1500 50 T 1800 50 V 350 H 0 Z'
 const WAVE_PATH_2 =
-  'M 0 40 Q 200 70 400 40 T 800 40 T 1200 40 T 1600 40 T 2000 40 V 400 H 0 Z'
+  'M 0 40 Q 200 70 400 40 T 800 40 T 1200 40 T 1600 40 T 2000 40 V 350 H 0 Z'
 const WAVE_PATH_3 =
-  'M 0 30 Q 120 60 240 30 T 480 30 T 720 30 T 960 30 T 1200 30 T 1440 30 T 1680 30 V 400 H 0 Z'
+  'M 0 30 Q 120 60 240 30 T 480 30 T 720 30 T 960 30 T 1200 30 T 1440 30 T 1680 30 V 350 H 0 Z'
 
 const randomBetween = (min: number, max: number) =>
   Math.round(min + Math.random() * (max - min))
@@ -163,7 +165,7 @@ export const AnimatedSea: React.FC = () => {
         </defs>
 
         {/* Back Layer */}
-        <g transform='translate(0, 130)'>
+        <g transform='translate(0, 90)'>
           <animated.path
             d={WAVE_PATH_2}
             fill='url(#deepWave)'
@@ -172,7 +174,7 @@ export const AnimatedSea: React.FC = () => {
         </g>
 
         {/* Mid Layer */}
-        <g transform='translate(0, 160)'>
+        <g transform='translate(0, 120)'>
           <animated.path
             d={WAVE_PATH_1}
             fill='url(#midWaveGrad)'
@@ -218,7 +220,7 @@ export const AnimatedSea: React.FC = () => {
         </animated.g>
 
         {/* Front Layer */}
-        <g transform='translate(0, 190)'>
+        <g transform='translate(0, 150)'>
           <animated.path
             d={WAVE_PATH_3}
             fill='url(#frontWaveGrad)'
