@@ -10,18 +10,20 @@ const Navigation = styled.nav`
   z-index: 10;
   width: 100%;
   font-size: 1.5rem;
-  background-color: ${({ theme }) => theme.colors.lightBlue};
+  background-color: ${({ theme }) => theme.colors.blue};
 `
 
 const NavContainer = styled.div`
   width: min(100% - 2rem, 70rem);
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: center; /* Centers items vertically in the bar */
   justify-content: space-between;
 `
 
 const Brand = styled.button`
+  display: flex;
+  align-items: center; /* Centers the image inside the button */
   padding: 0;
   border: 0;
   background: transparent;
@@ -39,15 +41,17 @@ const Toggle = styled.button`
   cursor: pointer;
 
   @media (max-width: 575px) {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `
 
 const NavLinks = styled.div<{ $isOpen: boolean }>`
   display: flex;
+  align-items: center; /* Centers links vertically on desktop */
   gap: 0.5rem;
   margin-left: auto;
-  padding-top: 10px;
 
   @media (max-width: 575px) {
     display: ${({ $isOpen }) => ($isOpen ? 'flex' : 'none')};
@@ -56,12 +60,15 @@ const NavLinks = styled.div<{ $isOpen: boolean }>`
     right: 1rem;
     left: 1rem;
     flex-direction: column;
+    align-items: stretch;
     padding: 0.5rem 1rem 1rem;
-    background: ${({ theme }) => theme.colors.lightBlue};
+    background: ${({ theme }) => theme.colors.black};
   }
 `
 
 const NavLink = styled(Link)`
+  display: flex;
+  align-items: center; /* Centers text vertically within link click-area */
   padding: 0.5rem 0.75rem;
   color: ${({ theme }) => theme.colors.cloud};
   font-family: ${({ theme }) => theme.fonts.body};
