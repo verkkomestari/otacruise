@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import HomeCards from './HomeCards'
-import tausta from '../assets/images/meritausta-2.jpg'
+import tausta from '../assets/images/meritausta.png'
 
 //Alotusssivun alla oleva esittelyosio
 
@@ -13,7 +13,7 @@ const IntroSection = styled.div<{ $background: string }>`
   overflow: hidden;
   text-align: center;
   color: white;
-  background: url(${({ $background }) => $background}) center / cover;
+  background-color: ${({ theme }) => theme.colors.lightBlue};
 `
 
 const Spacer = styled.div`
@@ -25,12 +25,12 @@ const IntroCopy = styled.div`
   margin: 0 auto;
   padding: 1rem;
   border-radius: 0.375rem;
-  background-color: #9bd4ac;
+  background-color: ${({ theme }) => theme.colors.primaryBackground};
 `
 
 const IntroTitle = styled.h1`
   margin: 0 0 0.5rem;
-  font-family: 'Mochiy Pop One', 'Gill Sans', sans-serif;
+  font-family: ${({ theme }) => theme.fonts.display};
   font-size: 2.5rem;
   letter-spacing: 4px;
 `

@@ -10,7 +10,7 @@ const Navigation = styled.nav`
   z-index: 10;
   width: 100%;
   font-size: 1.5rem;
-  background-color: #2c8c7d;
+  background-color: ${({ theme }) => theme.colors.brand};
 `
 
 const NavContainer = styled.div`
@@ -57,14 +57,14 @@ const NavLinks = styled.div<{ $isOpen: boolean }>`
     left: 1rem;
     flex-direction: column;
     padding: 0.5rem 1rem 1rem;
-    background: #2c8c7d;
+    background: ${({ theme }) => theme.colors.brand};
   }
 `
 
 const NavLink = styled(Link)`
   padding: 0.5rem 0.75rem;
-  color: #d7c3f1;
-  font-family: 'Montserrat', sans-serif;
+  color: ${({ theme }) => theme.colors.lavender};
+  font-family: ${({ theme }) => theme.fonts.body};
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -72,8 +72,8 @@ const NavLink = styled(Link)`
   transition: color 0.3s ease-out;
 
   &:hover {
-    color: #d7c3f1;
-    text-shadow: 1px 1px 10px #146555;
+    color: ${({ theme }) => theme.colors.lavender};
+    text-shadow: 1px 1px 10px ${({ theme }) => theme.colors.brandDark};
   }
 `
 

@@ -3,7 +3,7 @@ import InfoContent from './InfoContent'
 import InfoLink from './InfoLink'
 import { useParams } from 'react-router-dom'
 import infoList from '../assets/infoList'
-import meritausta from '../assets/images/meritausta.jpg'
+import meritausta from '../assets/images/meritausta.png'
 
 const InfoBackground = styled.div<{ $background: string }>`
   min-height: 100vh;

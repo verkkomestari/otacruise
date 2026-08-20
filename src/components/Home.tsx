@@ -1,6 +1,7 @@
 import Hero from './Hero'
 import Intro from './Intro'
 import { useRef } from 'react'
+import AnimatedSea from './Sea'
 
 const Home = () => {
   const scrollToRef = (ref: React.RefObject<HTMLDivElement>) =>
@@ -15,6 +16,7 @@ const Home = () => {
   return (
     <>
       <Hero executeScroll={executeScroll} />
+      <AnimatedSea />
       <Intro introRef={introRef} />
     </>
   )

@@ -4,11 +4,11 @@ const FooterContainer = styled.footer`
   padding: 60px 40px 40px;
   color: white;
   text-align: center;
-  background-color: #b69cd6;
+  background-color: ${({ theme }) => theme.colors.lavenderDark};
 `
 
 const FooterTitle = styled.div`
-  font-family: 'Montserrat', sans-serif;
+  font-family: ${({ theme }) => theme.fonts.body};
 `
 
 const Footer = () => (

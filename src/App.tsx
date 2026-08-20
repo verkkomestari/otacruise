@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Info from './components/Info'
 import Tickets from './components/Tickets'
 import Footer from './components/Footer'
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { theme } from './theme'
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -20,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
+    font-family: ${({ theme }) => theme.fonts.body};
     font-weight: 400;
   }
 `
@@ -35,19 +36,21 @@ const NavigationOffset = styled.div`
 
 function App() {
   return (
-    <AppContainer>
-      <GlobalStyle />
-      <Router>
-        <NavigationBar />
-        <NavigationOffset />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/info/:id' element={<Info />} />
-          <Route path='/tickets' element={<Tickets />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </AppContainer>
+    <ThemeProvider theme={theme}>
+      <AppContainer>
+        <GlobalStyle />
+        <Router>
+          <NavigationBar />
+          <NavigationOffset />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/info/:id' element={<Info />} />
+            <Route path='/tickets' element={<Tickets />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </AppContainer>
+    </ThemeProvider>
   )
 }
 

@@ -11,9 +11,9 @@ const CardWrapper = styled.div`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: white;
-  border-radius: 0.375rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background: ${({ theme }) => theme.colors.white};
+  border-radius: ${({ theme }) => theme.radii.small};
+  box-shadow: ${({ theme }) => theme.shadows.card};
   cursor: pointer;
   transition:
     transform 0.2s ease,
@@ -23,9 +23,7 @@ const CardWrapper = styled.div`
   &:hover {
     transform: translateY(-4px);
     background-color: rgb(238, 246, 253);
-    box-shadow:
-      0 0 25px 0 #b69cd6,
-      10px 10px 10px 0 #d7c3f1;
+    box-shadow: ${({ theme }) => theme.shadows.cardHover};
   }
 
   .card-body {
@@ -34,8 +32,8 @@ const CardWrapper = styled.div`
 
   .card-title {
     margin: 0 0 0.5rem;
-    color: #0d7c66;
-    font-family: 'Montserrat', sans-serif;
+    color: ${({ theme }) => theme.colors.brandAccent};
+    font-family: ${({ theme }) => theme.fonts.body};
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;

@@ -10,9 +10,9 @@ interface InfoLinkProps {
 
 const NavigationLink = styled(Link)`
   display: block;
-  color: #41b3a2;
+  color: ${({ theme }) => theme.colors.link};
   font-size: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: ${({ theme }) => theme.fonts.body};
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -20,7 +20,7 @@ const NavigationLink = styled(Link)`
   transition: color 0.15s ease-in-out;
 
   &:hover {
-    color: #146555;
+    color: ${({ theme }) => theme.colors.brandDark};
   }
 `
 

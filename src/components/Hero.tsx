@@ -7,7 +7,7 @@ const HeroWrapper = styled.section`
   position: relative;
   overflow: hidden;
   text-align: center;
-  background-color: #d7c3f1;
+  background-color: ${({ theme }) => theme.colors.cloud};
   color: #146555;
 
   /* Full screen height + responsive mobile address bar support */
