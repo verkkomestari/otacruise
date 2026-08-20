@@ -8,7 +8,7 @@ const HeroWrapper = styled.section`
   overflow: hidden;
   text-align: center;
   background-color: ${({ theme }) => theme.colors.cloud};
-  color: #146555;
+  color: ${({ theme }) => theme.colors.blue};
 
   /* Full screen height + responsive mobile address bar support */
   min-height: 100vh;
@@ -19,70 +19,79 @@ const HeroWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+`
 
-  .hero-content {
-    width: min(100%, 1140px);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    z-index: 1;
+const HeroContent = styled.div`
+  width: min(100%, 1140px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  z-index: 1;
+`
+
+const HeroLogo = styled.img`
+  width: min(90vw, 750px);
+  height: auto;
+`
+
+const HeroMotto = styled.p`
+  margin: 0;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  line-height: 1.4;
+  padding-inline: 1rem;
+`
+
+const HeroDate = styled.p`
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: bold;
+`
+
+const HeroCTA = styled.button`
+  display: inline-block;
+  border: 2px solid ${({ theme }) => theme.colors.darkBlue};
+  border-radius: 10px;
+  padding: 0.5rem 1.25rem;
+  color: ${({ theme }) => theme.colors.blue};
+  background: transparent;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: ${({ theme }) => theme.colors.cloud};
+    background-color: ${({ theme }) => theme.colors.darkBlue};
   }
 
-  .hero-logo {
-    width: min(90vw, 750px);
-    height: auto;
+  @media (max-width: 575px) {
+    display: none;
   }
+`
 
-  .hero-motto {
-    margin: 0;
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
-    line-height: 1.4;
-    padding-inline: 1rem;
-  }
+const MottoDivider = styled.div`
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`
 
-  .hero-date {
-    margin: 0;
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: bold;
-  }
+const HeroMascot = styled.img`
+  position: absolute;
+  bottom: 5rem;
+  left: clamp(-40px, 2vw, 40px);
+  width: clamp(140px, 25vw, 320px);
+  height: auto;
+  pointer-events: none;
 
-  .hero-cta {
-    display: inline-block;
-    border: 2px solid #166555;
-    border-radius: 10px;
-    padding: 0.5rem 1.25rem;
-    color: #166555;
-    background: transparent;
-    font-size: 1.25rem;
-    cursor: pointer;
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease;
-
-    &:hover,
-    &:focus-visible {
-      color: #d7c3f1;
-      background-color: #166555;
-    }
-
-    @media (max-width: 575px) {
-      display: none;
-    }
-  }
-
-  .hero-mascot {
-    position: absolute;
-    bottom: 5rem;
-    left: clamp(-40px, 2vw, 40px);
-    width: clamp(140px, 25vw, 320px);
-    height: auto;
-    pointer-events: none;
-
-    @media (max-width: 480px) {
-      display: none;
-    }
+  @media (max-width: 480px) {
+    display: none;
   }
 `
 
@@ -93,24 +102,24 @@ interface HeroProps {
 const Hero = ({ executeScroll }: HeroProps) => {
   return (
     <HeroWrapper>
-      <div className='hero-content'>
-        <img className='hero-logo' src={otacruise} alt='Otacruise' />
+      <HeroContent>
+        <HeroLogo src={otacruise} alt='Otacruise' />
 
-        <div>
-          <p className='hero-motto'>
+        <MottoDivider>
+          <HeroMotto>
             Finland's biggest student cruise for Aalto University students!
-          </p>
-          <p className='hero-date'>
+          </HeroMotto>
+          <HeroDate>
             {CONSTS.DEPARTURE_DATE.getDate()} -{' '}
             {CONSTS.ARRIVAL_DATE.toLocaleDateString()}
-          </p>
-        </div>
+          </HeroDate>
+        </MottoDivider>
 
-        <button type='button' className='hero-cta' onClick={executeScroll}>
+        <HeroCTA type='button' onClick={executeScroll}>
           Read more!
-        </button>
-        <img className='hero-mascot' src={merihevonen} alt='' />
-      </div>
+        </HeroCTA>
+        <HeroMascot src={merihevonen} alt='' />
+      </HeroContent>
     </HeroWrapper>
   )
 }
