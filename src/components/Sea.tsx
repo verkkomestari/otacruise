@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSpring, animated, config } from '@react-spring/web'
+import { useSpring, animated, easings } from '@react-spring/web'
 import styled, { useTheme } from 'styled-components'
 
 const SeaContainer = styled.div`
@@ -28,11 +28,11 @@ export const AnimatedSea: React.FC = () => {
       while (true) {
         await next({
           transform: 'translateX(-600px) translateY(8px)',
-          config: { duration: 7000 },
+          config: { duration: 14000, easing: easings.easeInOutQuad },
         })
         await next({
           transform: 'translateX(0px) translateY(0px)',
-          config: { duration: 7000 },
+          config: { duration: 14000, easing: easings.easeInOutQuad },
         })
       }
     },
@@ -45,11 +45,11 @@ export const AnimatedSea: React.FC = () => {
       while (true) {
         await next({
           transform: 'translateX(0px) translateY(-6px)',
-          config: { duration: 5500 },
+          config: { duration: 7000, easing: easings.easeInOutQuad },
         })
         await next({
           transform: 'translateX(-400px) translateY(4px)',
-          config: { duration: 5500 },
+          config: { duration: 7000, easing: easings.easeInOutQuad },
         })
       }
     },
@@ -62,11 +62,11 @@ export const AnimatedSea: React.FC = () => {
       while (true) {
         await next({
           transform: 'translateX(-480px) translateY(6px)',
-          config: { duration: 4000 },
+          config: { duration: 5500, easing: easings.easeInOutQuad },
         })
         await next({
           transform: 'translateX(0px) translateY(-4px)',
-          config: { duration: 4000 },
+          config: { duration: 5500, easing: easings.easeInOutQuad },
         })
       }
     },
