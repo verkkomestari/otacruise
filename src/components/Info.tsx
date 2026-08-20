@@ -3,9 +3,8 @@ import InfoContent from './InfoContent'
 import InfoLink from './InfoLink'
 import { useParams } from 'react-router-dom'
 import infoList from '../assets/infoList'
-import meritausta from '../assets/images/meritausta.png'
 
-const InfoBackground = styled.div<{ $background: string }>`
+const InfoBackground = styled.div`
   min-height: 100vh;
   padding: 2em 1em 1em;
   background: ${({ theme }) => theme.colors.blue};};
@@ -48,7 +47,7 @@ const Info = () => {
 
   const infoText = infoList.find((info) => info.id === id) ?? infoList[0]
   return (
-    <InfoBackground id='info-bg' $background={meritausta}>
+    <InfoBackground id='info-bg'>
       <InfoContainer id='info-container'>
         <InfoLayout id='info-container-child'>
           <Sidebar>
