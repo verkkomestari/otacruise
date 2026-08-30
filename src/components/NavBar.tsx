@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import pelastusrengas from '../assets/images/pelastusrengas.png'
@@ -7,11 +7,17 @@ const brandBounce = `
   0% {
     transform: scale(1);
   }
-  35% {
-    transform: scale(0.88);
+  20% {
+    transform: scale(0.72);
+  }
+  45% {
+    transform: scale(1.22);
   }
   65% {
-    transform: scale(1.12);
+    transform: scale(0.94);
+  }
+  80% {
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
@@ -37,7 +43,11 @@ const NavContainer = styled.div`
   min-height: 85px;
 `
 
-const Brand = styled.button<{ $isBouncing: boolean; $isSpinning: boolean }>`
+const Brand = styled.button<{
+  $isBouncing: boolean
+  $isSpinning: boolean
+  $bounceDuration: number
+}>`
   justify-self: start;
   display: flex;
   align-items: center;
@@ -45,9 +55,12 @@ const Brand = styled.button<{ $isBouncing: boolean; $isSpinning: boolean }>`
   border: 0;
   background: transparent;
   cursor: pointer;
-  animation: ${({ $isBouncing, $isSpinning }) => {
+  transform-origin: center center;
+  will-change: transform;
+  animation: ${({ $isBouncing, $isSpinning, $bounceDuration }) => {
     if ($isSpinning) return 'brandSpin 1.2s linear infinite'
-    if ($isBouncing) return 'brandBounce 0.35s ease-in-out'
+    if ($isBouncing)
+      return `brandBounce ${$bounceDuration}s cubic-bezier(0.2, 0.8, 0.2, 1)`
     return 'none'
   }};
 
@@ -55,6 +68,7 @@ const Brand = styled.button<{ $isBouncing: boolean; $isSpinning: boolean }>`
     height: 62px;
     width: auto;
     display: block;
+    pointer-events: none;
   }
 
   @keyframes brandBounce {
@@ -213,11 +227,31 @@ const NavigationBar = () => {
   const [isBrandBouncing, setIsBrandBouncing] = useState(false)
   const [brandClickCount, setBrandClickCount] = useState(0)
   const [isCounterUnlocking, setIsCounterUnlocking] = useState(false)
+  const [brandBounceKey, setBrandBounceKey] = useState(0)
+  const [brandBounceDuration, setBrandBounceDuration] = useState(0.45)
+  const lastClickTimeRef = useRef<number | null>(null)
   const navigateTo = useNavigate()
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed)
 
   const handleBrandClick = () => {
+    const now = Date.now()
+    const timeSinceLastClick = lastClickTimeRef.current
+      ? now - lastClickTimeRef.current
+      : Number.POSITIVE_INFINITY
+
+    if (timeSinceLastClick < 220) {
+      setBrandBounceDuration(0.22)
+    } else if (timeSinceLastClick < 500) {
+      setBrandBounceDuration(0.34)
+    } else if (timeSinceLastClick < 800) {
+      setBrandBounceDuration(0.48)
+    } else {
+      setBrandBounceDuration(0.7)
+    }
+
+    lastClickTimeRef.current = now
+
     const nextCount = Math.min(brandClickCount + 1, 67)
     setBrandClickCount(nextCount)
 
@@ -229,8 +263,13 @@ const NavigationBar = () => {
       return
     }
 
-    setIsBrandBouncing(true)
-    setTimeout(() => setIsBrandBouncing(false), 350)
+    setIsBrandBouncing(false)
+    setBrandBounceKey((prev) => prev + 1)
+    void (document.activeElement as HTMLElement | null)?.blur?.()
+    requestAnimationFrame(() => {
+      setIsBrandBouncing(true)
+      setTimeout(() => setIsBrandBouncing(false), 450)
+    })
     navigateTo('/')
   }
 
@@ -242,9 +281,11 @@ const NavigationBar = () => {
       <NavContainer>
         <BrandWrap>
           <Brand
+            key={brandBounceKey}
             type='button'
             $isBouncing={isBrandBouncing}
             $isSpinning={isBrandSpinning}
+            $bounceDuration={brandBounceDuration}
             onClick={handleBrandClick}
           >
             <img alt='Otacruise' src={pelastusrengas} />
