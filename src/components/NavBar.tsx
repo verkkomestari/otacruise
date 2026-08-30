@@ -68,7 +68,7 @@ const Brand = styled.button<{
   }};
 
   img {
-    height: 62px;
+    height: 3.3rem;
     width: auto;
     display: block;
     pointer-events: none;
