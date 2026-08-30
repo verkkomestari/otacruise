@@ -345,10 +345,30 @@ const NavigationBar = () => {
         </Toggle>
 
         <NavLinks $isOpen={!isNavCollapsed}>
-          <NavLink onClick={() => setIsNavCollapsed(true)} to='/'>
+          <NavLink
+            onClick={() => {
+              setIsNavCollapsed(true)
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'auto',
+              })
+            }}
+            to='/'
+          >
             Home
           </NavLink>
-          <NavLink onClick={() => setIsNavCollapsed(true)} to='/info/main'>
+          <NavLink
+            onClick={() => {
+              setIsNavCollapsed(true)
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'auto',
+              })
+            }}
+            to='/info/main'
+          >
             Info
           </NavLink>
         </NavLinks>
