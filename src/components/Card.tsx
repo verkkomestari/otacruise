@@ -21,7 +21,7 @@ const CardWrapper = styled.div`
 
   &:hover {
     transform: translateY(-4px);
-    background-color: rgb(238, 246, 253);
+    background-color: ${({ theme }) => theme.colors.cloud};
   }
 
   .card-body {
@@ -31,7 +31,7 @@ const CardWrapper = styled.div`
   .card-title {
     margin: 0 0 0.5rem;
     color: ${({ theme }) => theme.colors.darkBlue};
-    font-family: ${({ theme }) => theme.fonts.body};
+    font-family: ${({ theme }) => theme.fonts.display};
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;

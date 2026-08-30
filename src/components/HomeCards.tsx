@@ -1,6 +1,4 @@
 import Card from './Card'
-import info from '../assets/images/info.svg'
-import heart from '../assets/images/heart.svg'
 import styled from 'styled-components'
 
 const CardsContainer = styled.div`
@@ -13,26 +11,28 @@ const CardsRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: #212529;
+  color: ${({ theme }) => theme.colors.black};
 `
 
-const InfoIcon = styled.img.attrs({
-  src: info,
-})``
+const InfoIcon = styled.i`
+  font-size: 8rem;
+  color: ${({ theme }) => theme.colors.cloud};
+`
 
-const HeartIcon = styled.img.attrs({
-  src: heart,
-})``
+const HeartIcon = styled.i`
+  font-size: 8rem;
+  color: ${({ theme }) => theme.colors.cloud};
+`
 
 const HomeCards = () => {
   return (
     <CardsContainer>
       <CardsRow>
         <Card id='main'>
-          <InfoIcon />
+          <InfoIcon className='bi bi-info-circle' aria-hidden='true' />
         </Card>
         <Card id='aboutus'>
-          <HeartIcon />
+          <HeartIcon className='bi bi-heart-fill' aria-hidden='true' />
         </Card>
       </CardsRow>
     </CardsContainer>
