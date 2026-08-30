@@ -141,6 +141,8 @@ const BrandCounter = styled.span<{ $isUnlocking: boolean }>`
 
 const Toggle = styled.button`
   display: none;
+  width: auto;
+  min-width: 2.75rem;
   padding: 0.4rem 0.7rem;
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 5px;
@@ -148,9 +150,11 @@ const Toggle = styled.button`
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+  justify-self: end;
+  align-self: center;
 
   @media (max-width: 575px) {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
   }
