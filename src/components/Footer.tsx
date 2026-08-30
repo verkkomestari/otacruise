@@ -77,6 +77,43 @@ const Text = styled.p`
   opacity: 0.9;
 `
 
+const SocialLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+`
+
+const SocialLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: rgba(110, 231, 183, 0.15);
+    box-shadow: 0 0 0 1px rgba(110, 231, 183, 0.3);
+  }
+`
+
+const Copyright = styled.p`
+  margin: 12px 0 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+`
+
 const Handle = styled.span`
   font-weight: 600;
   color: #6ee7b7;
@@ -205,6 +242,33 @@ const Footer = () => {
         <Text>
           Remember to follow us on social media <Handle>@Otacruise</Handle>
         </Text>
+        <SocialLinks aria-label='Social media links'>
+          <SocialLink
+            href='https://www.tiktok.com/@otacruise'
+            target='_blank'
+            rel='noreferrer'
+            aria-label='TikTok'
+          >
+            <i className='bi bi-tiktok' aria-hidden='true' />
+          </SocialLink>
+          <SocialLink
+            href='https://www.instagram.com/otacruise/'
+            target='_blank'
+            rel='noreferrer'
+            aria-label='Instagram'
+          >
+            <i className='bi bi-instagram' aria-hidden='true' />
+          </SocialLink>
+          <SocialLink
+            href='https://t.me/otacruise'
+            target='_blank'
+            rel='noreferrer'
+            aria-label='Telegram'
+          >
+            <i className='bi bi-telegram' aria-hidden='true' />
+          </SocialLink>
+        </SocialLinks>
+        <Copyright>© Otaniemen Merikerho ry</Copyright>
       </Content>
     </FooterWrapper>
   )
