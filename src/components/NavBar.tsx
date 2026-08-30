@@ -55,6 +55,9 @@ const Brand = styled.button<{
   border: 0;
   background: transparent;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
   transform-origin: center center;
   will-change: transform;
   animation: ${({ $isBouncing, $isSpinning, $bounceDuration }) => {
@@ -105,6 +108,9 @@ const BrandCounter = styled.span<{ $isUnlocking: boolean }>`
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
   opacity: 0;
   transform: translateY(-4px);
   transition:
