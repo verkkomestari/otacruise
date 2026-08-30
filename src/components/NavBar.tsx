@@ -3,6 +3,21 @@ import { Link, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import pelastusrengas from '../assets/images/pelastusrengas.png'
 
+const brandBounce = `
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(0.88);
+  }
+  65% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+`
+
 // Navigointipalkki sivun yläreunassa
 
 const Navigation = styled.nav`
@@ -16,18 +31,92 @@ const Navigation = styled.nav`
 const NavContainer = styled.div`
   width: min(100% - 2rem, 70rem);
   margin: 0 auto;
-  display: flex;
-  align-items: center; /* Centers items vertically in the bar */
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  min-height: 85px;
 `
 
-const Brand = styled.button`
+const Brand = styled.button<{ $isBouncing: boolean; $isSpinning: boolean }>`
+  justify-self: start;
   display: flex;
-  align-items: center; /* Centers the image inside the button */
+  align-items: center;
   padding: 0;
   border: 0;
   background: transparent;
   cursor: pointer;
+  animation: ${({ $isBouncing, $isSpinning }) => {
+    if ($isSpinning) return 'brandSpin 1.2s linear infinite'
+    if ($isBouncing) return 'brandBounce 0.35s ease-in-out'
+    return 'none'
+  }};
+
+  img {
+    height: 62px;
+    width: auto;
+    display: block;
+  }
+
+  @keyframes brandBounce {
+    ${brandBounce}
+  }
+
+  @keyframes brandSpin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`
+
+const BrandWrap = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+`
+
+const BrandCounter = styled.span<{ $isUnlocking: boolean }>`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.2rem;
+  height: 1.5rem;
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: ${({ theme }) => theme.colors.egg};
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  animation: ${({ $isUnlocking }) =>
+    $isUnlocking ? 'counterUnlock 0.7s ease forwards' : 'none'};
+
+  &[data-visible='true'] {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes counterUnlock {
+    0% {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+    35% {
+      transform: scale(1.3) translateY(-2px);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.8) translateY(-10px);
+    }
+  }
 `
 
 const Toggle = styled.button`
@@ -49,9 +138,10 @@ const Toggle = styled.button`
 
 const NavLinks = styled.div<{ $isOpen: boolean }>`
   display: flex;
-  align-items: center; /* Centers links vertically on desktop */
+  align-items: center;
+  justify-content: flex-end;
   gap: 0.5rem;
-  margin-left: auto;
+  justify-self: end;
 
   @media (max-width: 575px) {
     display: ${({ $isOpen }) => ($isOpen ? 'flex' : 'none')};
@@ -63,6 +153,41 @@ const NavLinks = styled.div<{ $isOpen: boolean }>`
     align-items: stretch;
     padding: 0.5rem 1rem 1rem;
     background: ${({ theme }) => theme.colors.black};
+  }
+`
+
+const SocialLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+
+  @media (max-width: 575px) {
+    justify-content: flex-start;
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+`
+
+const SocialLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: ${({ theme }) => theme.colors.cloud};
+  font-size: 1.35rem;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.18s ease;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.egg};
+    background: rgba(255, 255, 255, 0.08);
   }
 `
 
@@ -85,15 +210,80 @@ const NavLink = styled(Link)`
 
 const NavigationBar = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true)
+  const [isBrandBouncing, setIsBrandBouncing] = useState(false)
+  const [brandClickCount, setBrandClickCount] = useState(0)
+  const [isCounterUnlocking, setIsCounterUnlocking] = useState(false)
   const navigateTo = useNavigate()
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed)
+
+  const handleBrandClick = () => {
+    const nextCount = Math.min(brandClickCount + 1, 67)
+    setBrandClickCount(nextCount)
+
+    if (nextCount >= 67) {
+      setIsBrandBouncing(false)
+      setIsCounterUnlocking(true)
+      setTimeout(() => setIsCounterUnlocking(false), 700)
+      navigateTo('/')
+      return
+    }
+
+    setIsBrandBouncing(true)
+    setTimeout(() => setIsBrandBouncing(false), 350)
+    navigateTo('/')
+  }
+
+  const isBrandSpinning = brandClickCount >= 67
+  const shouldShowCounter = brandClickCount > 0 && !isBrandSpinning
+
   return (
     <Navigation id='navigationBar'>
       <NavContainer>
-        <Brand type='button' onClick={() => navigateTo('/')}>
-          <img alt='Otacruise' src={pelastusrengas} height='85' />
-        </Brand>
+        <BrandWrap>
+          <Brand
+            type='button'
+            $isBouncing={isBrandBouncing}
+            $isSpinning={isBrandSpinning}
+            onClick={handleBrandClick}
+          >
+            <img alt='Otacruise' src={pelastusrengas} />
+          </Brand>
+          <BrandCounter
+            $isUnlocking={isCounterUnlocking}
+            data-visible={shouldShowCounter ? 'true' : 'false'}
+          >
+            x{brandClickCount}
+          </BrandCounter>
+        </BrandWrap>
+
+        <SocialLinks aria-label='Social media links'>
+          <SocialLink
+            href='https://www.tiktok.com/@otacruise'
+            target='_blank'
+            rel='noreferrer'
+            aria-label='TikTok'
+          >
+            <i className='bi bi-tiktok' aria-hidden='true' />
+          </SocialLink>
+          <SocialLink
+            href='https://www.instagram.com/otacruise/'
+            target='_blank'
+            rel='noreferrer'
+            aria-label='Instagram'
+          >
+            <i className='bi bi-instagram' aria-hidden='true' />
+          </SocialLink>
+          <SocialLink
+            href='https://t.me/otacruise'
+            target='_blank'
+            rel='noreferrer'
+            aria-label='Telegram'
+          >
+            <i className='bi bi-telegram' aria-hidden='true' />
+          </SocialLink>
+        </SocialLinks>
+
         <Toggle
           type='button'
           aria-expanded={!isNavCollapsed}
@@ -102,6 +292,7 @@ const NavigationBar = () => {
         >
           ☰
         </Toggle>
+
         <NavLinks $isOpen={!isNavCollapsed}>
           <NavLink onClick={() => setIsNavCollapsed(true)} to='/'>
             Home
