@@ -241,10 +241,19 @@ const NavigationBar = () => {
   const [brandBounceDuration, setBrandBounceDuration] = useState(0.45)
   const lastClickTimeRef = useRef<number | null>(null)
   const navigateTo = useNavigate()
+  const navigateToTop = () => {
+    navigateTo('/#top')
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed)
 
   const handleBrandClick = () => {
+    if (brandClickCount >= 67) {
+      navigateToTop()
+      return
+    }
+
     const now = Date.now()
     const timeSinceLastClick = lastClickTimeRef.current
       ? now - lastClickTimeRef.current
@@ -269,7 +278,7 @@ const NavigationBar = () => {
       setIsBrandBouncing(false)
       setIsCounterUnlocking(true)
       setTimeout(() => setIsCounterUnlocking(false), 700)
-      navigateTo('/')
+      navigateToTop()
       return
     }
 
@@ -280,7 +289,7 @@ const NavigationBar = () => {
       setIsBrandBouncing(true)
       setTimeout(() => setIsBrandBouncing(false), 450)
     })
-    navigateTo('/')
+    navigateToTop()
   }
 
   const isBrandSpinning = brandClickCount >= 67

@@ -49,7 +49,7 @@ function RoutedApp() {
   const { pathname } = useLocation()
 
   return (
-    <AppContainer $route={pathname}>
+    <AppContainer id='top' $route={pathname}>
       <GlobalStyle />
       <NavigationBar />
       <NavigationOffset />
