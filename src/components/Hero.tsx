@@ -1,6 +1,7 @@
+import { useEffect } from 'react'
+import { animated, useTrail } from 'react-spring'
 import styled from 'styled-components'
 import otacruise from '../assets/images/otacruise.png'
-import merihevonen from '../assets/images/merihevonen.png'
 import CONSTS from '../consts'
 import { formatDateRange } from '../helpers/formatDate'
 
@@ -68,10 +69,6 @@ const HeroCTA = styled.button`
     color: ${({ theme }) => theme.colors.cloud};
     background-color: ${({ theme }) => theme.colors.darkBlue};
   }
-
-  @media (max-width: 575px) {
-    display: none;
-  }
 `
 
 const MottoDivider = styled.div`
@@ -100,24 +97,66 @@ interface HeroProps {
   executeScroll: () => void
 }
 
+const easeOut = (progress: number) => 1 - Math.pow(1 - progress, 3)
+
 const Hero = ({ executeScroll }: HeroProps) => {
+  const [trail, trailApi] = useTrail(3, () => ({
+    from: { opacity: 0, y: 40 },
+    to: { opacity: 0, y: 40 },
+    config: { duration: 400, easing: easeOut },
+  }))
+
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => {
+      trailApi.start({
+        from: { opacity: 0, y: 40 },
+        to: { opacity: 1, y: 0 },
+        reset: true,
+        config: { duration: 400, easing: easeOut },
+      })
+    })
+
+    return () => cancelAnimationFrame(frame)
+  }, [trailApi])
+
   return (
     <HeroWrapper>
       <HeroContent>
-        <HeroLogo src={otacruise} alt='Otacruise' />
+        <animated.div
+          style={{
+            opacity: trail[0].opacity,
+            transform: trail[0].y.to((y) => `translateY(${y}px)`),
+          }}
+        >
+          <HeroLogo src={otacruise} alt='Otacruise' />
+        </animated.div>
 
-        <MottoDivider>
-          <HeroMotto>
-            Finland's biggest student cruise for Aalto University students!
-          </HeroMotto>
-          <HeroDate>
-            {formatDateRange(CONSTS.DEPARTURE_DATE, CONSTS.ARRIVAL_DATE)}
-          </HeroDate>
-        </MottoDivider>
+        <animated.div
+          style={{
+            opacity: trail[1].opacity,
+            transform: trail[1].y.to((y) => `translateY(${y}px)`),
+          }}
+        >
+          <MottoDivider>
+            <HeroMotto>
+              Finland's biggest student cruise for Aalto University students!
+            </HeroMotto>
+            <HeroDate>
+              {formatDateRange(CONSTS.DEPARTURE_DATE, CONSTS.ARRIVAL_DATE)}
+            </HeroDate>
+          </MottoDivider>
+        </animated.div>
 
-        <HeroCTA type='button' onClick={executeScroll}>
-          Read more!
-        </HeroCTA>
+        <animated.div
+          style={{
+            opacity: trail[2].opacity,
+            transform: trail[2].y.to((y) => `translateY(${y}px)`),
+          }}
+        >
+          <HeroCTA type='button' onClick={executeScroll}>
+            Read more!
+          </HeroCTA>
+        </animated.div>
       </HeroContent>
     </HeroWrapper>
   )
