@@ -1,8 +1,6 @@
 import CONSTS from '../consts'
 import {
-  formatDate,
   formatDateTime,
-  formatDayMonth,
   formatTime,
   formatTimeRange,
 } from '../helpers/formatDate'
