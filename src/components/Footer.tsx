@@ -137,21 +137,21 @@ const BubbleLayer = styled.div`
 `
 
 const Bubble = styled.span<{
-  left: number
-  size: number
-  duration: string
-  delay: string
+  $left: number
+  $size: number
+  $duration: string
+  $delay: string
 }>`
   position: absolute;
-  left: ${({ left }) => `${left}%`};
+  left: ${({ $left }) => `${$left}%`};
   bottom: 0;
-  width: ${({ size }) => `${size}px`};
-  height: ${({ size }) => `${size}px`};
+  width: ${({ $size }) => `${$size}px`};
+  height: ${({ $size }) => `${$size}px`};
   border-radius: 50%;
   background: rgba(110, 231, 183, 0.8);
   box-shadow: 0 0 14px rgba(110, 231, 183, 0.5);
-  animation: ${riseBubble} ${({ duration }) => duration} ease-in infinite;
-  animation-delay: ${({ delay }) => delay};
+  animation: ${riseBubble} ${({ $duration }) => $duration} ease-in infinite;
+  animation-delay: ${({ $delay }) => $delay};
   transform-box: fill-box;
   transform-origin: center;
 `
@@ -206,10 +206,10 @@ const Footer = () => {
         {bubbles.map((bubble) => (
           <Bubble
             key={bubble.id}
-            left={bubble.left}
-            size={bubble.size}
-            duration={bubble.duration}
-            delay={bubble.delay}
+            $left={bubble.left}
+            $size={bubble.size}
+            $duration={bubble.duration}
+            $delay={bubble.delay}
           />
         ))}
       </BubbleLayer>
