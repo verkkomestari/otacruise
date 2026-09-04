@@ -1,6 +1,11 @@
 import NavigationBar from './components/NavBar'
 import Home from './components/Home'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from 'react-router-dom'
 import Info from './components/Info'
 import Tickets from './components/Tickets'
 import Footer from './components/Footer'
@@ -23,33 +28,47 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     font-family: ${({ theme }) => theme.fonts.body};
     font-weight: 400;
+    background-color: ${({ theme }) => theme.colors.lightBlue};
   }
 `
 
-const AppContainer = styled.div`
-  min-height: 100%;
+const AppContainer = styled.div<{ $route: string }>`
+  min-height: 100vh;
+  background-color: ${({ $route, theme }) => {
+    if ($route.startsWith('/info')) return theme.colors.blue
+    if ($route === '/tickets') return theme.colors.egg
+    return theme.colors.lightBlue
+  }};
 `
 
 const NavigationOffset = styled.div`
   height: 5rem;
 `
 
+function RoutedApp() {
+  const { pathname } = useLocation()
+
+  return (
+    <AppContainer $route={pathname}>
+      <GlobalStyle />
+      <NavigationBar />
+      <NavigationOffset />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/info/:id' element={<Info />} />
+        <Route path='/tickets' element={<Tickets />} />
+      </Routes>
+      <Footer />
+    </AppContainer>
+  )
+}
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <AppContainer>
-        <GlobalStyle />
-        <Router>
-          <NavigationBar />
-          <NavigationOffset />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/info/:id' element={<Info />} />
-            <Route path='/tickets' element={<Tickets />} />
-          </Routes>
-          <Footer />
-        </Router>
-      </AppContainer>
+      <Router>
+        <RoutedApp />
+      </Router>
     </ThemeProvider>
   )
 }

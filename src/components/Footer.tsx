@@ -1,24 +1,6 @@
 import React, { useMemo } from 'react'
+import { animated, useSpring } from 'react-spring'
 import styled, { keyframes } from 'styled-components'
-
-// Swaying animations for underwater flora
-const swayLeft = keyframes`
-  0%, 100% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-6deg) skewX(-4deg);
-  }
-`
-
-const swayRight = keyframes`
-  0%, 100% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(7deg) skewX(5deg);
-  }
-`
 
 const riseBubble = keyframes`
   0% {
@@ -45,12 +27,28 @@ const FooterWrapper = styled.footer`
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  background: ${({ theme }) =>
-    theme?.colors?.darkGreen ||
-    'linear-gradient(180deg, #07231c 0%, #03130f 100%)'};
+  background: transparent;
   color: #ffffff;
   overflow: hidden;
   text-align: center;
+`
+
+const FooterSurface = styled.div`
+  position: absolute;
+  inset: 2rem 0 0;
+  background: ${({ theme }) => theme.colors.darkGreen};
+  z-index: 0;
+`
+
+const WaveDivider = styled.svg`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  color: ${({ theme }) => theme?.colors?.darkGreen || '#032b21'};
+  pointer-events: none;
+  z-index: 1;
 `
 
 const Content = styled.div`
@@ -130,16 +128,6 @@ const FloraLayer = styled.svg`
   z-index: 2;
 `
 
-const AnimatedKelpLeft = styled.g`
-  transform-origin: bottom center;
-  animation: ${swayLeft} 6s ease-in-out infinite;
-`
-
-const AnimatedKelpRight = styled.g`
-  transform-origin: bottom center;
-  animation: ${swayRight} 5s ease-in-out infinite;
-`
-
 const BubbleLayer = styled.div`
   position: absolute;
   inset: 0;
@@ -169,6 +157,13 @@ const Bubble = styled.span<{
 `
 
 const Footer = () => {
+  const { waveX } = useSpring({
+    from: { waveX: 0 },
+    to: { waveX: 1440 },
+    loop: true,
+    config: { duration: 40000 },
+  })
+
   const bubbles = useMemo(
     () =>
       Array.from({ length: 8 }, (_, index) => ({
@@ -183,6 +178,30 @@ const Footer = () => {
 
   return (
     <FooterWrapper id='footer'>
+      <WaveDivider
+        viewBox='0 0 1440 32'
+        fill='none'
+        preserveAspectRatio='none'
+        aria-hidden='true'
+      >
+        <animated.g transform={waveX.to((value) => `translate(${value} 0)`)}>
+          <path
+            d='M0,16 C60,5 120,5 180,16 C240,27 300,27 360,16 C420,5 480,5 540,16 C600,27 660,27 720,16 C780,5 840,5 900,16 C960,27 1020,27 1080,16 C1140,5 1200,5 1260,16 C1320,27 1380,27 1440,16 L1440,32 L0,32 Z'
+            fill='currentColor'
+            stroke='currentColor'
+            strokeWidth='1'
+          />
+          <path
+            d='M0,16 C60,5 120,5 180,16 C240,27 300,27 360,16 C420,5 480,5 540,16 C600,27 660,27 720,16 C780,5 840,5 900,16 C960,27 1020,27 1080,16 C1140,5 1200,5 1260,16 C1320,27 1380,27 1440,16 L1440,32 L0,32 Z'
+            transform='translate(-1440 0)'
+            fill='currentColor'
+            stroke='currentColor'
+            strokeWidth='1'
+          />
+        </animated.g>
+      </WaveDivider>
+      <FooterSurface />
+
       <BubbleLayer>
         {bubbles.map((bubble) => (
           <Bubble
