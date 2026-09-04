@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import otacruise from '../assets/images/otacruise.png'
 import merihevonen from '../assets/images/merihevonen.png'
 import CONSTS from '../consts'
+import { formatDateRange } from '../helpers/formatDate'
 
 const HeroWrapper = styled.section`
   position: relative;
@@ -110,8 +111,7 @@ const Hero = ({ executeScroll }: HeroProps) => {
             Finland's biggest student cruise for Aalto University students!
           </HeroMotto>
           <HeroDate>
-            {CONSTS.DEPARTURE_DATE.getDate()} -{' '}
-            {CONSTS.ARRIVAL_DATE.toLocaleDateString()}
+            {formatDateRange(CONSTS.DEPARTURE_DATE, CONSTS.ARRIVAL_DATE)}
           </HeroDate>
         </MottoDivider>
 

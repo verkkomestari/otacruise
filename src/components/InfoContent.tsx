@@ -84,7 +84,7 @@ const InfoContent = ({ infoItem }: InfoContentProps) => {
           <BodyText $faq={infoItem.id === 'faq'}>{part.body}</BodyText>
         </PageBody>
       ))}
-      {infoItem.title === 'Safety & guidelines' ? (
+      {/* {infoItem.title === 'Safety & guidelines' ? (
         <div>
           <LinkButton
             href='https://forms.gle/oqCWaBzqa1LfHrS97'
@@ -96,8 +96,8 @@ const InfoContent = ({ infoItem }: InfoContentProps) => {
         </div>
       ) : (
         <></>
-      )}
-      {infoItem.title === 'About Us' ? (
+      )} */}
+      {/* {infoItem.title === 'About Us' ? (
         <div>
           <LinkButton
             href='https://forms.gle/vk15w6hemVJftMCp6'
@@ -109,7 +109,7 @@ const InfoContent = ({ infoItem }: InfoContentProps) => {
         </div>
       ) : (
         <></>
-      )}
+      )} */}
     </Content>
   )
 }

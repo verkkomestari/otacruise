@@ -1,4 +1,11 @@
 import CONSTS from '../consts'
+import {
+  formatDate,
+  formatDateTime,
+  formatDayMonth,
+  formatTime,
+  formatTimeRange,
+} from '../helpers/formatDate'
 
 export type TInfoList = typeof infoList
 
@@ -15,19 +22,15 @@ const infoList = [
       },
       {
         subtitle: 'Dates',
-        body: `Departure from Olympia Terminal: ${CONSTS.DEPARTURE_DATE.toLocaleDateString()} at ${CONSTS.DEPARTURE_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}. Boarding 13-16.*`,
+        body: `Departure from Olympia Terminal: ${formatDateTime(CONSTS.DEPARTURE_DATE)}. Boarding ${formatTimeRange(CONSTS.BOARDING_START_DATE, CONSTS.BOARDING_END_DATE)}.`,
       },
       {
         subtitle: '',
-        body: `Arrival to Stockholm: ${CONSTS.ARRIVAL_STOCKHOLM_DATE.toLocaleDateString()} at ${CONSTS.ARRIVAL_STOCKHOLM_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} Swedish time. Return to the ship at ${CONSTS.RETURN_TO_SHIP_LATEST_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} the latest.*`,
+        body: `Arrival to Stockholm: ${formatDateTime(CONSTS.ARRIVAL_STOCKHOLM_DATE)} Swedish time. Return to the ship at ${formatTime(CONSTS.RETURN_TO_SHIP_LATEST_DATE)} the latest.`,
       },
       {
         subtitle: '',
-        body: `Arrival to Olympia Terminal: ${CONSTS.ARRIVAL_DATE.toLocaleDateString()} at ${CONSTS.ARRIVAL_DATE.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}*`,
-      },
-      {
-        subtitle: '',
-        body: '* The times are estimates for the time being',
+        body: `Arrival to Olympia Terminal: ${formatDateTime(CONSTS.ARRIVAL_DATE)}`,
       },
       {
         subtitle: 'More Info',
@@ -44,7 +47,7 @@ const infoList = [
   //   content: [
   //     {
   //       subtitle: '',
-  //       body: 'Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on 22.9. at 17:00 and on campus on 24.9. at 8:00. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.',
+  //       body: `Otacruise is for over 18 years old Aalto students only and you need an Aalto email address to buy the tickets. Ticket sales will start on Kide.app on ${formatDayMonth(CONSTS.TICKET_SALE_KIDE_START_DATE)} at ${formatTime(CONSTS.TICKET_SALE_KIDE_START_DATE)} and on campus on ${formatDayMonth(CONSTS.TICKET_SALE_CAMPUS_START_DATE)} at ${formatTime(CONSTS.TICKET_SALE_CAMPUS_START_DATE)}. On Kide.app, cabins from all available cabin classes will be for sale. On the campus sale, 4 people cabins from classes A, B and C will be for sale.`,
   //     },
   //     {
   //       subtitle: '',
@@ -92,7 +95,7 @@ const infoList = [
   //     },
   //     {
   //       subtitle: '',
-  //       body: 'There is 25 minutes to fill in the information. You can edit the information on Kide.app until 12.10.',
+  //       body: `There is 25 minutes to fill in the information. You can edit the information on Kide.app until ${formatDayMonth(CONSTS.TICKET_EDIT_DEADLINE_DATE)}`,
   //     },
   //     {
   //       subtitle: '',
@@ -148,7 +151,7 @@ const infoList = [
   //     },
   //     {
   //       subtitle: '',
-  //       body: '► The trip from Helsinki to Stockholm and back on the Silja Symphony on 22.-24.11.2026',
+  //       body: `► The trip from Helsinki to Stockholm and back on the Silja Symphony on ${CONSTS.DEPARTURE_DATE.getDate()}.-${formatDate(CONSTS.ARRIVAL_DATE)}`,
   //     },
   //     {
   //       subtitle: '',
@@ -219,7 +222,7 @@ const infoList = [
       },
       {
         subtitle: 'Is the spa open on the cruise?',
-        body: 'Yes. The Sunflower Oasis spa is open from 15.00-19.00 on the first day, and 12:00-20:00 on the second day.',
+        body: `Yes. The Sunflower Oasis spa is open from ${formatTimeRange(CONSTS.SPA_DAY_1_OPEN_DATE, CONSTS.SPA_DAY_1_CLOSE_DATE)} on the first day, and ${formatTimeRange(CONSTS.SPA_DAY_2_OPEN_DATE, CONSTS.SPA_DAY_2_CLOSE_DATE)} on the second day.`,
       },
     ],
   },
@@ -333,10 +336,10 @@ const infoList = [
         subtitle: '',
         body: 'Telegram: @CaptainOtacruise',
       },
-      {
-        subtitle: 'Apply to be an organiser!',
-        body: 'Want to get on board earlier and be a part of the organising team for Otacruise? The application is open until the end of the year and is made through the following link. More information can be found in the form:',
-      },
+      // {
+      //   subtitle: 'Apply to be an organiser!',
+      //   body: 'Want to get on board earlier and be a part of the organising team for Otacruise? The application is open until the end of the year and is made through the following link. More information can be found in the form:',
+      // },
     ],
   },
 ]
