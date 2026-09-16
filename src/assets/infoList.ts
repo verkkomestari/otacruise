@@ -220,7 +220,7 @@ const infoList = [
       },
       {
         subtitle: 'Is the spa open on the cruise?',
-        body: `Yes. The Sunflower Oasis spa is open from ${formatTimeRange(CONSTS.SPA_DAY_1_OPEN_DATE, CONSTS.SPA_DAY_1_CLOSE_DATE)} on the first day, and ${formatTimeRange(CONSTS.SPA_DAY_2_OPEN_DATE, CONSTS.SPA_DAY_2_CLOSE_DATE)} on the second day.`,
+        body: `Yes. The Sunflower Oasis spa is open from ${formatTimeRange(CONSTS.SPA_DAY_2_OPEN_DATE, CONSTS.SPA_DAY_2_CLOSE_DATE)} on the second day only.`,
       },
     ],
   },
