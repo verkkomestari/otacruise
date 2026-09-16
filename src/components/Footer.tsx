@@ -1,6 +1,7 @@
-import { useMemo } from 'react'
-import { animated, useSpring } from 'react-spring'
-import styled, { keyframes } from 'styled-components'
+import { useMemo } from 'react';
+import { animated, useSpring } from 'react-spring';
+import styled, { keyframes } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const riseBubble = keyframes`
   0% {
@@ -17,7 +18,7 @@ const riseBubble = keyframes`
     transform: translateY(-120px) scale(1.1);
     opacity: 0;
   }
-`
+`;
 
 const FooterWrapper = styled.footer`
   position: relative;
@@ -31,14 +32,14 @@ const FooterWrapper = styled.footer`
   color: #ffffff;
   overflow: hidden;
   text-align: center;
-`
+`;
 
 const FooterSurface = styled.div`
   position: absolute;
   inset: 2rem 0 0;
   background: ${({ theme }) => theme.colors.darkGreen};
   z-index: 0;
-`
+`;
 
 const WaveDivider = styled.svg`
   position: absolute;
@@ -49,7 +50,7 @@ const WaveDivider = styled.svg`
   color: ${({ theme }) => theme?.colors?.darkGreen || '#032b21'};
   pointer-events: none;
   z-index: 1;
-`
+`;
 
 const Content = styled.div`
   position: relative;
@@ -59,21 +60,21 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
+`;
 
 const Title = styled.h2`
   margin: 0 0 12px;
   font-family: ${({ theme }) => theme?.fonts?.body || 'inherit'};
   font-size: 1.8rem;
   letter-spacing: 0.5px;
-`
+`;
 
 const Text = styled.p`
   margin: 0;
   font-family: ${({ theme }) => theme?.fonts?.body || 'inherit'};
   font-size: 1rem;
   opacity: 0.9;
-`
+`;
 
 const SocialLinks = styled.div`
   display: flex;
@@ -81,7 +82,7 @@ const SocialLinks = styled.div`
   justify-content: center;
   gap: 12px;
   margin-top: 16px;
-`
+`;
 
 const SocialLink = styled.a`
   display: inline-flex;
@@ -103,19 +104,30 @@ const SocialLink = styled.a`
     background: rgba(110, 231, 183, 0.15);
     box-shadow: 0 0 0 1px rgba(110, 231, 183, 0.3);
   }
-`
+`;
 
 const Copyright = styled.p`
   margin: 12px 0 0;
   font-size: 0.8rem;
   letter-spacing: 0.04em;
   opacity: 0.8;
-`
+`;
+
+const PrivacyLink = styled(Link)`
+  margin-top: 12px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: #6ee7b7;
+  }
+`;
 
 const Handle = styled.span`
   font-weight: 600;
   color: #6ee7b7;
-`
+`;
 
 const FloraLayer = styled.svg`
   position: absolute;
@@ -126,7 +138,7 @@ const FloraLayer = styled.svg`
   min-width: 100%;
   pointer-events: none;
   z-index: 2;
-`
+`;
 
 const BubbleLayer = styled.div`
   position: absolute;
@@ -134,13 +146,13 @@ const BubbleLayer = styled.div`
   pointer-events: none;
   z-index: 3;
   overflow: hidden;
-`
+`;
 
 const Bubble = styled.span<{
-  $left: number
-  $size: number
-  $duration: string
-  $delay: string
+  $left: number;
+  $size: number;
+  $duration: string;
+  $delay: string;
 }>`
   position: absolute;
   left: ${({ $left }) => `${$left}%`};
@@ -154,7 +166,7 @@ const Bubble = styled.span<{
   animation-delay: ${({ $delay }) => $delay};
   transform-box: fill-box;
   transform-origin: center;
-`
+`;
 
 const Footer = () => {
   const { waveX } = useSpring({
@@ -162,7 +174,7 @@ const Footer = () => {
     to: { waveX: 1440 },
     loop: true,
     config: { duration: 40000 },
-  })
+  });
 
   const bubbles = useMemo(
     () =>
@@ -174,7 +186,7 @@ const Footer = () => {
         delay: `${Math.random() * 2.5}s`,
       })),
     [],
-  )
+  );
 
   return (
     <FooterWrapper id='footer'>
@@ -288,9 +300,12 @@ const Footer = () => {
           </SocialLink>
         </SocialLinks>
         <Copyright>© Otaniemen Merikerho ry</Copyright>
+        <PrivacyLink to='/privacy-notice'>
+          Tietosuojaseloste | privacy notice
+        </PrivacyLink>
       </Content>
     </FooterWrapper>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

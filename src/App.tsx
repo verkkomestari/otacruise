@@ -1,16 +1,18 @@
-import NavigationBar from './components/NavBar'
-import Home from './components/Home'
+import NavigationBar from './components/NavBar';
+import Home from './components/Home';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
-} from 'react-router-dom'
-import Info from './components/Info'
-import Tickets from './components/Tickets'
-import Footer from './components/Footer'
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
-import { theme } from './theme'
+} from 'react-router-dom';
+import Info from './components/Info';
+import Tickets from './components/Tickets';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import Footer from './components/Footer';
+import ScrollToTop from './helpers/ScrollToTop';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { theme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -30,37 +32,41 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     background-color: ${({ theme }) => theme.colors.lightBlue};
   }
-`
+`;
 
 const AppContainer = styled.div<{ $route: string }>`
   min-height: 100vh;
   background-color: ${({ $route, theme }) => {
-    if ($route.startsWith('/info')) return theme.colors.blue
-    if ($route === '/tickets') return theme.colors.egg
-    return theme.colors.lightBlue
+    if ($route.startsWith('/info')) return theme.colors.blue;
+    if ($route === '/tickets') return theme.colors.egg;
+    if ($route === '/privacy-notice') return theme.colors.blue;
+    return theme.colors.lightBlue;
   }};
-`
+`;
 
 const NavigationOffset = styled.div`
   height: 5rem;
-`
+`;
 
 function RoutedApp() {
-  const { pathname } = useLocation()
+  const { pathname } = useLocation();
 
   return (
     <AppContainer id='top' $route={pathname}>
       <GlobalStyle />
       <NavigationBar />
       <NavigationOffset />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/info/:id' element={<Info />} />
-        <Route path='/tickets' element={<Tickets />} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/info/:id' element={<Info />} />
+          <Route path='/tickets' element={<Tickets />} />
+          <Route path='/privacy-notice' element={<PrivacyPolicy />} />
+        </Routes>
+      </ScrollToTop>
       <Footer />
     </AppContainer>
-  )
+  );
 }
 
 function App() {
@@ -70,7 +76,7 @@ function App() {
         <RoutedApp />
       </Router>
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;
