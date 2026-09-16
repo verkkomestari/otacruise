@@ -1,9 +1,9 @@
 // The text content on Info page
-import type { TInfoList } from '../assets/infoList'
-import styled from 'styled-components'
+import type { TInfoList } from '../assets/infoList';
+import styled from 'styled-components';
 
 interface InfoContentProps {
-  infoItem: TInfoList[number]
+  infoItem: TInfoList[number];
 }
 
 const Content = styled.main`
@@ -12,7 +12,7 @@ const Content = styled.main`
   @media (min-width: 768px) {
     width: 66.667%;
   }
-`
+`;
 
 const Title = styled.h1`
   color: ${({ theme }) => theme.colors.darkBlue};
@@ -21,11 +21,11 @@ const Title = styled.h1`
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
-`
+`;
 
 const PageBody = styled.div`
   margin-bottom: 1rem;
-`
+`;
 
 const Subtitle = styled.h2<{ $faq: boolean }>`
   padding-left: 1px;
@@ -35,11 +35,11 @@ const Subtitle = styled.h2<{ $faq: boolean }>`
   font-family: ${({ theme }) => theme.fonts.body};
   font-weight: 900;
   letter-spacing: 2px;
-`
+`;
 
 const BodyText = styled.p<{ $faq: boolean }>`
   padding-bottom: ${({ $faq }) => ($faq ? '1.5rem' : '0')};
-`
+`;
 
 const LinkButton = styled.a`
   display: inline-block;
@@ -59,7 +59,7 @@ const LinkButton = styled.a`
     background-color: ${({ theme }) => theme.colors.darkBlue};
     border-color: ${({ theme }) => theme.colors.darkBlue};
   }
-`
+`;
 
 const InfoContent = ({ infoItem }: InfoContentProps) => {
   return (
@@ -73,6 +73,22 @@ const InfoContent = ({ infoItem }: InfoContentProps) => {
             rel='noreferrer'
           >
             Go to Kide.app!
+          </LinkButton>
+        </div>
+      ) : (
+        <></>
+      )}
+      {infoItem.id === 'travelterms' ? (
+        <div>
+          <LinkButton
+            href='https://www.matkapojat.fi/dokumentit/Merikerhoehdot.pdf'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Matkaehdot | Travel terms & conditions (PDF)
+          </LinkButton>
+          <LinkButton href='/privacy-notice'>
+            Tietosuojaseloste | Privacy notice
           </LinkButton>
         </div>
       ) : (
@@ -111,7 +127,7 @@ const InfoContent = ({ infoItem }: InfoContentProps) => {
         <></>
       )} */}
     </Content>
-  )
-}
+  );
+};
 
-export default InfoContent
+export default InfoContent;

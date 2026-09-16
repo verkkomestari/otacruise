@@ -1,11 +1,11 @@
-import CONSTS from '../consts'
+import CONSTS from '../consts';
 import {
   formatDateTime,
   formatTime,
   formatTimeRange,
-} from '../helpers/formatDate'
+} from '../helpers/formatDate';
 
-export type TInfoList = typeof infoList
+export type TInfoList = typeof infoList;
 
 const infoList = [
   {
@@ -340,6 +340,13 @@ const infoList = [
       // },
     ],
   },
-]
+  {
+    id: 'travelterms',
+    title: 'Travel terms & conditions',
+    cardText: 'Read the travel terms and conditions',
+    img: '../assets/images/IG_arkku.jpg',
+    content: [],
+  },
+];
 
-export default infoList
+export default infoList;
