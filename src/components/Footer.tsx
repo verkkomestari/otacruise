@@ -299,10 +299,10 @@ const Footer = () => {
             <i className='bi bi-telegram' aria-hidden='true' />
           </SocialLink>
         </SocialLinks>
-        <Copyright>© Otaniemen Merikerho ry</Copyright>
         <PrivacyLink to='/privacy-notice'>
           Tietosuojaseloste | privacy notice
         </PrivacyLink>
+        <Copyright>© Otaniemen Merikerho ry</Copyright>
       </Content>
     </FooterWrapper>
   );
