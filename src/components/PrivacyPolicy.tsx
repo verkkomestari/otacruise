@@ -23,6 +23,7 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.colors.darkBlue};
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   line-height: 1.2;
+  overflow-wrap: anywhere;
 `;
 
 const DocumentLink = styled.a`
