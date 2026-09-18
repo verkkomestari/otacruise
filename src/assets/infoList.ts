@@ -3,6 +3,7 @@ import {
   formatDateTime,
   formatTime,
   formatTimeRange,
+  formatDate
 } from '../helpers/formatDate';
 
 export type TInfoList = typeof infoList;
@@ -194,7 +195,7 @@ const infoList = [
       }*/
       {
         subtitle: 'Can I switch the cabin members in our cabin?',
-        body: 'Yes. You can edit your ticket information on Kide.app until TBA free of charge. After that, contact opiskelijamatkat@matkapojat.fi for changes. This will cost 30€.',
+        body: `Yes. You can edit your ticket information on Kide.app until ${formatDate(CONSTS.LAST_DATE_TO_EDIT_CABIN_INFO)} free of charge. After that, contact opiskelijamatkat@matkapojat.fi for changes. This will cost 30€.`,
       },
       /*{
         subtitle: 'Which cabin class are the tickets for?',

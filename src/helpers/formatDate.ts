@@ -25,7 +25,7 @@ export const formatTimeRange = (start: Date, end: Date) =>
   `${formatTime(start)}-${formatTime(end)}`;
 
 export const formatDateRange = (start: Date, end: Date) =>
-  `${new Intl.DateTimeFormat(FINNISH_LOCALE, DAY_FORMAT).format(start)} - ${formatDate(end)}`;
+  `${new Intl.DateTimeFormat(FINNISH_LOCALE, DAY_FORMAT).format(start)}. - ${formatDate(end)}`;
 
 export const formatDayMonth = (date: Date) =>
   new Intl.DateTimeFormat(FINNISH_LOCALE, {
