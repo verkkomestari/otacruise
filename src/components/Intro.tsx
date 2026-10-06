@@ -1,11 +1,11 @@
-import { useEffect, useState, type RefObject } from 'react'
-import styled, { css, keyframes } from 'styled-components'
-import HomeCards from './HomeCards'
+import { useEffect, useState, type RefObject } from 'react';
+import styled, { css, keyframes } from 'styled-components';
+import HomeCards from './HomeCards';
 
 // Aloitussivun esittelyosio
 
 interface IntroProps {
-  introRef: RefObject<HTMLElement>
+  introRef: RefObject<HTMLElement>;
 }
 
 // Upward fade animation keyframes
@@ -18,7 +18,7 @@ const fadeInUp = keyframes`
     opacity: 1;
     transform: translateY(0);
   }
-`
+`;
 
 const IntroSection = styled.section`
   position: relative;
@@ -30,7 +30,7 @@ const IntroSection = styled.section`
   text-align: center;
   color: #ffffff;
   background-color: ${({ theme }) => theme.colors.lightBlue};
-`
+`;
 
 // Welcome card: starts hidden, triggers animation when $isVisible is true
 const IntroCopy = styled.div<{ $isVisible: boolean }>`
@@ -47,7 +47,7 @@ const IntroCopy = styled.div<{ $isVisible: boolean }>`
     css`
       animation: ${fadeInUp} 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     `}
-`
+`;
 
 const IntroTitle = styled.h2`
   margin: 0 0 1rem;
@@ -56,14 +56,14 @@ const IntroTitle = styled.h2`
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-`
+`;
 
 const IntroText = styled.p`
   margin: 0;
   font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.7;
   opacity: 0.92;
-`
+`;
 
 // Cards wrapper: triggers with a slight stagger once visible
 const CardsWrapper = styled.div<{ $isVisible: boolean }>`
@@ -75,33 +75,33 @@ const CardsWrapper = styled.div<{ $isVisible: boolean }>`
       animation: ${fadeInUp} 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
       animation-delay: 0.4s;
     `}
-`
+`;
 
 const Intro = ({ introRef }: IntroProps) => {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const target = introRef.current
-    if (!target) return
+    const target = introRef.current;
+    if (!target) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.unobserve(target) // Animate once
+          setIsVisible(true);
+          observer.unobserve(target); // Animate once
         }
       },
       {
         threshold: 0.15, // Triggers when 15% of the section is in view
       },
-    )
+    );
 
-    observer.observe(target)
+    observer.observe(target);
 
     return () => {
-      observer.disconnect()
-    }
-  }, [introRef])
+      observer.disconnect();
+    };
+  }, [introRef]);
 
   return (
     <IntroSection ref={introRef} id='intro'>
@@ -111,7 +111,7 @@ const Intro = ({ introRef }: IntroProps) => {
           Want to step on an unforgettable adventure across the Baltic Sea?
           Otacruise will once again welcome all of Otaniemi to a ship full of
           entertainment. The cruise will sail from Helsinki to Stockholm and
-          back, carrying more than 2,500 party-craving students.
+          back, carrying more than 2,600 party-craving students.
         </IntroText>
       </IntroCopy>
 
@@ -119,7 +119,7 @@ const Intro = ({ introRef }: IntroProps) => {
         <HomeCards />
       </CardsWrapper>
     </IntroSection>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;

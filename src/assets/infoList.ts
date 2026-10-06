@@ -203,7 +203,7 @@ const infoList = [
       },*/
       {
         subtitle: 'How many tickets are available?',
-        body: 'There are tickets for about 2500 Aalto students.',
+        body: 'There are tickets for about 2600 Aalto students.',
       },
       /*{
         subtitle:
