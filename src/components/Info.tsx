@@ -37,6 +37,9 @@ const Sidebar = styled.aside`
 `
 
 const InfoNav = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
   list-style: none;
