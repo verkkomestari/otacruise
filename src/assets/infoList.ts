@@ -3,7 +3,7 @@ import {
   formatDateTime,
   formatTime,
   formatTimeRange,
-  formatDate
+  formatDate,
 } from '../helpers/formatDate';
 
 export type TInfoList = typeof infoList;
@@ -218,6 +218,10 @@ const infoList = [
       {
         subtitle: 'Who is organising Otacruise?',
         body: 'Otacruise is run by a non-profit association, Otaniemen Merikerho ry, set up specifically for this purpose. You can contact the organisers at merikerho@merikerho.net or on Telegram @CaptainOtacruise.',
+      },
+      {
+        subtitle: 'What is the minimum age to attend Otacruise?',
+        body: 'The minimum age to attend Otacruise is 18, without exceptions.',
       },
       {
         subtitle: 'Is the spa open on the cruise?',
