@@ -32,6 +32,10 @@ const infoList = [
         body: `Arrival to Olympia Terminal: ${formatDateTime(CONSTS.ARRIVAL_DATE)}`,
       },
       {
+        subtitle: 'Lähtöselvitys',
+        body: 'Silja Linen Olympiaterminaalin 1. krs Otacruise / Matkapoikien lähtöselvityspiste klo 13:00–16:15. sieltä saat osanottajatodistusta vastaan meno- ja paluumatkan maihinnousukortit sekä Matkapojista tilatut lisäpalveluliput laivalle, kuten ruokailuliput. Hytissä aakkosten ensimmäisenä oleva (sukunimen mukaan) hakee kaikkien samassa hytissä majoittuvien liput; tarkista ennen laivaan nousua, että olet saanut kaikki tilaamasi liput. Säilytä liput hyvin, sillä kadonnutta lippua ei korvata, vaan sen joutuu lunastamaan uudelleen.',
+      },
+      {
         subtitle: 'More Info',
         body: 'Look through the info pages to find out more!',
       },
@@ -214,6 +218,10 @@ const infoList = [
         subtitle:
           "Can I buy a cabin for less people than the cabin's capacity?",
         body: 'Unfortunately, no. You will need to fill the whole cabin.',
+      },
+      {
+        subtitle: 'How does the check-in work?',
+        body: 'At check-in, by presenting your participant certificate, you will receive your boarding passes for both the outbound and return journeys, together with any additional services booked through Matkapojat, such as meal vouchers. For each cabin, all tickets and vouchers will be issued to the person whose surname comes first alphabetically. Before boarding, please check that you have received everything you ordered. Keep all tickets and vouchers safe throughout the trip, as lost items cannot be replaced and will need to be purchased again.',
       },
       {
         subtitle: 'Who is organising Otacruise?',
