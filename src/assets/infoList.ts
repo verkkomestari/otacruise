@@ -32,10 +32,6 @@ const infoList = [
         body: `Arrival to Olympia Terminal: ${formatDateTime(CONSTS.ARRIVAL_DATE)}`,
       },
       {
-        subtitle: 'Lähtöselvitys',
-        body: 'Silja Linen Olympiaterminaalin 1. krs Otacruise / Matkapoikien lähtöselvityspiste klo 13:00–16:15. sieltä saat osanottajatodistusta vastaan meno- ja paluumatkan maihinnousukortit sekä Matkapojista tilatut lisäpalveluliput laivalle, kuten ruokailuliput. Hytissä aakkosten ensimmäisenä oleva (sukunimen mukaan) hakee kaikkien samassa hytissä majoittuvien liput; tarkista ennen laivaan nousua, että olet saanut kaikki tilaamasi liput. Säilytä liput hyvin, sillä kadonnutta lippua ei korvata, vaan sen joutuu lunastamaan uudelleen.',
-      },
-      {
         subtitle: 'More Info',
         body: 'Look through the info pages to find out more!',
       },
@@ -221,7 +217,7 @@ const infoList = [
       },
       {
         subtitle: 'How does the check-in work?',
-        body: 'At check-in, by presenting your participant certificate, you will receive your boarding passes for both the outbound and return journeys, together with any additional services booked through Matkapojat, such as meal vouchers. For each cabin, all tickets and vouchers will be issued to the person whose surname comes first alphabetically. Before boarding, please check that you have received everything you ordered. Keep all tickets and vouchers safe throughout the trip, as lost items cannot be replaced and will need to be purchased again.',
+        body: 'Distribution of the tickets and boarding the ship begins at 13.00 at Olympiaterminaali. All the tickets to a cabin will be distributed in the same envelope. The envelope can be picked up by the person whose surname comes first in the alphabet from the cabin. The ticket distribution points are divided alphabetically so please line-up to the corresponding one with your surname. Only the person, whose last name is alphabetically first in the cabin group, should line up to pick up the tickets. The person picking up the tickets needs to present their drivers licence, EU identity card or passport at the counter.',
       },
       {
         subtitle: 'Who is organising Otacruise?',
